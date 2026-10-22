@@ -8,27 +8,34 @@ import json
 import sys
 
 
+def handle(event, names, errors, failed, counter):
+    kind = event.get("type")
+    if kind == "testStart":
+        names[event["test"]["id"]] = event["test"]["name"]
+    elif kind == "error":
+        errors.setdefault(event["testID"], str(event.get("error", "")))
+    elif kind == "testDone" and not event.get("hidden"):
+        counter["total"] += 1
+        if event.get("result") in ("failure", "error"):
+            failed.append(event["testID"])
+
+
 def main(path: str) -> None:
-    names: dict[int, str] = {}
-    errors: dict[int, str] = {}
-    failed: list[int] = []
-    total = 0
-    with open(path, encoding="utf-8", errors="replace") as handle:
-        for line in handle:
+    names: dict = {}
+    errors: dict = {}
+    failed: list = []
+    counter = {"total": 0}
+    with open(path, encoding="utf-8", errors="replace") as handle_file:
+        for line in handle_file:
             try:
-                event = json.loads(line)
+                decoded = json.loads(line)
             except ValueError:
                 continue
-            kind = event.get("type")
-            if kind == "testStart":
-                names[event["test"]["id"]] = event["test"]["name"]
-            elif kind == "error":
-                errors.setdefault(event["testID"], str(event.get("error", "")))
-            elif kind == "testDone" and not event.get("hidden"):
-                total += 1
-                if event.get("result") in ("failure", "error"):
-                    failed.append(event["testID"])
-    print(f"{total} tests run, {len(failed)} failed")
+            # The tool prints some events as a one-element list.
+            for event in decoded if isinstance(decoded, list) else [decoded]:
+                if isinstance(event, dict):
+                    handle(event, names, errors, failed, counter)
+    print(f"{counter['total']} tests run, {len(failed)} failed")
     for test_id in failed[:30]:
         message = errors.get(test_id, "").replace("%", "%25").replace("\r", "")
         message = message.replace("\n", "%0A")[:900]

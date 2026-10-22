@@ -66,9 +66,12 @@ dependencies {
     // suspend (@async) APIs, so the app must depend on it explicitly. Apache-2.0.
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
-    androidTestImplementation("androidx.test:runner:1.6.2")
-    androidTestImplementation("androidx.test:rules:1.6.1")
-    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+    // Versions match what Flutter's integration_test plugin already puts on the app's
+    // runtime classpath (runner 1.3.0, rules 1.2.0); newer ones fail Gradle's
+    // consistent-resolution check.
+    androidTestImplementation("androidx.test:runner:1.3.0")
+    androidTestImplementation("androidx.test:rules:1.2.0")
+    androidTestImplementation("androidx.test.ext:junit:1.1.2")
 }
 
 // flutter_local_notifications asks for core library desugaring, which only matters
