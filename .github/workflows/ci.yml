@@ -123,10 +123,39 @@ jobs:
       - name: Fail on Play Services, Firebase or Play Core
         run: dart run tools/license_scan/bin/check_gms.dart "$RUNNER_TEMP/android-deps.txt"
 
-      - name: Print the Android dependency list (for the license register)
-        if: always()
+      - name: Licenses of every Android dependency
+        run: python3 scripts/android-licenses.py "$RUNNER_TEMP/android-deps.txt"
+
+  android-emulator:
+    name: Android instrumented tests on an emulator
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Flutter ${{ env.FLUTTER_VERSION }}
         run: |
-          grep -oE '[A-Za-z0-9_.-]+:[A-Za-z0-9_.-]+:[A-Za-z0-9_.+-]+' "$RUNNER_TEMP/android-deps.txt" | sort -u | head -400
+          git clone --depth 1 --branch "$FLUTTER_VERSION" https://github.com/flutter/flutter.git "$HOME/flutter"
+          echo "$HOME/flutter/bin" >> "$GITHUB_PATH"
+
+      - name: Set up
+        run: scripts/setup.sh
+
+      - name: Enable hardware acceleration for the emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      # reactivecircus/android-emulator-runner is MIT licensed and only runs in CI.
+      - name: Run the instrumented tests (arbiter vectors, alarm flow, loud mode)
+        uses: reactivecircus/android-emulator-runner@v2.33.0
+        with:
+          api-level: 34
+          arch: x86_64
+          target: default
+          working-directory: apps/mobile/android
+          script: ./gradlew connectedDebugAndroidTest
 
   ios:
     name: iOS build (opt-in)

@@ -17,3 +17,10 @@ file; they were not resolved here (no Gradle in this environment), so the verifi
 | Path | Description | License | Status |
 |------|-------------|---------|--------|
 | apps/mobile/android/app/src/main/res/raw/keep.xml | resource-shrinker keep rule so run-time-looked-up Azaan recordings are not removed; contains no content | project-authored, same license as the app | approved |
+
+## CI tooling (not shipped in the app)
+
+| Name | Version | License | Verified | Use |
+|------|---------|---------|----------|-----|
+| reactivecircus/android-emulator-runner | v2.33.0 | MIT | U (check the repository LICENSE file before relying on it) | GitHub Action that starts an Android emulator for the instrumented tests; runs only in CI |
+| actions/checkout | v4 | MIT | U | GitHub-owned action that fetches the repository in CI |
