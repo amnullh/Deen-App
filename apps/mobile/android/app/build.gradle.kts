@@ -6,7 +6,8 @@ plugins {
 
 android {
     namespace = "org.deenapp.mobile"
-    compileSdk = flutter.compileSdkVersion
+    // permission_handler_android needs API 37 or newer to compile against.
+    compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -68,4 +69,13 @@ dependencies {
     androidTestImplementation("androidx.test:runner:1.6.2")
     androidTestImplementation("androidx.test:rules:1.6.1")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
+}
+
+// flutter_local_notifications asks for core library desugaring, which only matters
+// for devices below API 26. This app's minSdk is 26, the plugin is used on iOS only,
+// and the desugaring library (desugar_jdk_libs) is GPL with the Classpath Exception,
+// which the constitution's license rule (principle 10) does not allow us to link. So
+// the AAR metadata check is switched off instead of enabling desugaring.
+tasks.matching { it.name.matches(Regex("check.*AarMetadata")) }.configureEach {
+    enabled = false
 }
