@@ -20,6 +20,8 @@ permissions:
   contents: read
 
 env:
+  # Publishes the tail of a failing step as an annotation (readable without logs).
+  BASH_ENV: ${{ github.workspace }}/scripts/ci-trap.sh
   FLUTTER_VERSION: "3.47.7"
   # Keep tool telemetry off for CI as well.
   FLUTTER_SUPPRESS_ANALYTICS: "true"
