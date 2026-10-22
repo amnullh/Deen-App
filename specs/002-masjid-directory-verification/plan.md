@@ -150,7 +150,7 @@ The full tables are at the end of research.md sections 1 to 8 and become `conten
 
 ## Server changes (summary; detail in data-model.md and contracts/)
 
-1. API with 129 operations (126 on the console host, 3 on the api host; each role or step-up difference needs its own policy row), OpenAPI-first, routes created from `operationId`, request and response validation by Ajv, `removeAdditional: false`, problem+json errors, 404 for another Masjid's resource and a missing one with the same body.
+1. API with 131 operations (128 on the console host, 3 on the api host; each role or step-up difference needs its own policy row), OpenAPI-first, routes created from `operationId`, request and response validation by Ajv, `removeAdditional: false`, problem+json errors, 404 for another Masjid's resource and a missing one with the same body.
 2. Authentication in-house (research R-08, R-09); sessions in Valkey with a `session_epoch` in PostgreSQL; step-up; recovery machines (password reset, second-factor reset with a consumed recovery code, break-glass with a call, a second Operator and a 48-hour delay).
 3. Claim and listing state machines from one transition table (`services/domain/claim-transitions.ts`), enforced again by a database trigger; 266 claim pairs and 653 pairs over 12 machines tested.
 4. Evidence: upload to a sandboxed transcoder, AES-256-GCM per file, wrapped keys, assigned-Operator-only fail-closed access with audit, 90-day crypto-shred sweeper, appeal hold.
