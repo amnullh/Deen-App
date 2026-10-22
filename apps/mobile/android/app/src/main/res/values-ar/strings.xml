@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="channel_tone">نغمة تنبيه الصلاة</string>
+    <string name="channel_silent">تنبيه صامت للصلاة</string>
+    <string name="channel_vibrate">تنبيه اهتزازي للصلاة</string>
+    <string name="channel_reminder">التذكيرات</string>
+    <string name="channel_renewal">إشعار تجديد الجدول</string>
+    <string name="channel_playback">تشغيل الأذان</string>
+    <string name="channel_azaan">الأذان (%1$s)</string>
+    <string name="default_stop_label">إيقاف</string>
+    <string name="test_alert_title">تنبيه تجريبي</string>
+    <string name="test_alert_body">هذا تنبيه تجريبي من التطبيق.</string>
+</resources>

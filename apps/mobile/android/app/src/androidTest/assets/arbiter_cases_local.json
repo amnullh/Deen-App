@@ -1,0 +1,28 @@
+{
+  "_comment": "Small local subset for the Kotlin arbiter and alert-ID rules. The shared vectors live in packages/schedule_planner/test_vectors/ (workstream W2) and use this same shape: ledger entries carry alertId and state (fired, played, acknowledged, suppressed, failed); kind is one of prayer, preReminder, suhoor, adhkarReminder, renewal.",
+  "arbiter": [
+    {"name": "empty ledger plays", "ledger": [], "alertId": "fajr:2026-10-21", "expectPlay": true},
+    {"name": "played id is refused", "ledger": [{"alertId": "fajr:2026-10-21", "state": "played"}], "alertId": "fajr:2026-10-21", "expectPlay": false},
+    {"name": "other id still plays", "ledger": [{"alertId": "fajr:2026-10-21", "state": "played"}], "alertId": "dhuhr:2026-10-21", "expectPlay": true},
+    {"name": "same prayer next day plays", "ledger": [{"alertId": "fajr:2026-10-21", "state": "played"}], "alertId": "fajr:2026-10-22", "expectPlay": true},
+    {"name": "pre reminder is its own id", "ledger": [{"alertId": "asr:2026-10-21:pre", "state": "played"}], "alertId": "asr:2026-10-21", "expectPlay": true},
+    {"name": "fired only still plays", "ledger": [{"alertId": "isha:2026-10-21", "state": "fired"}], "alertId": "isha:2026-10-21", "expectPlay": true},
+    {"name": "failed attempt can be retried", "ledger": [{"alertId": "maghrib:2026-10-21", "state": "failed"}], "alertId": "maghrib:2026-10-21", "expectPlay": true},
+    {"name": "suppressed attempt can be retried", "ledger": [{"alertId": "maghrib:2026-10-21", "state": "suppressed"}], "alertId": "maghrib:2026-10-21", "expectPlay": true},
+    {"name": "played then acknowledged stays refused", "ledger": [{"alertId": "fajr:2026-10-21", "state": "played"}, {"alertId": "fajr:2026-10-21", "state": "acknowledged"}], "alertId": "fajr:2026-10-21", "expectPlay": false}
+  ],
+  "alertIds": [
+    {"id": "fajr:2026-10-21", "valid": true, "kind": "prayer", "prayer": "fajr", "date": "2026-10-21"},
+    {"id": "isha:2026-12-31", "valid": true, "kind": "prayer", "prayer": "isha", "date": "2026-12-31"},
+    {"id": "asr:2026-10-21:pre", "valid": true, "kind": "preReminder", "prayer": "asr", "date": "2026-10-21"},
+    {"id": "suhoor:2027-03-01", "valid": true, "kind": "suhoor", "date": "2027-03-01"},
+    {"id": "adhkar-morning:2026-10-21", "valid": true, "kind": "adhkarReminder", "date": "2026-10-21"},
+    {"id": "adhkar-evening:2026-10-21", "valid": true, "kind": "adhkarReminder", "date": "2026-10-21"},
+    {"id": "renewal:2026-12-20", "valid": true, "kind": "renewal", "date": "2026-12-20"},
+    {"id": "sunrise:2026-10-21", "valid": false},
+    {"id": "fajr:2026-10-21:post", "valid": false},
+    {"id": "fajr:21-10-2026", "valid": false},
+    {"id": "fajr", "valid": false},
+    {"id": "", "valid": false}
+  ]
+}

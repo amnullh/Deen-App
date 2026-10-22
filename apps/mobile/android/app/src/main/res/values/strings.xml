@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings used by native code only: notification channel names (shown in system settings) and
+     a few fallbacks. Alert titles and bodies come localized from the Dart planner. -->
+<resources>
+    <string name="channel_tone">Prayer alert tone</string>
+    <string name="channel_silent">Silent prayer alert</string>
+    <string name="channel_vibrate">Vibrating prayer alert</string>
+    <string name="channel_reminder">Reminders</string>
+    <string name="channel_renewal">Schedule renewal notice</string>
+    <string name="channel_playback">Azaan playing</string>
+    <string name="channel_azaan">Azaan (%1$s)</string>
+    <string name="default_stop_label">Stop</string>
+    <string name="test_alert_title">Test alert</string>
+    <string name="test_alert_body">This is a test alert from the app.</string>
+</resources>

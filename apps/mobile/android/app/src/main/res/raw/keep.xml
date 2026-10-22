@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Azaan recordings are looked up by name at run time (AudioResources), so the resource
+     shrinker must not remove them. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@raw/*" />

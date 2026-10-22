@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="channel_tone">Nada peringatan salat</string>
+    <string name="channel_silent">Peringatan salat senyap</string>
+    <string name="channel_vibrate">Peringatan salat getar</string>
+    <string name="channel_reminder">Pengingat</string>
+    <string name="channel_renewal">Pemberitahuan pembaruan jadwal</string>
+    <string name="channel_playback">Azan sedang diputar</string>
+    <string name="channel_azaan">Azan (%1$s)</string>
+    <string name="default_stop_label">Hentikan</string>
+    <string name="test_alert_title">Peringatan uji coba</string>
+    <string name="test_alert_body">Ini adalah peringatan uji coba dari aplikasi.</string>
+</resources>
