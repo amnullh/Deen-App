@@ -9,7 +9,6 @@ import org.json.JSONArray
 import org.json.JSONObject
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
-import org.junit.Assume.assumeTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -17,10 +16,9 @@ import org.junit.runner.RunWith
  * Runs the Kotlin [Arbiter] and [AlertIds] against vector files, so the Kotlin and Dart arbiters
  * cannot diverge (plan: shared vectors).
  *
- * Two sources: a small local file (`arbiter_cases_local.json`) that always runs, and the shared
- * vectors from `packages/schedule_planner/test_vectors/` (workstream W2), which Gradle adds to
- * the test assets. The shared file's exact shape was not known when this was written; the test
- * assumes the shape of the local file and fails with a clear message if the shared file differs.
+ * Two sources: a small local file (`arbiter_cases_local.json`) and the shared vectors
+ * (`arbiter.json`, `alert_ids.json`) from `packages/schedule_planner/test_vectors/`, which Gradle
+ * adds to the test assets. Their formats are documented in that folder's README.md.
  */
 @RunWith(AndroidJUnit4::class)
 class ArbiterVectorsTest {
@@ -32,18 +30,102 @@ class ArbiterVectorsTest {
     @Test
     fun localAlertIdCases() = checkAlertIdCases(readJson(LOCAL_FILE).getJSONArray("alertIds"), LOCAL_FILE)
 
+    /**
+     * `arbiter.json` (schema `arbiter/1`) from the planner package: `cases` (a fixed ledger and one
+     * decision) and `sequences` (steps replayed against one ledger). The Kotlin arbiter only
+     * answers "has this alert already played?"; whether a call suppresses the Azaan is decided by
+     * the playback service, so the expected `skipSuppressed` and `play` both mean "not already
+     * played" here.
+     */
     @Test
-    fun sharedVectors() {
-        val name = assets.list("")?.firstOrNull {
-            it.endsWith(".json") && it.contains("arbiter") && it != LOCAL_FILE
+    fun sharedArbiterVectors() {
+        val json = readJson(SHARED_ARBITER)
+        assertEquals("arbiter/1", json.getString("schema"))
+        val cases = json.getJSONArray("cases")
+        for (i in 0 until cases.length()) {
+            val case = cases.getJSONObject(i)
+            val ledger = playedLedger(case.getJSONArray("ledger"))
+            val verdict = Arbiter.decide(case.getString("alertId"), ledger)
+            assertEquals(
+                "$SHARED_ARBITER: ${case.optString("name")}",
+                case.getString("expected") == "skipAlreadyPlayed",
+                verdict == Arbiter.Verdict.ALREADY_PLAYED,
+            )
         }
-        assumeTrue("shared arbiter vectors are not in packages/schedule_planner/test_vectors yet", name != null)
-        val json = readJson(name!!)
-        val arbiter = json.optJSONArray("arbiter")
-            ?: throw AssertionError("$name has no \"arbiter\" array; reconcile it with arbiter_cases_local.json")
-        checkArbiterCases(arbiter, name)
-        json.optJSONArray("alertIds")?.let { checkAlertIdCases(it, name) }
+        val sequences = json.getJSONArray("sequences")
+        for (i in 0 until sequences.length()) {
+            val sequence = sequences.getJSONObject(i)
+            val ledger = mutableListOf<JournalEntry>()
+            val steps = sequence.getJSONArray("steps")
+            for (j in 0 until steps.length()) {
+                val step = steps.getJSONObject(j)
+                val alertId = step.getString("alertId")
+                val verdict = Arbiter.decide(alertId, ledger)
+                assertEquals(
+                    "$SHARED_ARBITER: ${sequence.optString("name")}, step ${j + 1}",
+                    step.getString("expected") == "skipAlreadyPlayed",
+                    verdict == Arbiter.Verdict.ALREADY_PLAYED,
+                )
+                if (step.optBoolean("markPlayed")) ledger.add(playedEntry(alertId))
+            }
+        }
     }
+
+    /** `alert_ids.json` (schema `alert_ids/1`): the Kotlin ID builders and parser against the Dart ones. */
+    @Test
+    fun sharedAlertIdVectors() {
+        val json = readJson(SHARED_ALERT_IDS)
+        assertEquals("alert_ids/1", json.getString("schema"))
+        val prayers = setOf("fajr", "dhuhr", "asr", "maghrib", "isha")
+
+        val build = json.getJSONArray("build")
+        for (i in 0 until build.length()) {
+            val case = build.getJSONObject(i)
+            if (case.isNull("expected")) continue // Kotlin builders take already valid input
+            val kind = case.getString("kind")
+            val date = case.getString("localDate")
+            val made = when {
+                kind in prayers && case.getBoolean("pre") -> AlertIds.pre(kind, date)
+                kind in prayers -> AlertIds.prayer(kind, date)
+                kind == "suhoor" -> AlertIds.suhoor(date)
+                kind == "adhkar-morning" -> AlertIds.adhkarMorning(date)
+                kind == "adhkar-evening" -> AlertIds.adhkarEvening(date)
+                kind == "renewal" -> AlertIds.renewal(date)
+                else -> throw AssertionError("unknown kind '$kind' in $SHARED_ALERT_IDS")
+            }
+            assertEquals("$SHARED_ALERT_IDS: build $kind $date", case.getString("expected"), made)
+        }
+
+        val parse = json.getJSONArray("parse")
+        for (i in 0 until parse.length()) {
+            val case = parse.getJSONObject(i)
+            val id = case.getString("id")
+            val parsed = AlertIds.parse(id)
+            if (case.isNull("expected")) {
+                assertEquals("$SHARED_ALERT_IDS: '$id' must be rejected", null, parsed)
+                continue
+            }
+            val expected = case.getJSONObject("expected")
+            assertNotNull("$SHARED_ALERT_IDS: '$id' must parse", parsed)
+            val kind = expected.getString("kind")
+            val expectedKind = when {
+                kind in prayers && expected.getBoolean("pre") -> AlertKind.PRE_REMINDER
+                kind in prayers -> AlertKind.PRAYER
+                kind == "suhoor" -> AlertKind.SUHOOR
+                kind == "renewal" -> AlertKind.RENEWAL
+                else -> AlertKind.ADHKAR_REMINDER
+            }
+            assertEquals("$SHARED_ALERT_IDS: kind of '$id'", expectedKind, parsed!!.kind)
+            assertEquals("$SHARED_ALERT_IDS: date of '$id'", expected.getString("localDate"), parsed.localDate)
+            if (kind in prayers) assertEquals("$SHARED_ALERT_IDS: prayer of '$id'", kind, parsed.prayer)
+        }
+    }
+
+    private fun playedEntry(alertId: String) =
+        JournalEntry(alertId = alertId, plannedAtEpochMs = 0L, state = JournalState.PLAYED)
+
+    private fun playedLedger(ids: JSONArray): List<JournalEntry> =
+        (0 until ids.length()).map { playedEntry(ids.getString(it)) }
 
     private fun checkArbiterCases(cases: JSONArray, source: String) {
         for (i in 0 until cases.length()) {
@@ -94,5 +176,7 @@ class ArbiterVectorsTest {
 
     private companion object {
         const val LOCAL_FILE = "arbiter_cases_local.json"
+        const val SHARED_ARBITER = "arbiter.json"
+        const val SHARED_ALERT_IDS = "alert_ids.json"
     }
 }
