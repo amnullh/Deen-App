@@ -73,9 +73,21 @@ def main(path):
             problems.append(f"{group}:{artifact}:{version}: license not on the allowlist: {label}")
     print(f"{len(rows)} Android dependencies")
     print("\n".join(rows))
-    # A notice annotation makes the table readable without a login.
-    body = "%0A".join(r.replace("%", "%25") for r in rows)[:60000]
-    print(f"::notice title=Android dependency licenses ({len(rows)})::{body}")
+    # Notice annotations make the table readable without a login. The API shows only
+    # the first 4,096 characters of each annotation, so the table is split into parts.
+    part = 1
+    chunk = []
+    size = 0
+    for row in rows + [None]:
+        if row is None or size + len(row) + 3 > 3500:
+            if chunk:
+                body = "%0A".join(chunk)
+                print(f"::notice title=Android dependency licenses part {part}::{body}")
+                part += 1
+                chunk, size = [], 0
+        if row is not None:
+            chunk.append(row.replace("%", "%25"))
+            size += len(row) + 3
     for problem in problems:
         print(f"::error title=Android dependency license::{problem}")
     sys.exit(1 if problems else 0)

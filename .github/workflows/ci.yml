@@ -158,7 +158,7 @@ jobs:
 
   ios:
     name: iOS build (opt-in)
-    if: ${{ vars.ENABLE_IOS_CI == 'true' || (github.event_name == 'workflow_dispatch' && inputs.ios) }}
+    # The repository is public, so macOS minutes are free: build iOS on every run.
     runs-on: macos-latest
     timeout-minutes: 60
     steps:
