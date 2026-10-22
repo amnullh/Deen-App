@@ -1,6 +1,6 @@
 # Android dependencies (release runtime classpath)
 
-Generated from CI run 39733337073 by `scripts/android-licenses.py`, which reads each library's POM. Every entry
+Generated from CI run 39734250456 by `scripts/android-licenses.py`, which reads each library's POM. Every entry
 is a permissive license; the four `io.flutter` artifacts publish no license in their POM and are BSD-3-Clause
 like the Flutter SDK (flutter/flutter LICENSE). No Google Play Services, Firebase or Play Core library is present
 (`tools/license_scan/bin/check_gms.dart` passed in the same run). Refresh with the CI step "Licenses of every
@@ -56,3 +56,26 @@ Android dependency" whenever a plugin or Gradle dependency changes.
 | androidx.tracing:tracing:1.2.0 | The Apache Software License, Version 2.0 |
 | androidx.versionedparcelable:versionedparcelable:1.1.1 | The Apache Software License, Version 2.0 |
 | androidx.viewpager:viewpager:1.0.0 | The Apache Software License, Version 2.0 |
+| androidx.window:window:1.2.0 | The Apache Software License, Version 2.0 |
+| androidx.window:window-java:1.2.0 | The Apache Software License, Version 2.0 |
+| androidx.window.extensions.core:core:1.0.0 | The Apache Software License, Version 2.0 |
+| com.getkeepsafe.relinker:relinker:1.4.5 | The Apache Software License, Version 2.0 |
+| com.google.code.gson:gson:2.12.0 | Apache-2.0 |
+| com.google.errorprone:error_prone_annotations:2.36.0 | Apache 2.0 |
+| com.google.guava:failureaccess:1.0.2 | The Apache Software License, Version 2.0 |
+| com.google.guava:guava:33.0.0-android | Apache License, Version 2.0 |
+| com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava | The Apache Software License, Version 2.0 |
+| io.flutter:arm64_v8a_release:1.0.0-deb287481e3ce9468f3434937ced4240a70539ca | BSD-3-Clause (Flutter engine, same license as the Flutter SDK) |
+| io.flutter:armeabi_v7a_release:1.0.0-deb287481e3ce9468f3434937ced4240a70539ca | BSD-3-Clause (Flutter engine, same license as the Flutter SDK) |
+| io.flutter:flutter_embedding_release:1.0.0-deb287481e3ce9468f3434937ced4240a70539ca | BSD-3-Clause (Flutter engine, same license as the Flutter SDK) |
+| io.flutter:x86_64_release:1.0.0-deb287481e3ce9468f3434937ced4240a70539ca | BSD-3-Clause (Flutter engine, same license as the Flutter SDK) |
+| org.jetbrains:annotations:23.0.0 | The Apache Software License, Version 2.0 |
+| org.jetbrains.kotlin:kotlin-stdlib:2.4.0 | Apache-2.0 |
+| org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0 | Apache-2.0 |
+| org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.11.0 | Apache-2.0 |
+| org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0 | Apache-2.0 |
+| org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.11.0 | Apache-2.0 |
+| org.jetbrains.kotlinx:kotlinx-serialization-bom:1.7.3 | The Apache Software License, Version 2.0 |
+| org.jetbrains.kotlinx:kotlinx-serialization-core:1.7.3 | The Apache Software License, Version 2.0 |
+| org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.7.3 | The Apache Software License, Version 2.0 |
+| org.jspecify:jspecify:1.0.0 | The Apache License, Version 2.0 |
