@@ -3,6 +3,8 @@ package org.deenapp.mobile
 import org.deenapp.mobile.generated.AlertKind
 import org.deenapp.mobile.generated.JournalEntry
 import org.deenapp.mobile.generated.JournalState
+import java.time.DateTimeException
+import java.time.LocalDate
 
 /**
  * The alert arbiter: at most one `played` per alert ID (FR-005). Same rule as the Dart arbiter in
@@ -59,8 +61,21 @@ object AlertIds {
 
     fun isTest(alertId: String) = alertId.startsWith(TEST_PREFIX)
 
-    /** Returns null when [alertId] does not follow the planner's rules. */
+    /** Returns null when [alertId] does not follow the planner's rules or its date is not a real date. */
     fun parse(alertId: String): ParsedAlertId? {
+        val parsed = parseShape(alertId) ?: return null
+        return if (isRealDate(parsed.localDate)) parsed else null
+    }
+
+    private fun isRealDate(date: String): Boolean =
+        try {
+            LocalDate.parse(date)
+            true
+        } catch (e: DateTimeException) {
+            false
+        }
+
+    private fun parseShape(alertId: String): ParsedAlertId? {
         PRAYER_RE.matchEntire(alertId)?.let {
             return ParsedAlertId(AlertKind.PRAYER, it.groupValues[1], it.groupValues[2])
         }
