@@ -154,8 +154,7 @@ jobs:
           api-level: 34
           arch: x86_64
           target: default
-          working-directory: apps/mobile/android
-          script: ./gradlew connectedDebugAndroidTest
+          script: bash scripts/ci-android-instrumented.sh
 
   ios:
     name: iOS build (opt-in)

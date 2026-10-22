@@ -21,6 +21,9 @@ REPOSITORIES = [
 ALLOWED = ("apache", "mit license", "bsd", "isc", "mozilla public license", "eclipse public license 1.0", "unicode")
 FORBIDDEN = ("gpl", "lgpl", "agpl", "general public license", "sspl", "busl", "business source")
 NS = {"m": "http://maven.apache.org/POM/4.0.0"}
+# Flutter engine artifacts publish POMs without a license element. The engine is
+# licensed BSD-3-Clause, like the Flutter SDK (flutter/flutter LICENSE).
+KNOWN_BY_GROUP = {"io.flutter": "BSD-3-Clause (Flutter engine, same license as the Flutter SDK)"}
 
 
 def fetch_pom(group, artifact, version):
@@ -57,6 +60,8 @@ def main(path):
     for (group, artifact, version) in sorted(found):
         pom = fetch_pom(group, artifact, version)
         names = licenses_of(pom) if pom is not None else None
+        if group in KNOWN_BY_GROUP and not names:
+            names = [KNOWN_BY_GROUP[group]]
         label = "POM NOT FOUND" if names is None else ("NO LICENSE IN POM" if not names else "; ".join(names))
         rows.append(f"{group}:{artifact}:{version} | {label}")
         lowered = label.lower()
