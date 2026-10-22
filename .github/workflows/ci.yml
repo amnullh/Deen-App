@@ -71,7 +71,7 @@ jobs:
         working-directory: apps/mobile
         run: |
           set +e
-          flutter test --machine > "$RUNNER_TEMP/test.json"
+          flutter test --machine --exclude-tags golden > "$RUNNER_TEMP/test.json"
           status=$?
           python3 ../../scripts/ci-test-summary.py "$RUNNER_TEMP/test.json"
           exit $status

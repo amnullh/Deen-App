@@ -1,3 +1,8 @@
+// Golden pixels differ between operating systems, so CI on Linux skips this tag
+// (`--exclude-tags golden`); run them on the machine that created the images.
+@Tags(['golden'])
+library;
+
 import 'package:deen_mobile/domain/entities/enums.dart';
 import 'package:deen_mobile/platform/alert_scheduler.dart';
 import 'package:deen_mobile/ui/alerts/alert_options_page.dart';
