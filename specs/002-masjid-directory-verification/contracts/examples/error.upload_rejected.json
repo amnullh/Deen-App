@@ -1,0 +1,19 @@
+{
+  "type": "https://console.deen.example/problems/upload_rejected",
+  "title": "A file was refused",
+  "status": 422,
+  "code": "upload_rejected",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "The file type is not allowed.",
+  "errors": [
+    {
+      "path": "/files/1",
+      "code": "unsupported_type",
+      "severity": "error",
+      "message_key": "upload.unsupported_type",
+      "args": {
+        "detected": "image/gif"
+      }
+    }
+  ]
+}

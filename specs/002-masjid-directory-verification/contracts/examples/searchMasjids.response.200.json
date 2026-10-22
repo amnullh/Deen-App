@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "id": "m4kx72ab",
+      "primary_name": "Masjid Nur",
+      "names": [
+        {
+          "lang": "ar",
+          "role": "name",
+          "name": "مسجد النور",
+          "is_primary": false
+        },
+        {
+          "lang": "ar-Latn",
+          "role": "name",
+          "name": "Masjid An-Nur",
+          "is_primary": false
+        },
+        {
+          "lang": "id",
+          "role": "name",
+          "name": "Masjid Nur",
+          "is_primary": true
+        }
+      ],
+      "location": {
+        "lat": -6.9932,
+        "lon": 110.4203
+      },
+      "city": "Semarang",
+      "country_code": "ID",
+      "listing_status": "unclaimed",
+      "source": "osm"
+    },
+    {
+      "id": "mq7bd3fk",
+      "primary_name": "Masjid Agung Semarang",
+      "names": [
+        {
+          "lang": "id",
+          "role": "name",
+          "name": "Masjid Agung Semarang",
+          "is_primary": true
+        }
+      ],
+      "location": {
+        "lat": -6.9886,
+        "lon": 110.4237
+      },
+      "city": "Semarang",
+      "country_code": "ID",
+      "listing_status": "verified",
+      "source": "curated"
+    }
+  ],
+  "next_cursor": null
+}

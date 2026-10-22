@@ -1,0 +1,8 @@
+{
+  "type": "https://console.deen.example/problems/mfa_required",
+  "title": "Second factor required",
+  "status": 401,
+  "code": "mfa_required",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "Finish sign-in with your authenticator code."
+}

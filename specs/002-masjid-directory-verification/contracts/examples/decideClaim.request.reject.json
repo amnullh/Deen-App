@@ -1,0 +1,5 @@
+{
+  "decision": "reject",
+  "reason_code": "REJ-NOT-AUTHORISED",
+  "reason_text": "The contacts we reached did not confirm your authority to manage this listing."
+}

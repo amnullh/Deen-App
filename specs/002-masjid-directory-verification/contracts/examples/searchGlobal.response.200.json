@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "type": "masjid",
+      "id": "m4kx72ab",
+      "label": "Masjid Nur, Semarang, ID",
+      "listing_status": "verified",
+      "account_kind": null,
+      "account_status": null,
+      "ts": null,
+      "action": null
+    },
+    {
+      "type": "person",
+      "id": "0192f3a0-7c1e-7001-8a4b-5b6c8f1a2e01",
+      "label": "secretary@masjid-nur.example",
+      "listing_status": null,
+      "account_kind": "admin",
+      "account_status": "active",
+      "ts": null,
+      "action": null
+    },
+    {
+      "type": "audit_event",
+      "id": "88123",
+      "label": "claim.verified on claim 0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+      "listing_status": null,
+      "account_kind": null,
+      "account_status": null,
+      "ts": "2026-10-22T09:20:00Z",
+      "action": "claim.verified"
+    }
+  ],
+  "next_cursor": null
+}

@@ -1,0 +1,9 @@
+{
+  "type": "https://console.deen.example/problems/version_conflict",
+  "title": "The Masjid changed since you loaded it",
+  "status": 412,
+  "code": "version_conflict",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "Reload, review the newer version and try again.",
+  "current_version": 13
+}

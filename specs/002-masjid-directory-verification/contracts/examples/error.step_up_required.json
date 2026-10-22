@@ -1,0 +1,9 @@
+{
+  "type": "https://console.deen.example/problems/step_up_required",
+  "title": "Confirm your identity again",
+  "status": 403,
+  "code": "step_up_required",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "This action needs a fresh password and authenticator code.",
+  "required_step_up": "5min"
+}

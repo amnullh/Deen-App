@@ -1,0 +1,33 @@
+{
+  "id": "0192f3a0-7c1e-703c-8a4b-5b6c8f1a2e3c",
+  "kind": "break_glass",
+  "state": "approved",
+  "account": {
+    "id": "0192f3a0-7c1e-7001-8a4b-5b6c8f1a2e01",
+    "email": "secretary@masjid-nur.example",
+    "kind": "admin"
+  },
+  "masjid_id": "m4kx72ab",
+  "initiator": {
+    "actor_ref": "0192f3a0-7c1e-7007-8a4b-5b6c8f1a2e07",
+    "label": "Super-admin A"
+  },
+  "assignee": {
+    "actor_ref": "0192f3a0-7c1e-7007-8a4b-5b6c8f1a2e07",
+    "label": "Super-admin A"
+  },
+  "approved_by": {
+    "actor_ref": "0192f3a0-7c1e-7009-8a4b-5b6c8f1a2e09",
+    "label": "Reviewer B"
+  },
+  "second_approved_by": null,
+  "recovery_code_consumed": false,
+  "call_logged": true,
+  "approved_at": "2026-10-22T12:00:00Z",
+  "not_before": "2026-10-24T12:00:00Z",
+  "expires_at": "2026-10-29T11:00:00Z",
+  "executed_at": null,
+  "notified_admin_at": "2026-10-22T12:00:05Z",
+  "notified_contacts_at": "2026-10-22T12:00:07Z",
+  "cancel_reason": null
+}

@@ -1,0 +1,29 @@
+{
+  "from": "2026-10-01",
+  "to": "2026-10-22",
+  "working_days_rule": "Monday to Friday except public holidays of the Operator team",
+  "target_working_days": 5,
+  "completed": 14,
+  "within_target": 13,
+  "within_target_pct": 92.9,
+  "median_operator_minutes": 27.5,
+  "open_at_risk": [
+    {
+      "case_id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+      "age_working_days": 5,
+      "sla_state": "red"
+    }
+  ],
+  "by_week": [
+    {
+      "week_start": "2026-10-05",
+      "completed": 6,
+      "within_target": 6
+    },
+    {
+      "week_start": "2026-10-12",
+      "completed": 8,
+      "within_target": 7
+    }
+  ]
+}

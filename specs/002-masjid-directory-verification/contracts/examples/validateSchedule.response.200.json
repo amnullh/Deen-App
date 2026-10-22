@@ -1,0 +1,22 @@
+{
+  "valid": false,
+  "tzdata_version": "2026e",
+  "issues": [
+    {
+      "code": "iqamah_before_azaan",
+      "severity": "error",
+      "path": "r[0].p.is.i",
+      "message_key": "schedule.iqamah_before_azaan",
+      "args": {
+        "first_date": "2026-01-01"
+      }
+    },
+    {
+      "code": "jumuah_missing",
+      "severity": "warning",
+      "path": "r[0]",
+      "message_key": "schedule.jumuah_missing",
+      "args": {}
+    }
+  ]
+}

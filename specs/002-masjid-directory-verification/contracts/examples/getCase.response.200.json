@@ -1,0 +1,133 @@
+{
+  "id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+  "kind": "claim",
+  "status": "in_review",
+  "masjid": {
+    "id": "m4kx72ab",
+    "primary_name": "Masjid Nur",
+    "names": [
+      {
+        "lang": "ar",
+        "role": "name",
+        "name": "مسجد النور",
+        "is_primary": false
+      },
+      {
+        "lang": "ar-Latn",
+        "role": "name",
+        "name": "Masjid An-Nur",
+        "is_primary": false
+      },
+      {
+        "lang": "id",
+        "role": "name",
+        "name": "Masjid Nur",
+        "is_primary": true
+      }
+    ],
+    "location": {
+      "lat": -6.9932,
+      "lon": 110.4203
+    },
+    "city": "Semarang",
+    "country_code": "ID",
+    "listing_status": "unclaimed",
+    "source": "osm"
+  },
+  "listing": {
+    "listing_status": "pending",
+    "verified_at": null,
+    "verified_until": null,
+    "grace_until": null,
+    "in_grace": false,
+    "renewal_open": false,
+    "frozen": false,
+    "status_reason_code": null
+  },
+  "claimant": {
+    "actor_ref": "0192f3a0-7c1e-7008-8a4b-5b6c8f1a2e08",
+    "account_age_days": 12,
+    "earlier_claims": 0,
+    "earlier_rejections_for_masjid": 0
+  },
+  "assignee": {
+    "actor_ref": "0192f3a0-7c1e-7007-8a4b-5b6c8f1a2e07",
+    "label": "Reviewer A"
+  },
+  "second_review_required": false,
+  "submitted_at": "2026-10-15T07:00:00Z",
+  "appeal_deadline": null,
+  "needs_info_due_at": null,
+  "decisions": [],
+  "notes": [
+    {
+      "id": "0192f3a0-7c1e-7032-8a4b-5b6c8f1a2e32",
+      "kind": "note",
+      "author_label": "Reviewer A",
+      "body": "Documents consistent with the listing name and address.",
+      "created_at": "2026-10-22T08:30:00Z"
+    }
+  ],
+  "calls": [
+    {
+      "id": "0192f3a0-7c1e-7033-8a4b-5b6c8f1a2e33",
+      "outcome": "C4",
+      "contact_id": "0192f3a0-7c1e-7034-8a4b-5b6c8f1a2e34",
+      "independent_number": false,
+      "called_at": "2026-10-21T09:00:00Z",
+      "operator_label": "Reviewer A",
+      "script_version": "v1",
+      "note": "No answer, no message left."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "0192f3a0-7c1e-701f-8a4b-5b6c8f1a2e1f",
+      "kind": "committee_doc",
+      "label": "Committee decree p1",
+      "page_no": 1,
+      "source_group": null,
+      "bytes": 184264,
+      "width": 1600,
+      "height": 2263,
+      "content_type": "image/webp",
+      "created_at": "2026-10-20T08:00:00Z",
+      "purged_at": null
+    },
+    {
+      "id": "0192f3a0-7c1e-7021-8a4b-5b6c8f1a2e21",
+      "kind": "authorization_letter",
+      "label": "Authorization letter",
+      "page_no": null,
+      "source_group": null,
+      "bytes": 184266,
+      "width": 1600,
+      "height": 2263,
+      "content_type": "image/webp",
+      "created_at": "2026-10-20T08:00:00Z",
+      "purged_at": null
+    },
+    {
+      "id": "0192f3a0-7c1e-7022-8a4b-5b6c8f1a2e22",
+      "kind": "building_photo",
+      "label": "Front of building",
+      "page_no": null,
+      "source_group": null,
+      "bytes": 184267,
+      "width": 1600,
+      "height": 2263,
+      "content_type": "image/webp",
+      "created_at": "2026-10-20T08:00:00Z",
+      "purged_at": null
+    }
+  ],
+  "contacts_count": 2,
+  "conflict_id": null,
+  "appeal": null,
+  "allowed_events": [
+    "request_info",
+    "verify",
+    "reject"
+  ],
+  "delete_after": null
+}

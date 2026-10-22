@@ -32,4 +32,5 @@
 ## Notes
 
 - The one open marker (the pilot's monthly infrastructure budget) was answered on 2026-10-22: US$10 per month. It is recorded in the Infrastructure Cost section and SC-005.
+- Plan written 2026-10-22 ([plan.md](../plan.md)): owner decisions O1 to O16 are open with defaults; spec wording FR-004, FR-016, FR-026, FR-027 to amend after the owner confirms O14; constitution actions A1 to A3 are separate runs.
 - Clarification session 2026-10-22 recorded 11 supplied decisions and 4 answers (admin-data licensing, lockout recovery, contact protection, region file size). Deferred to planning: map tile source and load, how a $10 server delivers mail reliably, geohash cell layout in dense cities, console language packaging for Phase 4.

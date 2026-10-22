@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": 88123,
+      "ts": "2026-10-22T09:20:00Z",
+      "actor_ref": "0192f3a0-7c1e-7007-8a4b-5b6c8f1a2e07",
+      "actor_role": "reviewer",
+      "actor_label": "Reviewer A",
+      "action": "claim.verified",
+      "object_type": "claim",
+      "object_id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+      "masjid_id": "m4kx72ab",
+      "case_id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+      "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+      "audience": "admin",
+      "detail": {
+        "reason_code": "VER-CONFIRMED",
+        "from": "in_review",
+        "to": "verified"
+      }
+    },
+    {
+      "id": 88122,
+      "ts": "2026-10-22T09:19:40Z",
+      "actor_ref": "0192f3a0-7c1e-7007-8a4b-5b6c8f1a2e07",
+      "actor_role": "reviewer",
+      "actor_label": "Reviewer A",
+      "action": "evidence.view_start",
+      "object_type": "evidence_file",
+      "object_id": "0192f3a0-7c1e-701f-8a4b-5b6c8f1a2e1f",
+      "masjid_id": "m4kx72ab",
+      "case_id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+      "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+      "audience": "operator",
+      "detail": {}
+    }
+  ],
+  "next_cursor": "eyJpZCI6ODgxMjJ9"
+}

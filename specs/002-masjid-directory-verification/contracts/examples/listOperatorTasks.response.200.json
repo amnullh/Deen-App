@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "id": "0192f3a0-7c1e-7046-8a4b-5b6c8f1a2e46",
+      "kind": "suspension_flag",
+      "masjid_id": "m4kx72ab",
+      "subject_id": null,
+      "status": "open",
+      "due_at": null,
+      "assignee": null,
+      "note": "SUS-WRONG-SCHEDULE: published Isha time differs from the announced time.",
+      "created_at": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "0192f3a0-7c1e-7047-8a4b-5b6c8f1a2e47",
+      "kind": "recovery_request",
+      "masjid_id": null,
+      "subject_id": "0192f3a0-7c1e-7001-8a4b-5b6c8f1a2e01",
+      "status": "open",
+      "due_at": null,
+      "assignee": null,
+      "note": null,
+      "created_at": "2026-10-22T10:30:00Z"
+    }
+  ],
+  "next_cursor": null
+}

@@ -1,0 +1,28 @@
+{
+  "names": [
+    {
+      "lang": "ar",
+      "role": "name",
+      "name": "مسجد النور",
+      "is_primary": false
+    },
+    {
+      "lang": "ar-Latn",
+      "role": "name",
+      "name": "Masjid An-Nur",
+      "is_primary": false
+    },
+    {
+      "lang": "id",
+      "role": "name",
+      "name": "Masjid Nur",
+      "is_primary": true
+    },
+    {
+      "lang": "id",
+      "role": "alt",
+      "name": "Masjid Nur Pandanaran",
+      "is_primary": false
+    }
+  ]
+}

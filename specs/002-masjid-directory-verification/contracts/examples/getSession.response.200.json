@@ -1,0 +1,28 @@
+{
+  "authenticated": true,
+  "mfa_verified": true,
+  "csrf_token": "q3Vn0m2Z8cJb5Xk1R7tYw9LdP4sH6aEoUiGfNjMBrTc",
+  "account": {
+    "id": "0192f3a0-7c1e-7001-8a4b-5b6c8f1a2e01",
+    "email": "secretary@masjid-nur.example",
+    "kind": "admin",
+    "status": "active",
+    "locale": "id",
+    "email_verified": true,
+    "mfa_enrolled": true,
+    "operator_roles": [],
+    "memberships": [
+      {
+        "masjid_id": "m4kx72ab",
+        "role": "admin",
+        "primary_name": "Masjid Nur"
+      }
+    ]
+  },
+  "session": {
+    "created_at": "2026-10-22T09:30:00Z",
+    "idle_expires_at": "2026-10-22T10:00:00Z",
+    "absolute_expires_at": "2026-10-22T21:30:00Z",
+    "step_up_until": "2026-10-22T09:40:00Z"
+  }
+}

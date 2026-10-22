@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "case_id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+      "kind": "claim",
+      "claim_status": "submitted",
+      "masjid": {
+        "id": "m4kx72ab",
+        "primary_name": "Masjid Nur",
+        "country_code": "ID",
+        "listing_status": "pending"
+      },
+      "submitted_at": "2026-10-15T07:00:00Z",
+      "age_working_days": 5,
+      "sla_state": "red",
+      "assignee": null,
+      "second_review_required": false
+    },
+    {
+      "case_id": "0192f3a0-7c1e-7029-8a4b-5b6c8f1a2e29",
+      "kind": "renewal",
+      "claim_status": "in_review",
+      "masjid": {
+        "id": "mq7bd3fk",
+        "primary_name": "Masjid Agung Semarang",
+        "country_code": "ID",
+        "listing_status": "verified"
+      },
+      "submitted_at": "2026-10-19T07:00:00Z",
+      "age_working_days": 3,
+      "sla_state": "amber",
+      "assignee": {
+        "actor_ref": "0192f3a0-7c1e-7007-8a4b-5b6c8f1a2e07",
+        "label": "Reviewer A"
+      },
+      "second_review_required": false
+    }
+  ],
+  "next_cursor": "eyJ0IjoiMjAyNi0xMC0xOSJ9"
+}

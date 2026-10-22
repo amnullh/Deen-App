@@ -1,0 +1,19 @@
+{
+  "type": "https://console.deen.example/problems/schedule_invalid",
+  "title": "The schedule has errors",
+  "status": 422,
+  "code": "schedule_invalid",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "Fix the errors and save again; nothing was stored.",
+  "errors": [
+    {
+      "path": "r[0].p.is.i",
+      "code": "iqamah_before_azaan",
+      "severity": "error",
+      "message_key": "schedule.iqamah_before_azaan",
+      "args": {
+        "first_date": "2026-01-01"
+      }
+    }
+  ]
+}

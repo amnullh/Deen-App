@@ -1,0 +1,9 @@
+{
+  "email": "secretary@masjid-nur.example",
+  "password": "correct horse battery staple 42",
+  "locale": "id",
+  "accepted_terms": {
+    "admin_terms": "2026-10-01",
+    "privacy_notice": "2026-10-01"
+  }
+}

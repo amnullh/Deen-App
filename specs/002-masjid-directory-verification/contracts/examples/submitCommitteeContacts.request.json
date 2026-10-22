@@ -1,0 +1,15 @@
+{
+  "contacts": [
+    {
+      "role_label": "Chairperson",
+      "name": "Fictional Name A",
+      "phone": "+62248500101",
+      "email": "chair@masjid-nur.example"
+    },
+    {
+      "role_label": "Treasurer",
+      "name": "Fictional Name B",
+      "phone": "+62248500102"
+    }
+  ]
+}

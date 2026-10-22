@@ -1,0 +1,9 @@
+{
+  "type": "https://console.deen.example/problems/guard_failed",
+  "title": "A precondition is not met",
+  "status": 409,
+  "code": "guard_failed",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "A verification call with outcome C1 is required before verifying.",
+  "guard": "call_ok"
+}

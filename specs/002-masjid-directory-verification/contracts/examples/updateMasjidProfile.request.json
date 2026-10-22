@@ -1,0 +1,41 @@
+{
+  "madhhab": "shafii",
+  "calc_settings": {
+    "method": "kemenag",
+    "asr": "standard",
+    "high_latitude_rule": "middle_of_the_night",
+    "offsets": {
+      "fajr": 0,
+      "dhuhr": 2,
+      "asr": 0,
+      "maghrib": 2,
+      "isha": 0
+    },
+    "imsak_minutes": 10,
+    "rounding_default": "u5"
+  },
+  "azaan_variant": "standard",
+  "languages": [
+    "id",
+    "ar"
+  ],
+  "facilities": [
+    "wudu_area",
+    "women_section",
+    "parking"
+  ],
+  "contacts": [
+    {
+      "kind": "phone",
+      "value": "+62248500123",
+      "label": "Office",
+      "sort_order": 0
+    },
+    {
+      "kind": "website",
+      "value": "https://masjid-nur.example",
+      "label": "Website",
+      "sort_order": 1
+    }
+  ]
+}

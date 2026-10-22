@@ -1,0 +1,7 @@
+{
+  "email": "reviewer.two@deen.example",
+  "display_name": "Reviewer Two",
+  "roles": [
+    "reviewer"
+  ]
+}

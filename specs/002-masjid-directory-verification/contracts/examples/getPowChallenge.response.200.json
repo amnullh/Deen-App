@@ -1,0 +1,7 @@
+{
+  "algorithm": "SHA-256",
+  "challenge": "b2f6e9d1a47c03856f19d0c8a3e7b45d9c1f2a6e8b0d3c5a7f9e1b4d6c8a0e23",
+  "salt": "7f3a9c1e5b2d?expires=1792660800",
+  "maxnumber": 100000,
+  "signature": "5d0c8a3e7b45d9c1f2a6e8b0d3c5a7f9e1b4d6c8a0e23b2f6e9d1a47c038561f"
+}

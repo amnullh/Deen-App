@@ -29,7 +29,7 @@ Prayer times from a formula rarely match what a specific Masjid actually announc
 - Q: Is admin-entered data published under the OpenStreetMap license? → A: No. Only the OpenStreetMap-derived fields (names, locations, addresses) are published openly. Admin-entered schedules, photos and contact details are a separate layer under the project's own terms and are never exported in bulk.
 - Q: How does an admin who lost both the authenticator and the recovery codes get back in? → A: An Operator phones a committee contact on file and a second Operator approves; a 48-hour delay applies, the admin and the committee contacts are notified, and all old sessions are closed.
 - Q: Who can see committee members' phone numbers and emails collected in a claim? → A: Only the Operator assigned to an open case, and only while the case is open. Every view is logged, and the details are deleted with the evidence 90 days after the final decision.
-- Q: How large may a region file be? → A: Under 500 KB per cell; dense cities are split into smaller cells; country files hold only a summary (names and coordinates of major Masjids).
+- Q: How large may a region file be? → A: Under 500 KB per cell; dense cells are split into parts of the same cell that are always downloaded together (a finer cell would reveal a finer location); country files hold only a summary (names and coordinates of major Masjids).
 - Q: How do admins sign in and recover? → A: Email, password and an authenticator-app code. No text messages and no social login. Password reset uses an email link. Resetting the second factor needs an Operator's approval plus a recovery code or a verification call.
 - Q: How is email delivered? → A: Self-hosted mail with SPF, DKIM and DMARC, or a relay that is open source or permanently free; a free relay is recorded in the constitution's Exceptions Register.
 - Q: How long is verification evidence kept? → A: 90 days after the final decision, longer only while under appeal.
@@ -227,7 +227,7 @@ Admins and Muazzins control their own data, and Operators handle privacy request
 - **FR-030**: Masjid names MUST support Arabic script, transliteration and the local language, with one primary display name.
 - **FR-031**: Exports of the directory for open publication MUST contain only OpenStreetMap-derived fields; admin-entered schedules, photos and contact details MUST NOT be included in any bulk export.
 - **FR-032**: Committee members' contact details collected in a claim MUST be visible only to the Operator assigned to the open case, only while the case is open; every view MUST be logged; the details MUST be deleted with the evidence 90 days after the final decision.
-- **FR-033**: Each region file MUST be under 500 KB; a cell that would exceed it MUST be split into smaller cells; a country file MUST hold only a summary of major Masjids.
+- **FR-033**: Each region file MUST be under 500 KB; a cell that would exceed it MUST be split into numbered parts of the same cell that the app always downloads together, so that no request reveals anything finer than the cell; a country file MUST hold only a summary of major Masjids.
 
 ### Key Entities
 

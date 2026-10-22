@@ -1,0 +1,65 @@
+{
+  "id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+  "masjid": {
+    "id": "m4kx72ab",
+    "primary_name": "Masjid Nur",
+    "country_code": "ID",
+    "listing_status": "pending"
+  },
+  "kind": "claim",
+  "status": "needs_info",
+  "decision": {
+    "kind": "request_info",
+    "reason_code": "NMI-PHOTOS",
+    "reason_text": "Please add a clear photo of the front of the building.",
+    "decided_at": "2026-10-21T10:00:00Z"
+  },
+  "appeal": null,
+  "submitted_at": "2026-10-18T07:00:00Z",
+  "final_at": null,
+  "appeal_deadline": null,
+  "needs_info_due_at": "2026-11-20T10:00:00Z",
+  "draft_expires_at": null,
+  "evidence": [
+    {
+      "id": "0192f3a0-7c1e-701f-8a4b-5b6c8f1a2e1f",
+      "kind": "committee_doc",
+      "label": "Committee decree p1",
+      "page_no": 1,
+      "source_group": null,
+      "bytes": 184264,
+      "width": 1600,
+      "height": 2263,
+      "content_type": "image/webp",
+      "created_at": "2026-10-20T08:00:00Z",
+      "purged_at": null
+    },
+    {
+      "id": "0192f3a0-7c1e-7021-8a4b-5b6c8f1a2e21",
+      "kind": "authorization_letter",
+      "label": "Authorization letter",
+      "page_no": null,
+      "source_group": null,
+      "bytes": 184266,
+      "width": 1600,
+      "height": 2263,
+      "content_type": "image/webp",
+      "created_at": "2026-10-20T08:00:00Z",
+      "purged_at": null
+    }
+  ],
+  "committee_contacts": {
+    "count": 2,
+    "required": 2
+  },
+  "missing": [
+    "building_photo"
+  ],
+  "allowed_events": [
+    "respond",
+    "appeal",
+    "withdraw",
+    "request_early_deletion"
+  ],
+  "created_at": "2026-10-17T09:00:00Z"
+}

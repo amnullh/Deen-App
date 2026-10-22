@@ -1,0 +1,20 @@
+{
+  "type": "https://console.deen.example/problems/validation_failed",
+  "title": "The request is not valid",
+  "status": 422,
+  "code": "validation_failed",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "One or more fields are invalid.",
+  "errors": [
+    {
+      "path": "/names",
+      "code": "primary_name_count",
+      "severity": "error",
+      "message_key": "masjid.names.primary_name_count",
+      "args": {
+        "found": 2,
+        "expected": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "location": {
+    "lat": -6.9932,
+    "lon": 110.4203
+  },
+  "address": {
+    "street": "Jl. Pandanaran 12",
+    "city": "Semarang",
+    "region": "Jawa Tengah",
+    "postcode": "50134"
+  },
+  "country_code": "ID",
+  "time_zone": "Asia/Jakarta"
+}

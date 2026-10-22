@@ -1,0 +1,38 @@
+{
+  "recovery_codes": [
+    "M9S3-46Q3-D25V-T4F5",
+    "V37E-3S3E-28JT-97KB",
+    "6CQ6-43DZ-VMXX-QKFB",
+    "F5KZ-NWJ4-7TAN-9ZT2",
+    "4MNP-ZX45-HY43-KWJR",
+    "P1XP-A7Z3-DJ8F-SSZ5",
+    "AWSH-8VHT-PRE9-5B9E",
+    "E0ZB-GJ09-TQM8-3XSS",
+    "SS6Y-S3C4-DWA7-N360",
+    "96Q1-4DR9-GPQY-77ZX"
+  ],
+  "csrf_token": "q3Vn0m2Z8cJb5Xk1R7tYw9LdP4sH6aEoUiGfNjMBrTc",
+  "account": {
+    "id": "0192f3a0-7c1e-7001-8a4b-5b6c8f1a2e01",
+    "email": "secretary@masjid-nur.example",
+    "kind": "admin",
+    "status": "active",
+    "locale": "id",
+    "email_verified": true,
+    "mfa_enrolled": true,
+    "operator_roles": [],
+    "memberships": [
+      {
+        "masjid_id": "m4kx72ab",
+        "role": "admin",
+        "primary_name": "Masjid Nur"
+      }
+    ]
+  },
+  "session": {
+    "created_at": "2026-10-22T09:30:00Z",
+    "idle_expires_at": "2026-10-22T10:00:00Z",
+    "absolute_expires_at": "2026-10-22T21:30:00Z",
+    "step_up_until": null
+  }
+}

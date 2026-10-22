@@ -1,0 +1,8 @@
+{
+  "next": "totp",
+  "second_factors": [
+    "totp",
+    "recovery_code"
+  ],
+  "expires_in": 300
+}

@@ -1,0 +1,108 @@
+{
+  "schedule": {
+    "masjid_id": "m4kx72ab",
+    "schema_id": "masjid-schedule/1",
+    "time_zone": "Asia/Jakarta",
+    "rules": {
+      "fmt": "masjid-schedule/1",
+      "id": "m4kx72ab",
+      "tz": "Asia/Jakarta",
+      "rev": 8,
+      "upd": "2026-10-20T04:11:00Z",
+      "r": [
+        {
+          "f": "01-01",
+          "t": "12-31",
+          "p": {
+            "fj": {
+              "a": [
+                "c",
+                0
+              ],
+              "i": [
+                "a",
+                10
+              ]
+            },
+            "dh": {
+              "a": [
+                "c",
+                3
+              ],
+              "i": [
+                "a",
+                10
+              ]
+            },
+            "as": {
+              "a": [
+                "c",
+                0
+              ],
+              "i": [
+                "a",
+                10
+              ]
+            },
+            "mg": {
+              "a": [
+                "c",
+                2
+              ],
+              "i": [
+                "a",
+                5
+              ]
+            },
+            "is": {
+              "a": [
+                "f",
+                "19:15"
+              ],
+              "i": [
+                "f",
+                "19:30"
+              ]
+            }
+          },
+          "j": [
+            {
+              "a": [
+                "f",
+                "12:00"
+              ],
+              "k": [
+                "f",
+                "11:40"
+              ],
+              "l": "id"
+            },
+            {
+              "a": [
+                "f",
+                "13:15"
+              ],
+              "l": "ar"
+            }
+          ]
+        }
+      ]
+    },
+    "revision": 8,
+    "version_no": 8,
+    "tzdata_version": "2026e",
+    "rules_sha256": "8d5c217e97f414aba86a00486eeb196c45eca495e1d0afde75225528abe8ec18",
+    "updated_at": "2026-10-22T09:41:00Z"
+  },
+  "warnings": [
+    {
+      "code": "jumuah_shifts_close",
+      "severity": "warning",
+      "path": "r[0].j",
+      "message_key": "schedule.jumuah_shifts_close",
+      "args": {
+        "minutes": 75
+      }
+    }
+  ]
+}

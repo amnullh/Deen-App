@@ -1,0 +1,37 @@
+{
+  "names": [
+    {
+      "lang": "ar",
+      "role": "name",
+      "name": "مسجد النور",
+      "is_primary": false
+    },
+    {
+      "lang": "ar-Latn",
+      "role": "name",
+      "name": "Masjid An-Nur",
+      "is_primary": false
+    },
+    {
+      "lang": "id",
+      "role": "name",
+      "name": "Masjid Nur",
+      "is_primary": true
+    }
+  ],
+  "kind": "mosque",
+  "location": {
+    "lat": -6.9932,
+    "lon": 110.4203
+  },
+  "address": {
+    "street": "Jl. Pandanaran 12",
+    "city": "Semarang",
+    "region": "Jawa Tengah",
+    "postcode": "50134"
+  },
+  "country_code": "ID",
+  "time_zone": "Asia/Jakarta",
+  "contrib_terms_version": "2026-10-01",
+  "confirm_not_duplicate": false
+}

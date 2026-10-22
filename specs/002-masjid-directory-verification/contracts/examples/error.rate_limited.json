@@ -1,0 +1,9 @@
+{
+  "type": "https://console.deen.example/problems/rate_limited",
+  "title": "Too many requests",
+  "status": 429,
+  "code": "rate_limited",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "Try again later.",
+  "retry_after_seconds": 900
+}

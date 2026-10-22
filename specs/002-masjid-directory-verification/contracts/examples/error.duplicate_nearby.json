@@ -1,0 +1,42 @@
+{
+  "type": "https://console.deen.example/problems/duplicate_nearby",
+  "title": "A listing already exists nearby",
+  "status": 409,
+  "code": "duplicate_nearby",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "Review the listings below, then repeat the request with confirm_not_duplicate set to true.",
+  "candidates": [
+    {
+      "id": "m4kx72ab",
+      "primary_name": "Masjid Nur",
+      "names": [
+        {
+          "lang": "ar",
+          "role": "name",
+          "name": "مسجد النور",
+          "is_primary": false
+        },
+        {
+          "lang": "ar-Latn",
+          "role": "name",
+          "name": "Masjid An-Nur",
+          "is_primary": false
+        },
+        {
+          "lang": "id",
+          "role": "name",
+          "name": "Masjid Nur",
+          "is_primary": true
+        }
+      ],
+      "location": {
+        "lat": -6.9932,
+        "lon": 110.4203
+      },
+      "city": "Semarang",
+      "country_code": "ID",
+      "listing_status": "unclaimed",
+      "source": "osm"
+    }
+  ]
+}

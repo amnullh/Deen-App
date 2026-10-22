@@ -1,0 +1,10 @@
+{
+  "case_id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+  "from_status": "in_review",
+  "to_status": "verified",
+  "decided_at": "2026-10-22T09:20:00Z",
+  "listing_status": "verified",
+  "evidence_delete_after": "2027-01-20T09:20:00Z",
+  "appeal_deadline": null,
+  "verified_until": "2027-10-22T09:20:00Z"
+}

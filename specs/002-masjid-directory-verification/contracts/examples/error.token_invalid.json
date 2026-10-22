@@ -1,0 +1,8 @@
+{
+  "type": "https://console.deen.example/problems/token_invalid",
+  "title": "The link is invalid or has expired",
+  "status": 400,
+  "code": "token_invalid",
+  "request_id": "0192f3a0-7c1e-7384-8a4b-5b6c8f1a2e84",
+  "detail": "Request a new link."
+}

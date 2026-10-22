@@ -9,6 +9,8 @@ sustain it. Project rules live in the [constitution](.specify/memory/constitutio
 
 ## Status
 
+Phase 1 (an optional server with a Masjid directory, verification and Masjid schedules) is planned, not started: see [specs/002-masjid-directory-verification/](specs/002-masjid-directory-verification/) ([plan](specs/002-masjid-directory-verification/plan.md)). Building it waits for Phase 0 to meet its exit criteria.
+
 Phase 0 is in implementation. Planning documents are in
 [specs/001-offline-worship-app/](specs/001-offline-worship-app/): the
 [spec](specs/001-offline-worship-app/spec.md), [plan](specs/001-offline-worship-app/plan.md),

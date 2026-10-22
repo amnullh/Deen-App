@@ -1,0 +1,87 @@
+{
+  "id": "m4kx72ab",
+  "source": "claimed",
+  "kind": "mosque",
+  "listing": {
+    "listing_status": "verified",
+    "verified_at": "2026-11-02T08:15:00Z",
+    "verified_until": "2027-11-02T08:15:00Z",
+    "grace_until": "2027-12-02T08:15:00Z",
+    "in_grace": false,
+    "renewal_open": false,
+    "frozen": false,
+    "status_reason_code": "VER-CONFIRMED"
+  },
+  "location": {
+    "lat": -6.9932,
+    "lon": 110.4203
+  },
+  "address": {
+    "street": "Jl. Pandanaran 12",
+    "city": "Semarang",
+    "region": "Jawa Tengah",
+    "postcode": "50134"
+  },
+  "country_code": "ID",
+  "time_zone": "Asia/Jakarta",
+  "names": [
+    {
+      "lang": "ar",
+      "role": "name",
+      "name": "مسجد النور",
+      "is_primary": false
+    },
+    {
+      "lang": "ar-Latn",
+      "role": "name",
+      "name": "Masjid An-Nur",
+      "is_primary": false
+    },
+    {
+      "lang": "id",
+      "role": "name",
+      "name": "Masjid Nur",
+      "is_primary": true
+    }
+  ],
+  "profile": {
+    "madhhab": "shafii",
+    "calc_settings": {
+      "method": "kemenag",
+      "asr": "standard",
+      "high_latitude_rule": "middle_of_the_night",
+      "offsets": {
+        "fajr": 0,
+        "dhuhr": 2,
+        "asr": 0,
+        "maghrib": 2,
+        "isha": 0
+      },
+      "imsak_minutes": 10,
+      "rounding_default": "u5"
+    },
+    "azaan_variant": "standard",
+    "languages": [
+      "id",
+      "ar"
+    ],
+    "facilities": [
+      "wudu_area",
+      "women_section",
+      "parking"
+    ]
+  },
+  "contacts": [
+    {
+      "kind": "phone",
+      "value": "+62248500123",
+      "label": "Office",
+      "sort_order": 0
+    }
+  ],
+  "photo_count": 3,
+  "version_no": 12,
+  "updated_at": "2026-11-20T14:02:11Z",
+  "viewer": "admin",
+  "attribution": "© OpenStreetMap contributors"
+}

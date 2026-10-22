@@ -1,0 +1,27 @@
+{
+  "from": "2026-10-01",
+  "to": "2026-10-22",
+  "overall_pct": 100.0,
+  "tables": [
+    {
+      "table": "claim",
+      "state_changes": 31,
+      "audit_rows": 31,
+      "coverage_pct": 100.0
+    },
+    {
+      "table": "masjid",
+      "state_changes": 58,
+      "audit_rows": 58,
+      "coverage_pct": 100.0
+    },
+    {
+      "table": "recovery_case",
+      "state_changes": 4,
+      "audit_rows": 4,
+      "coverage_pct": 100.0
+    }
+  ],
+  "mfa_exceptions": 0,
+  "chain_ok": true
+}

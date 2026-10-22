@@ -1,0 +1,20 @@
+{
+  "case_id": "0192f3a0-7c1e-7028-8a4b-5b6c8f1a2e28",
+  "contacts": [
+    {
+      "id": "0192f3a0-7c1e-7034-8a4b-5b6c8f1a2e34",
+      "role_label": "Chairperson",
+      "name": "Fictional Name A",
+      "phone": "+62248500101",
+      "email": "chair@masjid-nur.example"
+    },
+    {
+      "id": "0192f3a0-7c1e-7035-8a4b-5b6c8f1a2e35",
+      "role_label": "Treasurer",
+      "name": "Fictional Name B",
+      "phone": "+62248500102",
+      "email": null
+    }
+  ],
+  "delete_after": null
+}
