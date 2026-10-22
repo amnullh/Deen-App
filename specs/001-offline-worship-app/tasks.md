@@ -387,7 +387,7 @@ description: "Task list for Offline Worship App (Phase 0)"
 - [ ] T193 [DEVICE] Measure background battery use over 24 hours (SC-005): Android with `adb shell dumpsys batterystats`, iPhone with Xcode energy diagnostics or MetricKit, recorded in `specs/001-offline-worship-app/checklists/device-matrix.md`
 - [ ] T194 [DEVICE] Run the full real-device matrix sign-off (Pixel, Samsung, Xiaomi, Oppo or Vivo, iPhone on current and previous iOS) required for release, recorded in `specs/001-offline-worship-app/checklists/device-matrix.md`
 - [x] T195 Re-run the constitution check against the finished design and update the table in `specs/001-offline-worship-app/plan.md` (plan.md constitution table updated)
-- [ ] T196 Run the full [quickstart.md](quickstart.md) from a clean clone and fix anything that does not work in `specs/001-offline-worship-app/quickstart.md` (partly run locally: setup, tests and scans pass; a clean-clone run is still open)
+- [x] T196 Run the full [quickstart.md](quickstart.md) from a clean clone and fix anything that does not work in `specs/001-offline-worship-app/quickstart.md` (run from a fresh `git clone` on 2026-10-22: setup, l10n check, scans, NOTICE check, analysis and all 932 app tests pass; the city-database download and the device steps were not repeated)
 - [ ] T197 Verify store listings declare "no data collected" (SC-007) before the first submission and record the confirmation in `specs/001-offline-worship-app/release/store-notes.md`
 
 ---
