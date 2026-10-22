@@ -1,0 +1,22 @@
+# Shared lints for pure-Dart packages and tools (the Flutter app extends flutter_lints in its own file).
+include: package:lints/recommended.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  exclude:
+    - "**/build/**"
+    - "**/.dart_tool/**"
+    - "**/*.g.dart"
+
+linter:
+  rules:
+    - always_declare_return_types
+    - prefer_final_locals
+    - prefer_const_constructors
+    - avoid_print
+    - unawaited_futures
+    - directives_ordering
+    - require_trailing_commas

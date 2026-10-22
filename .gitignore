@@ -1,0 +1,65 @@
+# OS and editors
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.idea/
+*.iml
+.vscode/
+
+# Dart and Flutter
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+pubspec_overrides.yaml
+coverage/
+*.g.dart.bak
+.flutter-plugins
+.flutter-plugins-dependencies
+.fvm/
+
+# Android
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/key.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+*.jks
+*.keystore
+GeneratedPluginRegistrant.*
+
+# iOS and macOS
+**/ios/**/DerivedData/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Runner/GeneratedPluginRegistrant.*
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.p12
+*.mobileprovision
+
+# Generated content (rebuilt by tools/sync_content)
+apps/mobile/assets/cities/*
+apps/mobile/assets/audio/*
+apps/mobile/assets/adhkar/*
+!apps/mobile/assets/cities/.gitkeep
+!apps/mobile/assets/audio/.gitkeep
+!apps/mobile/assets/adhkar/.gitkeep
+
+# Scratch
+/scratch/
+
+# Large generated binary, rebuilt by tools/geonames_build (see content/register/content-tools.md)
+content/cities/cities.db

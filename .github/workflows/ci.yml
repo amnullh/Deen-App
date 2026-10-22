@@ -1,0 +1,124 @@
+name: CI
+
+# Free-tier friendly: Linux jobs run on every push and pull request. The iOS job
+# needs a macOS runner (free only for public repositories on GitHub), so it is
+# opt-in: set the repository variable ENABLE_IOS_CI to "true", or point it at a
+# self-hosted macOS runner. See plan decision D-9.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  FLUTTER_VERSION: "3.47.7"
+  # Keep tool telemetry off for CI as well.
+  FLUTTER_SUPPRESS_ANALYTICS: "true"
+  CI: "true"
+
+jobs:
+  dart:
+    name: Analyze, test, license scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      # Pinned Flutter from the official repository; no third-party action.
+      - name: Install Flutter ${{ env.FLUTTER_VERSION }}
+        run: |
+          git clone --depth 1 --branch "$FLUTTER_VERSION" https://github.com/flutter/flutter.git "$HOME/flutter"
+          echo "$HOME/flutter/bin" >> "$GITHUB_PATH"
+
+      - name: Set up (analytics off, resolve workspace)
+        run: scripts/setup.sh
+
+      - name: Generated code is up to date
+        working-directory: apps/mobile
+        run: |
+          dart run build_runner build
+          flutter gen-l10n
+          git diff --exit-code -- lib
+
+      - name: Format check
+        run: dart format --output=none --set-exit-if-changed packages tools apps/mobile/lib apps/mobile/test
+
+      - name: Analyze
+        run: |
+          dart analyze packages tools
+          cd apps/mobile && flutter analyze
+
+      - name: Test pure-Dart packages and tools
+        run: |
+          for dir in packages/prayer_engine packages/schedule_planner tools/license_scan tools/sync_content tools/fixtures_gen tools/hijri_table_gen tools/geonames_build tools/l10n_merge; do
+            if [ -d "$dir/test" ] && ls "$dir"/test/*_test.dart >/dev/null 2>&1; then
+              (cd "$dir" && dart test)
+            fi
+          done
+
+      - name: Test the app
+        working-directory: apps/mobile
+        run: flutter test
+
+      - name: License, register and tracker scan
+        run: dart run tools/license_scan/bin/scan.dart
+
+      - name: No network permission or tracker SDK
+        run: dart run tools/license_scan/bin/check_network.dart
+
+      - name: LICENSES/NOTICE is up to date
+        run: dart run tools/license_scan/bin/notice.dart --check
+
+      - name: Localization files are up to date
+        run: dart run tools/l10n_merge/bin/merge.dart --check
+
+      - name: Content register and iOS clip lengths
+        run: dart run tools/sync_content/bin/sync.dart --check
+
+  android-dependencies:
+    name: No proprietary Google libraries in the Android build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Flutter ${{ env.FLUTTER_VERSION }}
+        run: |
+          git clone --depth 1 --branch "$FLUTTER_VERSION" https://github.com/flutter/flutter.git "$HOME/flutter"
+          echo "$HOME/flutter/bin" >> "$GITHUB_PATH"
+
+      - name: Set up
+        run: scripts/setup.sh
+
+      - name: Gradle dependency report (release runtime)
+        working-directory: apps/mobile
+        run: |
+          flutter precache --android
+          cd android
+          ./gradlew :app:dependencies --configuration releaseRuntimeClasspath > "$RUNNER_TEMP/android-deps.txt"
+
+      - name: Fail on Play Services, Firebase or Play Core
+        run: dart run tools/license_scan/bin/check_gms.dart "$RUNNER_TEMP/android-deps.txt"
+
+  ios:
+    name: iOS build (opt-in)
+    if: ${{ vars.ENABLE_IOS_CI == 'true' }}
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Flutter ${{ env.FLUTTER_VERSION }}
+        run: |
+          git clone --depth 1 --branch "$FLUTTER_VERSION" https://github.com/flutter/flutter.git "$HOME/flutter"
+          echo "$HOME/flutter/bin" >> "$GITHUB_PATH"
+
+      - name: Set up
+        run: scripts/setup.sh
+
+      - name: Build for the simulator (no signing)
+        working-directory: apps/mobile
+        run: flutter build ios --simulator --no-codesign

@@ -1,0 +1,17 @@
+name: deen_workspace
+description: Workspace root for Deen App (Phase 0). Not published.
+publish_to: none
+
+environment:
+  sdk: ^3.13.5
+
+workspace:
+  - apps/mobile
+  - packages/prayer_engine
+  - packages/schedule_planner
+  - tools/fixtures_gen
+  - tools/geonames_build
+  - tools/hijri_table_gen
+  - tools/l10n_merge
+  - tools/license_scan
+  - tools/sync_content
