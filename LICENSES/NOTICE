@@ -250,7 +250,7 @@ be recorded under the signed license (clarification D2).
 
 | Id | Description | Source | License | Reviewer | Status |
 |----|-------------|--------|---------|----------|--------|
-| adhkar-ar | Adhkar Arabic texts | unresolved (plan D-4) | unresolved | TODO scholar | BLOCKED |
+| adhkar-ar | Adhkar Arabic texts | own collection from primary hadith sources (plan D-4, decided 2026-10-22) | to be recorded per entry | TODO scholar | BLOCKED until sourced and reviewed |
 | adhkar-translit | Transliteration | none found | unresolved | TODO | BLOCKED |
 | adhkar-en, adhkar-ur, adhkar-id | Translations | none found openly licensed | unresolved | TODO | BLOCKED |
 | ui-en, ui-ar, ui-ur, ui-id | Interface strings | written by the project | project license (Apache-2.0) | TODO native speaker per language | to write |
