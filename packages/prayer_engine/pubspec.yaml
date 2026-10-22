@@ -1,0 +1,17 @@
+name: prayer_engine
+description: Pure Dart prayer-time engine, Hijri (Umm al-Qura), Qibla and regional defaults. No Flutter dependency.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  adhan_dart: 2.0.1
+  timezone: ^0.11.2
+
+dev_dependencies:
+  fixtures_gen: ^0.1.0
+  lints: ^6.0.0
+  test: ^1.25.0
