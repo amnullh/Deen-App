@@ -32,4 +32,4 @@
 ## Notes
 
 - The one open marker (the pilot's monthly infrastructure budget) was answered on 2026-10-22: US$10 per month. It is recorded in the Infrastructure Cost section and SC-005.
-- Items to resolve in `/speckit-clarify` or planning, none blocking the spec: the open dataset used to seed the directory and any share-alike obligation; region packaging and download size; the second console language; account recovery for an admin who loses both the authenticator and the recovery codes; how Operator phone numbers and committee contact details are protected.
+- Clarification session 2026-10-22 recorded 11 supplied decisions and 4 answers (admin-data licensing, lockout recovery, contact protection, region file size). Deferred to planning: map tile source and load, how a $10 server delivers mail reliably, geohash cell layout in dense cities, console language packaging for Phase 4.

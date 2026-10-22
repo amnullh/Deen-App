@@ -20,6 +20,26 @@ Prayer times from a formula rarely match what a specific Masjid actually announc
 - **Operator**: Deen App team member who reviews claims and moderates.
 - **Super-admin**: an Operator who manages other Operators.
 
+## Clarifications
+
+### Session 2026-10-22
+
+- Q: Where does the initial directory come from? → A: OpenStreetMap places of worship tagged as Muslim (ODbL license). The attribution and share-alike obligations apply to the derived directory and are shown in the app and the console. The Two Holy Mosques and other major Masjids are curated by hand.
+- Q: How does the app search nearby without sending location? → A: The server publishes static, cacheable files per region (cells of about 5 km, plus country files). The app downloads and searches them on the phone.
+- Q: Is admin-entered data published under the OpenStreetMap license? → A: No. Only the OpenStreetMap-derived fields (names, locations, addresses) are published openly. Admin-entered schedules, photos and contact details are a separate layer under the project's own terms and are never exported in bulk.
+- Q: How does an admin who lost both the authenticator and the recovery codes get back in? → A: An Operator phones a committee contact on file and a second Operator approves; a 48-hour delay applies, the admin and the committee contacts are notified, and all old sessions are closed.
+- Q: Who can see committee members' phone numbers and emails collected in a claim? → A: Only the Operator assigned to an open case, and only while the case is open. Every view is logged, and the details are deleted with the evidence 90 days after the final decision.
+- Q: How large may a region file be? → A: Under 500 KB per cell; dense cities are split into smaller cells; country files hold only a summary (names and coordinates of major Masjids).
+- Q: How do admins sign in and recover? → A: Email, password and an authenticator-app code. No text messages and no social login. Password reset uses an email link. Resetting the second factor needs an Operator's approval plus a recovery code or a verification call.
+- Q: How is email delivered? → A: Self-hosted mail with SPF, DKIM and DMARC, or a relay that is open source or permanently free; a free relay is recorded in the constitution's Exceptions Register.
+- Q: How long is verification evidence kept? → A: 90 days after the final decision, longer only while under appeal.
+- Q: How does renewal work? → A: Verification lasts 12 months, a reminder goes out 30 days before, there is a 30-day grace period, then the status drops to Pending (shown to listeners as "Claimed pending").
+- Q: Who are the Operators at the start? → A: The founding team, at least 2 people so that review by a second person is possible. Operator onboarding documentation is a deliverable.
+- Q: What map does the admin use to place a Masjid? → A: A map built on OpenStreetMap data from a self-hosted or free community tile source; if no free source can carry the pilot load, a simple list and a coordinate picker with no map background.
+- Q: How are Masjid names stored? → A: In Arabic script, transliteration and the local language, with one primary display name.
+- Q: Where does the admin and operator console live? → A: In a web app, separate from the mobile apps.
+- Q: Which languages does the console support? → A: English first; other languages in Phase 4. All console text stays localizable.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Find and confirm my Masjid (Priority: P1)
@@ -33,7 +53,7 @@ A listener finds a Masjid by name, by "near me", or by browsing a country, city 
 **Acceptance Scenarios**:
 
 1. **Given** the listener types part of a name, **When** results appear, **Then** each shows the name, distance, a verification badge (Verified, Claimed pending, Unclaimed), the madhhab and calculation method if known, and the Azaan variant.
-2. **Given** a downloaded region and no network, **When** the listener chooses "near me", **Then** nearby Masjids are listed using only data on the phone.
+2. **Given** a downloaded region (static files of about 5 km cells plus country files) and no network, **When** the listener chooses "near me", **Then** nearby Masjids are listed using only data on the phone.
 3. **Given** the listener browses a country, city or region, **When** they open the curated list, **Then** the Two Holy Mosques and other famous Masjids are findable.
 4. **Given** a search result, **When** the listener has not confirmed it, **Then** the app does not use it for times or alerts; the app never picks a Masjid silently.
 5. **Given** several confirmed Masjids, **When** the listener marks one as "my Masjid" or removes any, **Then** the change applies on the phone only and nothing about it is sent to the server.
@@ -71,13 +91,14 @@ A Masjid Admin signs up with strong credentials and multi-factor sign-in, claims
 
 **Acceptance Scenarios**:
 
-1. **Given** a new Masjid Admin, **When** they sign up with an email and a strong password, **Then** they must set up multi-factor sign-in (an authenticator app code) and keep printable recovery codes before they can do anything else, and cannot reach any editing screen without it.
+1. **Given** a new Masjid Admin, **When** they sign up with an email and a strong password, **Then** they must set up multi-factor sign-in (an authenticator app code) and keep printable recovery codes before they can do anything else, and cannot reach any editing screen without it. No text message or social sign-in exists.
+1a. **Given** an admin forgets their password, **When** they ask for a reset, **Then** an email link lets them set a new one. **Given** an admin loses their authenticator, **When** they ask to reset it, **Then** an Operator must approve, and the admin must present a recovery code or pass a verification call.
 2. **Given** an unclaimed Masjid or a new one, **When** the admin claims or creates it, **Then** they submit committee or trust documents, an authorization letter, building photos and contact details of two committee members.
 3. **Given** a complete claim, **When** an Operator reviews it, **Then** they verify by phone call to a committee contact, using no paid telephony or text-message service.
 4. **Given** the statuses Unclaimed, Pending, Verified, Needs more information, Rejected, Suspended and Revoked, **When** a decision is made, **Then** the admin sees the status and the reason, and may appeal once.
 5. **Given** more than one admin, **When** the Masjid is managed, **Then** several admins can manage it, ownership transfers only with an Operator's approval, and an admin can invite and remove Muazzins.
 6. **Given** two claims on the same Masjid, **When** they conflict, **Then** both are held for Operator arbitration and neither claimant has edit rights until it is resolved.
-7. **Given** a Verified Masjid, **When** 12 months pass, **Then** verification expires unless renewed, and a reminder is sent 30 days before.
+7. **Given** a Verified Masjid, **When** 12 months pass, **Then** verification expires unless renewed; a reminder is sent 30 days before; after the 30-day grace period the status drops to Pending (shown to listeners as "Claimed pending") and its schedule is no longer offered.
 8. **Given** any state change, **When** it happens, **Then** it is written to an audit log (with actor and time) that admins and Operators can read.
 9. **Given** a claim was rejected, **When** identical evidence is submitted again, **Then** it stays rejected.
 10. **Given** verification documents, **When** they are stored, **Then** they are encrypted, visible only to Operators, access-logged, and deleted 90 days after a final decision unless under appeal; admins may request earlier deletion.
@@ -94,7 +115,7 @@ An admin edits the Masjid's profile and schedule, previews it, and can roll chan
 
 **Acceptance Scenarios**:
 
-1. **Given** an admin of a Verified Masjid, **When** they edit names (in several languages), address, location (a pin on an offline-friendly map or coordinates), photos, languages spoken, madhhab, calculation method, Azaan variant, contact details and facilities, **Then** the changes go live immediately.
+1. **Given** an admin of a Verified Masjid, **When** they edit names (in Arabic script, in transliteration and in the local language, with one primary display name), address, location (a pin on a map, or coordinates when no free map source can carry the load), photos, languages spoken, madhhab, calculation method, Azaan variant, contact details and facilities, **Then** the changes go live immediately.
 2. **Given** a schedule edit, **When** the admin previews it, **Then** the next 14 days are shown and impossible values (for example Iqamah before Azaan) are warned about.
 3. **Given** a Pending Masjid, **When** a listener looks it up, **Then** only its name and location appear, marked unverified.
 4. **Given** any change, **When** it is saved, **Then** it is versioned and can be rolled back.
@@ -129,11 +150,11 @@ The directory starts from open data and stays clean through moderation.
 
 **Acceptance Scenarios**:
 
-1. **Given** an import from open data, **When** Masjids appear, **Then** they are Unclaimed and clearly labeled as unverified information.
+1. **Given** an import from OpenStreetMap places of worship tagged as Muslim, **When** Masjids appear, **Then** they are Unclaimed and clearly labeled as unverified information.
 2. **Given** duplicates and near-duplicates, **When** they are detected, **Then** Operators can review and merge them.
 3. **Given** a listener suggests a correction or a new Masjid, **When** it is submitted, **Then** it is moderated and rate-limited.
 4. **Given** the curated list of major Masjids, **When** it is published, **Then** each entry is hand-verified with recorded sources.
-5. **Given** imported data, **When** it is shown, **Then** attribution and license notices appear in the app and in the console.
+5. **Given** imported data, **When** it is shown, **Then** the OpenStreetMap attribution and the ODbL license notice appear in the app and in the console, and the OpenStreetMap-derived fields of the directory are published openly so the license's share-alike obligation is met; admin-entered schedules, photos and contacts are kept as a separate layer and are not part of that publication.
 
 ---
 
@@ -190,7 +211,7 @@ Admins and Muazzins control their own data, and Operators handle privacy request
 - **FR-014**: The app MUST cache the next 30 days of a confirmed Masjid's schedule, refresh when online, mark updated times, and fall back to calculated times (saying so) when the data is older than 30 days.
 - **FR-015**: Switching to or from a Masjid schedule MUST update the next alerts within 5 seconds and MUST NOT create duplicate alerts.
 - **FR-016**: Claims MUST follow the statuses Unclaimed, Pending, Verified, Needs more information, Rejected, Suspended and Revoked, with reasons shown to the admin and one appeal; a rejected claim MUST stay rejected when identical evidence is submitted again.
-- **FR-017**: Verification MUST include an Operator phone call and MUST NOT use a paid telephony or text-message service; it MUST expire after 12 months with a reminder 30 days before.
+- **FR-017**: Verification MUST include an Operator phone call and MUST NOT use a paid telephony or text-message service; it MUST expire after 12 months with a reminder 30 days before and a 30-day grace period, after which the status drops to Pending and the Masjid's schedule is no longer offered.
 - **FR-018**: Conflicting claims MUST be held for Operator arbitration, with no edit rights for either claimant until resolved; ownership transfer MUST require Operator approval.
 - **FR-019**: Admin edits to a Verified Masjid MUST go live immediately and be versioned with rollback; a Pending Masjid MUST show listeners only its name and location, marked unverified.
 - **FR-020**: Schedule edits MUST preview the next 14 days and warn about impossible values.
@@ -199,12 +220,20 @@ Admins and Muazzins control their own data, and Operators handle privacy request
 - **FR-023**: Data attribution and license notices MUST be shown in the app and the console.
 - **FR-024**: Admins MUST be able to delete their account (anonymizing audit entries and keeping the listing) and export their own data; Operators MUST answer privacy requests within 30 days.
 - **FR-025**: The server MUST cost no more than the stated pilot budget to run, and every component MUST follow the constitution's open-source, zero-licensing-cost rule.
+- **FR-026**: Admin sign-in MUST use email, password and an authenticator-app code; a password reset MUST use an email link; resetting the second factor MUST need an Operator's approval plus a recovery code or a verification call. When both the authenticator and the recovery codes are lost, recovery MUST need a verification call to a committee contact on file, approval by a second Operator, a 48-hour delay with notification to the admin and the committee contacts, and closing of all old sessions.
+- **FR-027**: Server access logs MUST NOT pair a listener's network address with the region files they request.
+- **FR-028**: Operator onboarding documentation (roles, review procedure, phone-call verification script, privacy handling, break-glass) MUST be delivered before the first Operator reviews a claim.
+- **FR-029**: The location picker MUST work without a map background (a list and a coordinate entry) when no free map source can carry the pilot load.
+- **FR-030**: Masjid names MUST support Arabic script, transliteration and the local language, with one primary display name.
+- **FR-031**: Exports of the directory for open publication MUST contain only OpenStreetMap-derived fields; admin-entered schedules, photos and contact details MUST NOT be included in any bulk export.
+- **FR-032**: Committee members' contact details collected in a claim MUST be visible only to the Operator assigned to the open case, only while the case is open; every view MUST be logged; the details MUST be deleted with the evidence 90 days after the final decision.
+- **FR-033**: Each region file MUST be under 500 KB; a cell that would exceed it MUST be split into smaller cells; a country file MUST hold only a summary of major Masjids.
 
 ### Key Entities
 
-- **Masjid**: a listed place of worship: names in several languages, address, location, photos, languages spoken, madhhab, calculation method, Azaan variant, contacts, facilities, status, source (imported, curated, claimed), version history.
+- **Masjid**: a listed place of worship: names in Arabic script, transliteration and the local language with one primary display name, address, location, photos, languages spoken, madhhab, calculation method, Azaan variant, contacts, facilities, status, source (imported, curated, claimed), version history.
 - **Schedule**: a Masjid's times: rules by date range, each time defined as fixed, calculated-plus-offset or Iqamah-after-Azaan; Jumu'ah shifts; the Masjid's time zone; a version and a last-updated time.
-- **Region Pack**: downloadable directory data for a region (a country or part of one) kept on the phone, with a version and a license notice.
+- **Region Pack**: a static, cacheable file of directory data for a cell of about 5 km or for a country, kept on the phone, with a version and the OpenStreetMap license notice.
 - **Follow**: a listener's choice of a Masjid, including "my Masjid"; stored on the phone only.
 - **Account**: an admin, Muazzin or Operator with an email, strong password, multi-factor method and recovery codes, and a role.
 - **Claim**: an admin's request to manage a Masjid, with status, evidence, reviewer notes, decision reason, appeal and expiry.
@@ -254,11 +283,12 @@ The monthly cost ceiling for the pilot is US$10 per month, decided by the produc
 
 - Operators exist and will perform reviews; verification requires a human phone call.
 - The first pilot has 3 to 5 Masjids with willing committees.
-- The initial directory comes from an open dataset whose license allows redistribution with attribution and fits the constitution's content rules; the dataset is chosen during planning, and any share-alike obligation is decided then.
+- The initial directory comes from OpenStreetMap (ODbL). Only the fields derived from it are published openly; admin-entered data is a separate layer. A licensing review in planning confirms exactly which fields count as derived and how region files combine the two layers.
 - A region is a country or a documented subdivision of one, sized so a typical download is small enough for mobile data; the exact packaging is a planning decision.
-- Reminders to admins (for example the 12-month renewal) are sent by email from the server; no push notifications exist yet.
-- Admin and Operator sign-in uses an email address and a strong password with an authenticator-app code; hardware security keys are not required in this phase.
-- The listener app remains available in English, Arabic, Urdu and Bahasa Indonesia; the console is localized to at least English and one more language before the pilot (the second language is chosen in planning).
+- Reminders to admins (for example the 12-month renewal) are sent by email; no push notifications exist yet. Email comes from a self-hosted mail setup (with SPF, DKIM and DMARC) or from a relay that is open source or permanently free (recorded in the Exceptions Register). Whether a $10 server can deliver mail reliably is checked in planning.
+- Hardware security keys are not required in this phase.
+- The listener app remains available in English, Arabic, Urdu and Bahasa Indonesia. The admin and operator console is a web app, separate from the mobile apps, in English at launch; other languages arrive in Phase 4, and all console text stays localizable.
+- Operators are initially the founding team, at least 2 people.
 - Phase 0's alert planner and settings are the integration point: a Masjid schedule is supplied to the existing planner as times for the five prayers.
 
 ## Out of Scope
