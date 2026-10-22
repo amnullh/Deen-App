@@ -9,6 +9,12 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+    inputs:
+      ios:
+        description: "Also build for iOS (macOS minutes cost more on private repositories)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -93,19 +99,31 @@ jobs:
       - name: Set up
         run: scripts/setup.sh
 
-      - name: Gradle dependency report (release runtime)
+      # Compiles all Kotlin (generated Pigeon code, receivers, services) and links
+      # the plugins; this is the first time the Android code is built anywhere.
+      - name: Build the debug APK
         working-directory: apps/mobile
-        run: |
-          flutter precache --android
-          cd android
-          ./gradlew :app:dependencies --configuration releaseRuntimeClasspath > "$RUNNER_TEMP/android-deps.txt"
+        run: flutter build apk --debug
+
+      - name: Compile the Android instrumented tests
+        working-directory: apps/mobile/android
+        run: ./gradlew :app:assembleDebugAndroidTest
+
+      - name: Gradle dependency report (release runtime)
+        working-directory: apps/mobile/android
+        run: ./gradlew :app:dependencies --configuration releaseRuntimeClasspath > "$RUNNER_TEMP/android-deps.txt"
 
       - name: Fail on Play Services, Firebase or Play Core
         run: dart run tools/license_scan/bin/check_gms.dart "$RUNNER_TEMP/android-deps.txt"
 
+      - name: Print the Android dependency list (for the license register)
+        if: always()
+        run: |
+          grep -oE '[A-Za-z0-9_.-]+:[A-Za-z0-9_.-]+:[A-Za-z0-9_.+-]+' "$RUNNER_TEMP/android-deps.txt" | sort -u | head -400
+
   ios:
     name: iOS build (opt-in)
-    if: ${{ vars.ENABLE_IOS_CI == 'true' }}
+    if: ${{ vars.ENABLE_IOS_CI == 'true' || (github.event_name == 'workflow_dispatch' && inputs.ios) }}
     runs-on: macos-latest
     timeout-minutes: 60
     steps:
