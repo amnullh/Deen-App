@@ -1,0 +1,16 @@
+name: sync_content
+description: Copies content into the app and platform folders and verifies each file is registered and valid.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  license_scan: ^0.1.0
+  path: ^1.9.1
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.0

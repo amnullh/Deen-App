@@ -1,0 +1,16 @@
+name: geonames_build
+description: Builds the offline city database from GeoNames dumps.
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  path: ^1.9.1
+  sqlite3: ^3.7.1
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.0

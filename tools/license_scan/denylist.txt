@@ -1,0 +1,25 @@
+# Packages that collect data, show ads or track users (constitution principle 4, FR-002).
+# A trailing * matches a prefix. Matched against pub package names and Gradle coordinates.
+firebase_*
+cloud_firestore*
+google_mobile_ads
+google_analytics*
+google_sign_in*
+facebook_*
+flutter_facebook_*
+sentry
+sentry_*
+bugsnag_*
+appsflyer_sdk
+adjust_sdk
+mixpanel_flutter
+amplitude_flutter
+segment_analytics
+posthog_flutter
+onesignal_flutter
+branch_sdk
+flutter_branch_sdk
+datadog_*
+newrelic_*
+smartlook
+appcenter*
