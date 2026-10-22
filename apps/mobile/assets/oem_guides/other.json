@@ -1,0 +1,29 @@
+{
+  "brand": "other",
+  "steps": {
+    "en": [
+      "Open Settings, then Apps, then Deen App, then Battery.",
+      "Choose Unrestricted (also called Don't optimize or Allow background activity).",
+      "If your phone has an Autostart or Auto-launch list, turn on Deen App there.",
+      "In the recent apps screen, lock the Deen App card if your phone offers that, so the system does not close it."
+    ],
+    "ar": [
+      "افتح الإعدادات ثم التطبيقات ثم Deen App ثم البطارية.",
+      "اختر «غير مقيّد» (ويسمى أيضًا «عدم التحسين» أو «السماح بالنشاط في الخلفية»).",
+      "إن كان في هاتفك قائمة للتشغيل التلقائي فعّل Deen App فيها.",
+      "في شاشة التطبيقات الأخيرة، اقفل بطاقة Deen App إن كان هاتفك يتيح ذلك كي لا يغلقه النظام."
+    ],
+    "ur": [
+      "ترتیبات کھولیں، پھر ایپس، پھر Deen App، پھر بیٹری۔",
+      "«غیر محدود» منتخب کریں (جسے «آپٹیمائز نہ کریں» یا «پس منظر کی سرگرمی کی اجازت دیں» بھی کہا جاتا ہے)۔",
+      "اگر آپ کے فون میں آٹو اسٹارٹ کی فہرست ہو تو اس میں Deen App آن کریں۔",
+      "اگر آپ کا فون اجازت دے تو حالیہ ایپس کی اسکرین میں Deen App کا کارڈ لاک کریں تاکہ سسٹم اسے بند نہ کرے۔"
+    ],
+    "id": [
+      "Buka Pengaturan, lalu Aplikasi, lalu Deen App, lalu Baterai.",
+      "Pilih Tidak dibatasi (disebut juga Jangan optimalkan atau Izinkan aktivitas latar belakang).",
+      "Jika ponsel Anda punya daftar Mulai otomatis, aktifkan Deen App di sana.",
+      "Di layar aplikasi terbaru, kunci kartu Deen App jika ponsel Anda menyediakannya agar sistem tidak menutupnya."
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "aboutTitle": {
+    "en": "About",
+    "ar": "حول التطبيق",
+    "ur": "ایپ کے بارے میں",
+    "id": "Tentang",
+    "description": "Title of the About screen."
+  },
+  "aboutEntryHint": {
+    "en": "Licenses, sources and privacy",
+    "ar": "التراخيص والمصادر والخصوصية",
+    "ur": "لائسنس، ماخذ اور رازداری",
+    "id": "Lisensi, sumber, dan privasi",
+    "description": "Hint under the About entry in settings."
+  },
+  "aboutDescription": {
+    "en": "Prayer times, Azaan alerts and daily worship tools. Everything works offline.",
+    "ar": "أوقات الصلاة وتنبيهات الأذان وأدوات العبادة اليومية. كل شيء يعمل دون إنترنت.",
+    "ur": "نماز کے اوقات، اذان کے الرٹس اور روزمرہ عبادت کے اوزار۔ سب کچھ بغیر انٹرنیٹ کے چلتا ہے۔",
+    "id": "Waktu salat, peringatan azan, dan alat ibadah harian. Semuanya berjalan tanpa internet.",
+    "description": "Short description of the app at the top of About."
+  },
+  "aboutVersion": {
+    "en": "Version {version}",
+    "ar": "الإصدار {version}",
+    "ur": "ورژن {version}",
+    "id": "Versi {version}",
+    "description": "App version.",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutPrivacyHeading": {
+    "en": "Your privacy",
+    "ar": "خصوصيتك",
+    "ur": "آپ کی رازداری",
+    "id": "Privasi Anda",
+    "description": "Heading of the privacy statement."
+  },
+  "aboutNoDataCollected": {
+    "en": "Deen App collects no data. There are no accounts, no analytics and no ads. Your location stays on this device and is used only to work out prayer times and the Qibla direction.",
+    "ar": "لا يجمع التطبيق أي بيانات. لا توجد حسابات ولا تحليلات ولا إعلانات. يبقى موقعك على هذا الجهاز ولا يُستخدم إلا لحساب أوقات الصلاة واتجاه القبلة.",
+    "ur": "ایپ کوئی ڈیٹا جمع نہیں کرتی۔ نہ اکاؤنٹ ہیں، نہ تجزیات اور نہ اشتہارات۔ آپ کا مقام اسی آلے پر رہتا ہے اور صرف نماز کے اوقات اور قبلہ کی سمت معلوم کرنے کے لیے استعمال ہوتا ہے۔",
+    "id": "Aplikasi ini tidak mengumpulkan data apa pun. Tidak ada akun, analitik, atau iklan. Lokasi Anda tetap di perangkat ini dan hanya dipakai untuk menghitung waktu salat dan arah kiblat.",
+    "description": "The no-data-collected statement."
+  },
+  "aboutPrivacyPolicyTitle": {
+    "en": "Privacy policy",
+    "ar": "سياسة الخصوصية",
+    "ur": "رازداری کی پالیسی",
+    "id": "Kebijakan privasi",
+    "description": "Heading of the privacy policy section."
+  },
+  "aboutPrivacyPolicyPending": {
+    "en": "The full privacy policy will be published before release. It will say the same thing: the app collects no data.",
+    "ar": "ستُنشر سياسة الخصوصية الكاملة قبل الإصدار، وستقول الأمر نفسه: التطبيق لا يجمع أي بيانات.",
+    "ur": "مکمل رازداری کی پالیسی ریلیز سے پہلے شائع کی جائے گی۔ اس میں بھی یہی لکھا ہوگا: ایپ کوئی ڈیٹا جمع نہیں کرتی۔",
+    "id": "Kebijakan privasi lengkap akan dipublikasikan sebelum rilis. Isinya sama: aplikasi tidak mengumpulkan data.",
+    "description": "Placeholder shown until the privacy policy address is known."
+  },
+  "aboutPrivacyPolicyAddress": {
+    "en": "Read the full policy at: {address}",
+    "ar": "اقرأ السياسة الكاملة على: {address}",
+    "ur": "مکمل پالیسی یہاں پڑھیں: {address}",
+    "id": "Baca kebijakan lengkap di: {address}",
+    "description": "Shown when the privacy policy address is known.",
+    "placeholders": {
+      "address": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutLicensesTitle": {
+    "en": "Open-source licenses",
+    "ar": "تراخيص البرمجيات الحرة",
+    "ur": "اوپن سورس لائسنس",
+    "id": "Lisensi sumber terbuka",
+    "description": "Entry that opens the list of software licenses."
+  },
+  "aboutLicensesSubtitle": {
+    "en": "Licenses of the software this app is built with",
+    "ar": "تراخيص البرمجيات المستخدمة في بناء هذا التطبيق",
+    "ur": "اس ایپ میں استعمال ہونے والے سافٹ ویئر کے لائسنس",
+    "id": "Lisensi perangkat lunak yang dipakai untuk membangun aplikasi ini",
+    "description": "Subtitle of the licenses entry."
+  },
+  "aboutAttributionsTitle": {
+    "en": "Attributions",
+    "ar": "الإسناد والشكر",
+    "ur": "اعترافات",
+    "id": "Atribusi",
+    "description": "Heading of the attributions section."
+  },
+  "aboutCitiesHeading": {
+    "en": "City data",
+    "ar": "بيانات المدن",
+    "ur": "شہروں کا ڈیٹا",
+    "id": "Data kota",
+    "description": "Heading above the GeoNames attribution."
+  },
+  "aboutFontsHeading": {
+    "en": "Fonts",
+    "ar": "الخطوط",
+    "ur": "فونٹس",
+    "id": "Font",
+    "description": "Heading above the font attribution."
+  },
+  "aboutHijriHeading": {
+    "en": "Hijri calendar data",
+    "ar": "بيانات التقويم الهجري",
+    "ur": "ہجری کیلنڈر کا ڈیٹا",
+    "id": "Data kalender Hijriah",
+    "description": "Heading above the Unicode notice."
+  },
+  "aboutLegalEnglishNote": {
+    "en": "The wording below is the license wording and stays in English.",
+    "ar": "النص أدناه هو صيغة الترخيص ويبقى بالإنجليزية.",
+    "ur": "نیچے کی عبارت لائسنس کے الفاظ ہیں اور انگریزی میں ہی رہتی ہے۔",
+    "id": "Teks di bawah adalah kalimat lisensi dan tetap dalam bahasa Inggris.",
+    "description": "Note before the English license wording."
+  },
+  "aboutContentHeading": {
+    "en": "Adhkar texts",
+    "ar": "نصوص الأذكار",
+    "ur": "اذکار کے متون",
+    "id": "Teks zikir",
+    "description": "Heading of the content sources section."
+  }
+}

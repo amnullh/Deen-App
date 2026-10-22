@@ -1,0 +1,448 @@
+{
+  "adhkarTitle": {
+    "en": "Adhkar",
+    "ar": "الأذكار",
+    "ur": "اذکار",
+    "id": "Zikir",
+    "description": "Title of the adhkar collections screen."
+  },
+  "adhkarEntryHint": {
+    "en": "Daily remembrances, bookmarks and reminders",
+    "ar": "أذكار يومية وعلامات مرجعية وتذكيرات",
+    "ur": "روزانہ کے اذکار، بک مارکس اور یاد دہانیاں",
+    "id": "Zikir harian, markah, dan pengingat",
+    "description": "One-line hint under the adhkar entry on the home screen."
+  },
+  "adhkarCollectionMorning": {
+    "en": "Morning adhkar",
+    "ar": "أذكار الصباح",
+    "ur": "صبح کے اذکار",
+    "id": "Zikir pagi",
+    "description": "Collection name."
+  },
+  "adhkarCollectionEvening": {
+    "en": "Evening adhkar",
+    "ar": "أذكار المساء",
+    "ur": "شام کے اذکار",
+    "id": "Zikir petang",
+    "description": "Collection name."
+  },
+  "adhkarCollectionAfterPrayer": {
+    "en": "After prayer",
+    "ar": "أذكار بعد الصلاة",
+    "ur": "نماز کے بعد کے اذکار",
+    "id": "Zikir setelah salat",
+    "description": "Collection name."
+  },
+  "adhkarCollectionBeforeSleep": {
+    "en": "Before sleep",
+    "ar": "أذكار النوم",
+    "ur": "سونے سے پہلے کے اذکار",
+    "id": "Zikir sebelum tidur",
+    "description": "Collection name."
+  },
+  "adhkarCollectionWaking": {
+    "en": "On waking",
+    "ar": "أذكار الاستيقاظ",
+    "ur": "جاگنے کے اذکار",
+    "id": "Zikir bangun tidur",
+    "description": "Collection name."
+  },
+  "adhkarCollectionOther": {
+    "en": "Other adhkar",
+    "ar": "أذكار أخرى",
+    "ur": "دیگر اذکار",
+    "id": "Zikir lainnya",
+    "description": "Collection name."
+  },
+  "adhkarEntryCount": {
+    "en": "Entries: {count}",
+    "ar": "عدد الأذكار: {count}",
+    "ur": "اذکار کی تعداد: {count}",
+    "id": "Jumlah zikir: {count}",
+    "description": "Number of entries in a collection, shown under its name.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarEmptyTitle": {
+    "en": "Adhkar are not available yet",
+    "ar": "الأذكار غير متاحة بعد",
+    "ur": "اذکار ابھی دستیاب نہیں ہیں",
+    "id": "Zikir belum tersedia",
+    "description": "Heading of the empty state shown while the content pack is empty."
+  },
+  "adhkarEmptyBody": {
+    "en": "This version of the app does not include adhkar texts yet. They will be added only after their sources are licensed and a scholar has reviewed them.",
+    "ar": "لا يتضمن هذا الإصدار من التطبيق نصوص الأذكار بعد. ستُضاف فقط بعد ترخيص مصادرها ومراجعتها من أحد أهل العلم.",
+    "ur": "ایپ کے اس ورژن میں ابھی اذکار کے متن شامل نہیں ہیں۔ انہیں صرف اس کے بعد شامل کیا جائے گا جب ان کے ماخذ کی اجازت مل جائے اور کوئی عالم ان کا جائزہ لے لے۔",
+    "id": "Versi aplikasi ini belum menyertakan teks zikir. Teks akan ditambahkan hanya setelah sumbernya berlisensi dan telah ditinjau oleh seorang ulama.",
+    "description": "Explanation in the empty state; says why there is no adhkar content."
+  },
+  "adhkarLoadError": {
+    "en": "The adhkar could not be loaded.",
+    "ar": "تعذّر تحميل الأذكار.",
+    "ur": "اذکار لوڈ نہیں ہو سکے۔",
+    "id": "Zikir tidak dapat dimuat.",
+    "description": "Shown when the content pack fails to load."
+  },
+  "adhkarNotFound": {
+    "en": "This collection is not available.",
+    "ar": "هذه المجموعة غير متاحة.",
+    "ur": "یہ مجموعہ دستیاب نہیں ہے۔",
+    "id": "Koleksi ini tidak tersedia.",
+    "description": "Shown when a collection id is not in the pack."
+  },
+  "adhkarBookmarksTitle": {
+    "en": "Bookmarks",
+    "ar": "العلامات المرجعية",
+    "ur": "بک مارکس",
+    "id": "Markah",
+    "description": "Title of the bookmarks screen and its button."
+  },
+  "adhkarBookmarksEmpty": {
+    "en": "You have not bookmarked anything yet. Use the bookmark button on an entry to save it here.",
+    "ar": "لم تحفظ أي ذكر بعد. استخدم زر العلامة المرجعية في أي ذكر لحفظه هنا.",
+    "ur": "آپ نے ابھی کچھ بھی بک مارک نہیں کیا۔ کسی ذکر کو یہاں محفوظ کرنے کے لیے اس پر بک مارک کا بٹن دبائیں۔",
+    "id": "Belum ada zikir yang dimarkahi. Gunakan tombol markah pada sebuah zikir untuk menyimpannya di sini.",
+    "description": "Empty state of the bookmarks screen."
+  },
+  "adhkarBookmarkAdd": {
+    "en": "Add bookmark",
+    "ar": "إضافة علامة مرجعية",
+    "ur": "بک مارک شامل کریں",
+    "id": "Tambah markah",
+    "description": "Tooltip and screen-reader label of the bookmark button when the entry is not bookmarked."
+  },
+  "adhkarBookmarkRemove": {
+    "en": "Remove bookmark",
+    "ar": "إزالة العلامة المرجعية",
+    "ur": "بک مارک ہٹائیں",
+    "id": "Hapus markah",
+    "description": "Tooltip and screen-reader label of the bookmark button when the entry is bookmarked."
+  },
+  "adhkarRemindersTitle": {
+    "en": "Adhkar reminders",
+    "ar": "تذكيرات الأذكار",
+    "ur": "اذکار کی یاد دہانیاں",
+    "id": "Pengingat zikir",
+    "description": "Title of the reminder settings screen and its button."
+  },
+  "adhkarProgressLabel": {
+    "en": "{done} of {total} entries complete",
+    "ar": "اكتمل {done} من {total} من الأذكار",
+    "ur": "{total} میں سے {done} اذکار مکمل",
+    "id": "{done} dari {total} zikir selesai",
+    "description": "Progress through a session, shown above the entry and read by screen readers.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarRepeatLabel": {
+    "en": "Repetitions: {count}",
+    "ar": "عدد المرات: {count}",
+    "ur": "تکرار کی تعداد: {count}",
+    "id": "Jumlah pengulangan: {count}",
+    "description": "How many times the entry is recited.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarSourceLabel": {
+    "en": "Source: {reference}",
+    "ar": "المصدر: {reference}",
+    "ur": "ماخذ: {reference}",
+    "id": "Sumber: {reference}",
+    "description": "Source reference of an entry.",
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarTransliterationHeading": {
+    "en": "Transliteration",
+    "ar": "النطق بالحروف اللاتينية",
+    "ur": "رومن حروف میں",
+    "id": "Transliterasi",
+    "description": "Heading above the transliteration of an entry."
+  },
+  "adhkarTranslationHeading": {
+    "en": "Translation",
+    "ar": "الترجمة",
+    "ur": "ترجمہ",
+    "id": "Terjemahan",
+    "description": "Heading above the translation of an entry."
+  },
+  "adhkarTranslationFallbackHeading": {
+    "en": "Translation (English; not available in your language yet)",
+    "ar": "الترجمة (بالإنجليزية؛ غير متاحة بلغتك بعد)",
+    "ur": "ترجمہ (انگریزی؛ آپ کی زبان میں ابھی دستیاب نہیں)",
+    "id": "Terjemahan (bahasa Inggris; belum tersedia dalam bahasa Anda)",
+    "description": "Heading used when only the English translation exists."
+  },
+  "adhkarCountLabel": {
+    "en": "Tap to count: {done} of {total}",
+    "ar": "اضغط للعدّ: {done} من {total}",
+    "ur": "گننے کے لیے دبائیں: {total} میں سے {done}",
+    "id": "Ketuk untuk menghitung: {done} dari {total}",
+    "description": "Text and screen-reader label of the large counting button.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarEntryDone": {
+    "en": "Done",
+    "ar": "تم",
+    "ur": "مکمل",
+    "id": "Selesai",
+    "description": "Label of the counting button once the entry reached its repeat count."
+  },
+  "adhkarUndo": {
+    "en": "Undo last count",
+    "ar": "التراجع عن آخر عدّ",
+    "ur": "آخری گنتی واپس کریں",
+    "id": "Batalkan hitungan terakhir",
+    "description": "Tooltip of the undo button."
+  },
+  "adhkarPrevious": {
+    "en": "Previous entry",
+    "ar": "الذكر السابق",
+    "ur": "پچھلا ذکر",
+    "id": "Zikir sebelumnya",
+    "description": "Tooltip of the previous button."
+  },
+  "adhkarNext": {
+    "en": "Next entry",
+    "ar": "الذكر التالي",
+    "ur": "اگلا ذکر",
+    "id": "Zikir berikutnya",
+    "description": "Tooltip of the next button."
+  },
+  "adhkarPosition": {
+    "en": "Entry {position} of {total}",
+    "ar": "الذكر {position} من {total}",
+    "ur": "{total} میں سے ذکر {position}",
+    "id": "Zikir {position} dari {total}",
+    "description": "Position of the shown entry in its collection.",
+    "placeholders": {
+      "position": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarSessionComplete": {
+    "en": "Session complete",
+    "ar": "اكتملت الجلسة",
+    "ur": "سیشن مکمل ہوا",
+    "id": "Sesi selesai",
+    "description": "Shown when every entry reached its repeat count."
+  },
+  "adhkarStartAgain": {
+    "en": "Start again",
+    "ar": "ابدأ من جديد",
+    "ur": "دوبارہ شروع کریں",
+    "id": "Mulai lagi",
+    "description": "Button that begins a new session after one is complete."
+  },
+  "adhkarReminderMorning": {
+    "en": "Morning reminder",
+    "ar": "تذكير الصباح",
+    "ur": "صبح کی یاد دہانی",
+    "id": "Pengingat pagi",
+    "description": "Heading of the morning reminder card."
+  },
+  "adhkarReminderEvening": {
+    "en": "Evening reminder",
+    "ar": "تذكير المساء",
+    "ur": "شام کی یاد دہانی",
+    "id": "Pengingat petang",
+    "description": "Heading of the evening reminder card."
+  },
+  "adhkarReminderEnable": {
+    "en": "Remind me",
+    "ar": "ذكّرني",
+    "ur": "مجھے یاد دلائیں",
+    "id": "Ingatkan saya",
+    "description": "Label of the on/off switch of a reminder."
+  },
+  "adhkarReminderAnchor": {
+    "en": "Time it from",
+    "ar": "احسب الوقت من",
+    "ur": "وقت کس نماز سے گنیں",
+    "id": "Hitung waktu dari",
+    "description": "Label above the choice of prayer a reminder follows."
+  },
+  "adhkarReminderFajrOnly": {
+    "en": "Morning reminders follow Fajr.",
+    "ar": "تتبع تذكيرات الصباح وقت الفجر.",
+    "ur": "صبح کی یاد دہانی فجر کے وقت کے مطابق ہوتی ہے۔",
+    "id": "Pengingat pagi mengikuti waktu Subuh.",
+    "description": "Explains that the morning reminder has a fixed anchor."
+  },
+  "adhkarReminderAfter": {
+    "en": "{minutes} min after {prayer}",
+    "ar": "بعد {prayer} بـ {minutes} دقيقة",
+    "ur": "{prayer} کے {minutes} منٹ بعد",
+    "id": "{minutes} menit setelah {prayer}",
+    "description": "Reminder timing, positive offset.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarReminderBefore": {
+    "en": "{minutes} min before {prayer}",
+    "ar": "قبل {prayer} بـ {minutes} دقيقة",
+    "ur": "{prayer} سے {minutes} منٹ پہلے",
+    "id": "{minutes} menit sebelum {prayer}",
+    "description": "Reminder timing, negative offset.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarReminderAt": {
+    "en": "At {prayer} time",
+    "ar": "عند وقت {prayer}",
+    "ur": "{prayer} کے وقت",
+    "id": "Pada waktu {prayer}",
+    "description": "Reminder timing, zero offset.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarReminderEarlier": {
+    "en": "5 minutes earlier",
+    "ar": "قبل 5 دقائق",
+    "ur": "5 منٹ پہلے",
+    "id": "5 menit lebih awal",
+    "description": "Tooltip of the button that moves a reminder earlier."
+  },
+  "adhkarReminderLater": {
+    "en": "5 minutes later",
+    "ar": "بعد 5 دقائق",
+    "ur": "5 منٹ بعد",
+    "id": "5 menit lebih lambat",
+    "description": "Tooltip of the button that moves a reminder later."
+  },
+  "adhkarReminderNote": {
+    "en": "Reminders are notifications on this device. They follow your prayer times, so they move with your location and calculation method.",
+    "ar": "التذكيرات إشعارات على هذا الجهاز، وهي تتبع أوقات صلاتك فتتغير بتغير موقعك وطريقة الحساب.",
+    "ur": "یاد دہانیاں اس آلے پر نوٹیفکیشن ہوتی ہیں۔ یہ آپ کی نماز کے اوقات کے مطابق ہوتی ہیں، اس لیے مقام اور حساب کے طریقے کے ساتھ بدل جاتی ہیں۔",
+    "id": "Pengingat berupa notifikasi di perangkat ini. Waktunya mengikuti waktu salat Anda, sehingga ikut berubah bersama lokasi dan metode perhitungan.",
+    "description": "Note at the bottom of the reminder settings."
+  },
+  "adhkarReminderSaveError": {
+    "en": "The reminder could not be saved.",
+    "ar": "تعذّر حفظ التذكير.",
+    "ur": "یاد دہانی محفوظ نہیں ہو سکی۔",
+    "id": "Pengingat tidak dapat disimpan.",
+    "description": "Shown when saving a reminder fails."
+  },
+  "adhkarCreditsTitle": {
+    "en": "Content sources and reviewers",
+    "ar": "مصادر المحتوى والمراجعون",
+    "ur": "مواد کے ماخذ اور جائزہ لینے والے",
+    "id": "Sumber konten dan peninjau",
+    "description": "Title of the credits screen and its entry in About."
+  },
+  "adhkarCreditsIntro": {
+    "en": "Every text lists where it comes from, its license and who reviewed it.",
+    "ar": "يُذكر لكل نص مصدره وترخيصه ومن راجعه.",
+    "ur": "ہر متن کے ساتھ اس کا ماخذ، لائسنس اور جائزہ لینے والے کا نام درج ہے۔",
+    "id": "Setiap teks mencantumkan sumbernya, lisensinya, dan siapa yang meninjaunya.",
+    "description": "Introduction on the credits screen."
+  },
+  "adhkarCreditsEmpty": {
+    "en": "This version of the app includes no adhkar texts, so there are no sources to list yet.",
+    "ar": "لا يتضمن هذا الإصدار نصوص أذكار، لذا لا توجد مصادر لعرضها بعد.",
+    "ur": "اس ورژن میں اذکار کے متن شامل نہیں ہیں، اس لیے فی الحال درج کرنے کے لیے کوئی ماخذ نہیں۔",
+    "id": "Versi ini belum menyertakan teks zikir, jadi belum ada sumber yang dicantumkan.",
+    "description": "Empty state of the credits screen."
+  },
+  "adhkarCreditsCount": {
+    "en": "Texts listed: {count}",
+    "ar": "عدد النصوص المدرجة: {count}",
+    "ur": "درج متون کی تعداد: {count}",
+    "id": "Jumlah teks tercantum: {count}",
+    "description": "Subtitle of the credits entry in About.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarCreditEntry": {
+    "en": "Entry {order}: {reference}",
+    "ar": "الذكر {order}: {reference}",
+    "ur": "ذکر {order}: {reference}",
+    "id": "Zikir {order}: {reference}",
+    "description": "Heading of one text in the credits list.",
+    "placeholders": {
+      "order": {
+        "type": "int"
+      },
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarCreditSource": {
+    "en": "Source: {source}. License: {license}.",
+    "ar": "المصدر: {source}. الترخيص: {license}.",
+    "ur": "ماخذ: {source}۔ لائسنس: {license}۔",
+    "id": "Sumber: {source}. Lisensi: {license}.",
+    "description": "Source and license of one text.",
+    "placeholders": {
+      "source": {
+        "type": "String"
+      },
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarCreditReviewer": {
+    "en": "Reviewed by {reviewer} on {date}.",
+    "ar": "راجعه {reviewer} بتاريخ {date}.",
+    "ur": "جائزہ: {reviewer}، تاریخ: {date}۔",
+    "id": "Ditinjau oleh {reviewer} pada {date}.",
+    "description": "Reviewer and review date of one text.",
+    "placeholders": {
+      "reviewer": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  }
+}

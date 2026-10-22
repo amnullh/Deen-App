@@ -1,0 +1,29 @@
+{
+  "brand": "oneplus",
+  "steps": {
+    "en": [
+      "Open Settings, then Battery, then Battery optimization, and find Deen App.",
+      "Choose Don't optimize for Deen App.",
+      "Open Settings, then Apps, then App management, then Deen App, then Battery usage, and allow background activity.",
+      "In the recent apps screen, tap the menu on the Deen App card and choose Lock, so the system does not close it."
+    ],
+    "ar": [
+      "افتح الإعدادات ثم البطارية ثم تحسين البطارية، وابحث عن Deen App.",
+      "اختر «عدم التحسين» لتطبيق Deen App.",
+      "افتح الإعدادات ثم التطبيقات ثم إدارة التطبيقات ثم Deen App ثم استخدام البطارية، واسمح بالنشاط في الخلفية.",
+      "في شاشة التطبيقات الأخيرة، اضغط على قائمة بطاقة Deen App واختر «قفل» كي لا يغلقه النظام."
+    ],
+    "ur": [
+      "ترتیبات کھولیں، پھر بیٹری، پھر بیٹری آپٹیمائزیشن، اور Deen App تلاش کریں۔",
+      "Deen App کے لیے «آپٹیمائز نہ کریں» منتخب کریں۔",
+      "ترتیبات کھولیں، پھر ایپس، پھر ایپ مینجمنٹ، پھر Deen App، پھر بیٹری کا استعمال، اور پس منظر کی سرگرمی کی اجازت دیں۔",
+      "حالیہ ایپس کی اسکرین میں Deen App کے کارڈ کا مینو دبائیں اور «لاک» منتخب کریں تاکہ سسٹم اسے بند نہ کرے۔"
+    ],
+    "id": [
+      "Buka Pengaturan, lalu Baterai, lalu Optimalisasi baterai, dan cari Deen App.",
+      "Pilih Jangan optimalkan untuk Deen App.",
+      "Buka Pengaturan, lalu Aplikasi, lalu Manajemen aplikasi, lalu Deen App, lalu Penggunaan baterai, dan izinkan aktivitas latar belakang.",
+      "Di layar aplikasi terbaru, ketuk menu pada kartu Deen App dan pilih Kunci agar sistem tidak menutupnya."
+    ]
+  }
+}

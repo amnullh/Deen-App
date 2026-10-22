@@ -1,0 +1,278 @@
+{
+  "tasbihTitle": {
+    "en": "Tasbih",
+    "ar": "المسبحة",
+    "ur": "تسبیح",
+    "id": "Tasbih",
+    "description": "Title of the Tasbih counter screen and its entry on the home screen."
+  },
+  "tasbihEntryHint": {
+    "en": "Count your dhikr",
+    "ar": "عُدّ أذكارك",
+    "ur": "اپنا ذکر گنیں",
+    "id": "Hitung zikir Anda",
+    "description": "One-line hint under the Tasbih entry on the home screen."
+  },
+  "tasbihCountLabel": {
+    "en": "Count: {count} of {target}",
+    "ar": "العدد: {count} من {target}",
+    "ur": "گنتی: {target} میں سے {count}",
+    "id": "Hitungan: {count} dari {target}",
+    "description": "Screen-reader label of the large tap target.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihCountHint": {
+    "en": "Adds one to the count",
+    "ar": "يضيف واحدًا إلى العدد",
+    "ur": "گنتی میں ایک کا اضافہ کرتا ہے",
+    "id": "Menambah satu hitungan",
+    "description": "Screen-reader hint of the large tap target."
+  },
+  "tasbihOfTarget": {
+    "en": "of {target}",
+    "ar": "من {target}",
+    "ur": "{target} میں سے",
+    "id": "dari {target}",
+    "description": "Shown under the large count, for example 'of 33'.",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTargetHeading": {
+    "en": "Target",
+    "ar": "الهدف",
+    "ur": "ہدف",
+    "id": "Target",
+    "description": "Heading above the target choices."
+  },
+  "tasbihTargetOptionLabel": {
+    "en": "Target {target}",
+    "ar": "الهدف {target}",
+    "ur": "ہدف {target}",
+    "id": "Target {target}",
+    "description": "Screen-reader label of a target choice (33 or 99).",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTargetCustom": {
+    "en": "Custom",
+    "ar": "مخصص",
+    "ur": "اپنی مرضی",
+    "id": "Kustom",
+    "description": "Choice that opens the custom target dialog."
+  },
+  "tasbihTargetCustomLabel": {
+    "en": "Custom target: {target}",
+    "ar": "هدف مخصص: {target}",
+    "ur": "اپنی مرضی کا ہدف: {target}",
+    "id": "Target kustom: {target}",
+    "description": "Screen-reader label of the custom choice when a custom target is active.",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTargetCustomTitle": {
+    "en": "Custom target",
+    "ar": "هدف مخصص",
+    "ur": "اپنی مرضی کا ہدف",
+    "id": "Target kustom",
+    "description": "Title of the custom target dialog."
+  },
+  "tasbihTargetCustomField": {
+    "en": "Target (1 to 100000)",
+    "ar": "الهدف (من 1 إلى 100000)",
+    "ur": "ہدف (1 سے 100000)",
+    "id": "Target (1 sampai 100000)",
+    "description": "Label of the number field in the custom target dialog."
+  },
+  "tasbihTargetInvalid": {
+    "en": "Enter a whole number from 1 to 100000.",
+    "ar": "أدخل عددًا صحيحًا من 1 إلى 100000.",
+    "ur": "1 سے 100000 تک کوئی پورا عدد درج کریں۔",
+    "id": "Masukkan bilangan bulat dari 1 sampai 100000.",
+    "description": "Error under the custom target field."
+  },
+  "tasbihSave": {
+    "en": "Save",
+    "ar": "حفظ",
+    "ur": "محفوظ کریں",
+    "id": "Simpan",
+    "description": "Confirms the custom target."
+  },
+  "tasbihCancel": {
+    "en": "Cancel",
+    "ar": "إلغاء",
+    "ur": "منسوخ کریں",
+    "id": "Batal",
+    "description": "Dismisses a dialog without changes."
+  },
+  "tasbihRounds": {
+    "en": "Rounds completed: {rounds}",
+    "ar": "الجولات المكتملة: {rounds}",
+    "ur": "مکمل دور: {rounds}",
+    "id": "Putaran selesai: {rounds}",
+    "description": "How many times the target was reached since the last reset.",
+    "placeholders": {
+      "rounds": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTodayTotal": {
+    "en": "Today: {total}",
+    "ar": "اليوم: {total}",
+    "ur": "آج: {total}",
+    "id": "Hari ini: {total}",
+    "description": "Total counted today, across resets.",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTargetReached": {
+    "en": "Target of {target} reached",
+    "ar": "تم بلوغ الهدف {target}",
+    "ur": "{target} کا ہدف پورا ہو گیا",
+    "id": "Target {target} tercapai",
+    "description": "Announced to screen readers when the count reaches the target.",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihReset": {
+    "en": "Reset",
+    "ar": "إعادة تعيين",
+    "ur": "ری سیٹ",
+    "id": "Atur ulang",
+    "description": "Button that sets the count back to zero (after confirmation)."
+  },
+  "tasbihResetTitle": {
+    "en": "Reset the counter?",
+    "ar": "إعادة تعيين العداد؟",
+    "ur": "کاؤنٹر ری سیٹ کریں؟",
+    "id": "Atur ulang penghitung?",
+    "description": "Title of the reset confirmation dialog."
+  },
+  "tasbihResetBody": {
+    "en": "The count goes back to 0. Your daily totals are kept.",
+    "ar": "سيعود العدد إلى 0. تبقى مجاميعك اليومية محفوظة.",
+    "ur": "گنتی 0 پر واپس آ جائے گی۔ آپ کے روزانہ کے مجموعے محفوظ رہیں گے۔",
+    "id": "Hitungan kembali ke 0. Total harian Anda tetap tersimpan.",
+    "description": "Body of the reset confirmation dialog."
+  },
+  "tasbihHistoryTitle": {
+    "en": "History",
+    "ar": "السجل",
+    "ur": "تاریخچہ",
+    "id": "Riwayat",
+    "description": "Heading of the daily totals list."
+  },
+  "tasbihHistoryEmpty": {
+    "en": "No counts yet. Your daily totals appear here.",
+    "ar": "لا توجد عدّات بعد. ستظهر مجاميعك اليومية هنا.",
+    "ur": "ابھی کوئی گنتی نہیں۔ آپ کے روزانہ کے مجموعے یہاں نظر آئیں گے۔",
+    "id": "Belum ada hitungan. Total harian Anda muncul di sini.",
+    "description": "Shown when there are no daily totals."
+  },
+  "tasbihOptionsTitle": {
+    "en": "Options",
+    "ar": "الخيارات",
+    "ur": "اختیارات",
+    "id": "Opsi",
+    "description": "Heading of the switches below the counter."
+  },
+  "tasbihHaptics": {
+    "en": "Vibrate on each count",
+    "ar": "اهتزاز عند كل عدّة",
+    "ur": "ہر گنتی پر وائبریشن",
+    "id": "Getar pada setiap hitungan",
+    "description": "Switch label."
+  },
+  "tasbihSound": {
+    "en": "Tap sound",
+    "ar": "صوت النقر",
+    "ur": "ٹیپ کی آواز",
+    "id": "Suara ketukan",
+    "description": "Switch label for the optional tick sound."
+  },
+  "tasbihKeepAwake": {
+    "en": "Keep the screen on",
+    "ar": "إبقاء الشاشة مضاءة",
+    "ur": "اسکرین کو روشن رکھیں",
+    "id": "Biarkan layar menyala",
+    "description": "Switch label; applies only while this screen is open."
+  },
+  "tasbihVolumeKeys": {
+    "en": "Count with the volume keys",
+    "ar": "العدّ بمفاتيح الصوت",
+    "ur": "والیوم بٹنوں سے گنتی",
+    "id": "Hitung dengan tombol volume",
+    "description": "Switch label, Android only."
+  },
+  "tasbihVolumeKeysHint": {
+    "en": "While this screen is open the volume keys count instead of changing the volume.",
+    "ar": "أثناء فتح هذه الشاشة تعدّ مفاتيح الصوت بدلًا من تغيير مستوى الصوت.",
+    "ur": "جب تک یہ اسکرین کھلی ہے، والیوم بٹن آواز بدلنے کے بجائے گنتی کریں گے۔",
+    "id": "Saat layar ini terbuka, tombol volume menghitung dan tidak mengubah volume.",
+    "description": "Explains the volume key option."
+  },
+  "tasbihLock": {
+    "en": "Lock touches on the counter",
+    "ar": "قفل اللمس على العداد",
+    "ur": "کاؤنٹر پر لمس بند کریں",
+    "id": "Kunci sentuhan pada penghitung",
+    "description": "Switch label for the tap lock."
+  },
+  "tasbihLockHint": {
+    "en": "A stray touch will not add a count. The volume keys still count.",
+    "ar": "لن يضيف اللمس العرضي عدّة. تبقى مفاتيح الصوت تعدّ.",
+    "ur": "غلطی سے لگنے والا لمس گنتی نہیں بڑھائے گا۔ والیوم بٹن پھر بھی گنتی کریں گے۔",
+    "id": "Sentuhan tidak sengaja tidak menambah hitungan. Tombol volume tetap menghitung.",
+    "description": "Explains the tap lock."
+  },
+  "tasbihLockedMessage": {
+    "en": "Locked. Touches on the counter are ignored.",
+    "ar": "مقفل. يتم تجاهل اللمس على العداد.",
+    "ur": "مقفل۔ کاؤنٹر پر لمس نظر انداز کیا جاتا ہے۔",
+    "id": "Terkunci. Sentuhan pada penghitung diabaikan.",
+    "description": "Shown on the counter while the tap lock is on."
+  },
+  "tasbihUnlock": {
+    "en": "Hold to unlock",
+    "ar": "اضغط مطولًا لفتح القفل",
+    "ur": "کھولنے کے لیے دبائے رکھیں",
+    "id": "Tahan untuk membuka kunci",
+    "description": "Button that turns the tap lock off with a long press."
+  },
+  "tasbihUnlockPressHint": {
+    "en": "Press and hold the button to unlock.",
+    "ar": "اضغط على الزر مطولًا لفتح القفل.",
+    "ur": "کھولنے کے لیے بٹن کو دبائے رکھیں۔",
+    "id": "Tekan dan tahan tombol untuk membuka kunci.",
+    "description": "Message shown after a short press on the unlock button."
+  },
+  "tasbihSaveError": {
+    "en": "Could not save the count. Try again.",
+    "ar": "تعذّر حفظ العدد. حاول مرة أخرى.",
+    "ur": "گنتی محفوظ نہیں ہو سکی۔ دوبارہ کوشش کریں۔",
+    "id": "Hitungan tidak dapat disimpan. Coba lagi.",
+    "description": "Plain error message when the database write fails."
+  }
+}

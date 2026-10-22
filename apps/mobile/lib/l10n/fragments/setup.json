@@ -1,0 +1,561 @@
+{
+  "setupTitle": {
+    "en": "Set up Deen App",
+    "ar": "إعداد Deen App",
+    "ur": "Deen App کی ترتیب",
+    "id": "Siapkan Deen App",
+    "description": "Title of the first-run setup app bar."
+  },
+  "setupProgress": {
+    "en": "Step {current} of {total}",
+    "ar": "الخطوة {current} من {total}",
+    "ur": "مرحلہ {current} از {total}",
+    "id": "Langkah {current} dari {total}",
+    "description": "Progress through setup.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "setupNext": {
+    "en": "Next",
+    "ar": "التالي",
+    "ur": "آگے",
+    "id": "Berikutnya"
+  },
+  "setupBack": {
+    "en": "Back",
+    "ar": "رجوع",
+    "ur": "پیچھے",
+    "id": "Kembali"
+  },
+  "setupNotNow": {
+    "en": "Not now",
+    "ar": "ليس الآن",
+    "ur": "ابھی نہیں",
+    "id": "Nanti saja"
+  },
+  "setupFinish": {
+    "en": "Finish setup",
+    "ar": "إنهاء الإعداد",
+    "ur": "سیٹ اپ مکمل کریں",
+    "id": "Selesaikan pengaturan"
+  },
+  "setupLanguageTitle": {
+    "en": "Choose your language",
+    "ar": "اختر لغتك",
+    "ur": "اپنی زبان منتخب کریں",
+    "id": "Pilih bahasa Anda"
+  },
+  "setupLanguageBody": {
+    "en": "You can change this at any time in settings.",
+    "ar": "يمكنك تغيير ذلك في أي وقت من الإعدادات.",
+    "ur": "آپ اسے کسی بھی وقت ترتیبات میں بدل سکتے ہیں۔",
+    "id": "Anda dapat mengubahnya kapan saja di pengaturan."
+  },
+  "languageNameEn": {
+    "en": "English",
+    "ar": "English",
+    "ur": "English",
+    "id": "English",
+    "description": "Name of the language in itself; never translated."
+  },
+  "languageNameAr": {
+    "en": "العربية",
+    "ar": "العربية",
+    "ur": "العربية",
+    "id": "العربية",
+    "description": "Name of the language in itself; never translated."
+  },
+  "languageNameUr": {
+    "en": "اردو",
+    "ar": "اردو",
+    "ur": "اردو",
+    "id": "اردو",
+    "description": "Name of the language in itself; never translated."
+  },
+  "languageNameId": {
+    "en": "Bahasa Indonesia",
+    "ar": "Bahasa Indonesia",
+    "ur": "Bahasa Indonesia",
+    "id": "Bahasa Indonesia",
+    "description": "Name of the language in itself; never translated."
+  },
+  "setupLocationTitle": {
+    "en": "Your location",
+    "ar": "موقعك",
+    "ur": "آپ کا مقام",
+    "id": "Lokasi Anda"
+  },
+  "setupLocationPrivacy": {
+    "en": "Your location stays on this device. It is never sent anywhere, and it is only used to calculate prayer times.",
+    "ar": "يبقى موقعك على هذا الجهاز. لا يُرسل إلى أي جهة، ويُستخدم فقط لحساب مواقيت الصلاة.",
+    "ur": "آپ کا مقام اسی ڈیوائس پر رہتا ہے۔ اسے کہیں نہیں بھیجا جاتا، اور یہ صرف نماز کے اوقات نکالنے کے لیے استعمال ہوتا ہے۔",
+    "id": "Lokasi Anda tetap berada di perangkat ini. Lokasi tidak pernah dikirim ke mana pun dan hanya dipakai untuk menghitung waktu salat.",
+    "description": "Plain statement that location never leaves the device."
+  },
+  "setupLocationPrecise": {
+    "en": "Use my precise location",
+    "ar": "استخدام موقعي الدقيق",
+    "ur": "میرا درست مقام استعمال کریں",
+    "id": "Gunakan lokasi tepat saya"
+  },
+  "setupLocationApproximate": {
+    "en": "Use my approximate location",
+    "ar": "استخدام موقعي التقريبي",
+    "ur": "میرا تخمینی مقام استعمال کریں",
+    "id": "Gunakan lokasi perkiraan saya"
+  },
+  "setupLocationApproximateHint": {
+    "en": "Approximate rounds your position to about 10 km. Prayer times change by well under a minute.",
+    "ar": "التقريبي يقرّب موقعك إلى نحو 10 كم. تتغير المواقيت بأقل بكثير من دقيقة.",
+    "ur": "تخمینی مقام آپ کی جگہ کو تقریباً 10 کلومیٹر تک گول کر دیتا ہے۔ اوقات میں ایک منٹ سے بہت کم فرق آتا ہے۔",
+    "id": "Perkiraan membulatkan posisi Anda hingga sekitar 10 km. Waktu salat berubah jauh kurang dari satu menit."
+  },
+  "setupLocationSearchLabel": {
+    "en": "Or search for a city",
+    "ar": "أو ابحث عن مدينة",
+    "ur": "یا کسی شہر کو تلاش کریں",
+    "id": "Atau cari kota"
+  },
+  "setupLocationSearchHint": {
+    "en": "City name",
+    "ar": "اسم المدينة",
+    "ur": "شہر کا نام",
+    "id": "Nama kota"
+  },
+  "setupLocationSearchEmpty": {
+    "en": "No city found. Check the spelling or try another name.",
+    "ar": "لم يتم العثور على مدينة. تحقق من الإملاء أو جرّب اسمًا آخر.",
+    "ur": "کوئی شہر نہیں ملا۔ ہجے دیکھیں یا کوئی اور نام آزمائیں۔",
+    "id": "Kota tidak ditemukan. Periksa ejaan atau coba nama lain."
+  },
+  "setupLocationOfflineNote": {
+    "en": "The city list is stored in the app, so searching works without internet. You can skip sharing your location and just pick a city.",
+    "ar": "قائمة المدن مخزنة في التطبيق، فيعمل البحث دون إنترنت. يمكنك عدم مشاركة موقعك واختيار مدينة فقط.",
+    "ur": "شہروں کی فہرست ایپ میں محفوظ ہے، اس لیے تلاش انٹرنیٹ کے بغیر کام کرتی ہے۔ آپ مقام شیئر کیے بغیر صرف شہر منتخب کر سکتے ہیں۔",
+    "id": "Daftar kota tersimpan di aplikasi, jadi pencarian bekerja tanpa internet. Anda bisa melewati berbagi lokasi dan cukup memilih kota."
+  },
+  "setupLocationFinding": {
+    "en": "Finding your location…",
+    "ar": "جارٍ تحديد موقعك…",
+    "ur": "آپ کا مقام تلاش کیا جا رہا ہے…",
+    "id": "Mencari lokasi Anda…"
+  },
+  "setupLocationSelected": {
+    "en": "Selected: {name}",
+    "ar": "المحدد: {name}",
+    "ur": "منتخب: {name}",
+    "id": "Dipilih: {name}",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "setupLocationCurrentName": {
+    "en": "Current location",
+    "ar": "الموقع الحالي",
+    "ur": "موجودہ مقام",
+    "id": "Lokasi saat ini",
+    "description": "Saved name for a place read from the phone's position."
+  },
+  "setupLocationApproximateName": {
+    "en": "Approximate location",
+    "ar": "الموقع التقريبي",
+    "ur": "تخمینی مقام",
+    "id": "Lokasi perkiraan",
+    "description": "Saved name for a rounded position."
+  },
+  "setupLocationNeeded": {
+    "en": "Choose a location or a city to continue.",
+    "ar": "اختر موقعًا أو مدينة للمتابعة.",
+    "ur": "جاری رکھنے کے لیے مقام یا شہر منتخب کریں۔",
+    "id": "Pilih lokasi atau kota untuk melanjutkan."
+  },
+  "setupProblemLocationDenied": {
+    "en": "Location was not allowed. Pick a city from the list instead, or allow location in app settings.",
+    "ar": "لم يُسمح بالوصول إلى الموقع. اختر مدينة من القائمة بدلًا من ذلك، أو اسمح بالموقع من إعدادات التطبيق.",
+    "ur": "مقام کی اجازت نہیں ملی۔ اس کے بجائے فہرست سے شہر منتخب کریں، یا ایپ کی ترتیبات میں مقام کی اجازت دیں۔",
+    "id": "Lokasi tidak diizinkan. Pilih kota dari daftar, atau izinkan lokasi di pengaturan aplikasi."
+  },
+  "setupProblemLocationTimeout": {
+    "en": "Your location could not be found in time. Try again, or pick a city from the list.",
+    "ar": "تعذّر تحديد موقعك في الوقت المناسب. حاول مرة أخرى أو اختر مدينة من القائمة.",
+    "ur": "آپ کا مقام بروقت نہیں مل سکا۔ دوبارہ کوشش کریں یا فہرست سے شہر منتخب کریں۔",
+    "id": "Lokasi Anda tidak dapat ditemukan tepat waktu. Coba lagi, atau pilih kota dari daftar."
+  },
+  "setupProblemLocationUnavailable": {
+    "en": "Location is not available on this phone right now. Pick a city from the list.",
+    "ar": "خدمة الموقع غير متاحة على هذا الهاتف حاليًا. اختر مدينة من القائمة.",
+    "ur": "اس فون پر فی الحال مقام دستیاب نہیں۔ فہرست سے شہر منتخب کریں۔",
+    "id": "Lokasi tidak tersedia di ponsel ini saat ini. Pilih kota dari daftar."
+  },
+  "setupProblemZoneUnknown": {
+    "en": "Your phone did not report a time zone. Pick a city from the list.",
+    "ar": "لم يُبلغ هاتفك عن منطقة زمنية. اختر مدينة من القائمة.",
+    "ur": "آپ کے فون نے ٹائم زون نہیں بتایا۔ فہرست سے شہر منتخب کریں۔",
+    "id": "Ponsel Anda tidak melaporkan zona waktu. Pilih kota dari daftar."
+  },
+  "setupProblemSaveFailed": {
+    "en": "Your choice could not be saved. Please try again.",
+    "ar": "تعذّر حفظ اختيارك. يرجى المحاولة مرة أخرى.",
+    "ur": "آپ کا انتخاب محفوظ نہیں ہو سکا۔ براہِ کرم دوبارہ کوشش کریں۔",
+    "id": "Pilihan Anda tidak dapat disimpan. Silakan coba lagi."
+  },
+  "setupOpenAppSettings": {
+    "en": "Open app settings",
+    "ar": "فتح إعدادات التطبيق",
+    "ur": "ایپ کی ترتیبات کھولیں",
+    "id": "Buka pengaturan aplikasi"
+  },
+  "setupMethodTitle": {
+    "en": "Calculation method",
+    "ar": "طريقة الحساب",
+    "ur": "حساب کا طریقہ",
+    "id": "Metode perhitungan"
+  },
+  "setupMethodSuggested": {
+    "en": "Suggested for your region: {method}",
+    "ar": "المقترحة لمنطقتك: {method}",
+    "ur": "آپ کے علاقے کے لیے تجویز کردہ: {method}",
+    "id": "Disarankan untuk wilayah Anda: {method}",
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "setupMethodGeneral": {
+    "en": "There is no regional default for your location, so the general Muslim World League method is suggested.",
+    "ar": "لا توجد طريقة افتراضية لمنطقتك، لذلك تُقترح الطريقة العامة لرابطة العالم الإسلامي.",
+    "ur": "آپ کے مقام کے لیے کوئی علاقائی طریقہ مقرر نہیں، اس لیے عمومی مسلم ورلڈ لیگ کا طریقہ تجویز کیا گیا ہے۔",
+    "id": "Tidak ada metode bawaan untuk lokasi Anda, jadi metode umum Liga Dunia Muslim disarankan."
+  },
+  "setupMethodChange": {
+    "en": "You can choose a different method:",
+    "ar": "يمكنك اختيار طريقة أخرى:",
+    "ur": "آپ کوئی دوسرا طریقہ منتخب کر سکتے ہیں:",
+    "id": "Anda dapat memilih metode lain:"
+  },
+  "setupAsrTitle": {
+    "en": "Asr prayer",
+    "ar": "صلاة العصر",
+    "ur": "نمازِ عصر",
+    "id": "Salat Asar"
+  },
+  "setupAsrIntro": {
+    "en": "Choose the school you follow for the start of Asr. Standard is already selected.",
+    "ar": "اختر المذهب الذي تتبعه في بداية وقت العصر. الخيار «القياسي» محدد مسبقًا.",
+    "ur": "عصر کے آغاز کے لیے وہ مکتبِ فکر منتخب کریں جس کی آپ پیروی کرتے ہیں۔ «معیاری» پہلے سے منتخب ہے۔",
+    "id": "Pilih mazhab yang Anda ikuti untuk awal waktu Asar. Standar sudah dipilih."
+  },
+  "asrStandardTitle": {
+    "en": "Standard",
+    "ar": "القياسي",
+    "ur": "معیاری",
+    "id": "Standar"
+  },
+  "asrStandardBody": {
+    "en": "Asr starts when an object's shadow is as long as the object itself (used by the Shafi'i, Maliki and Hanbali schools).",
+    "ar": "يبدأ العصر عندما يصبح ظل الشيء مساويًا لطوله (يعتمد عليه الشافعية والمالكية والحنابلة).",
+    "ur": "عصر اس وقت شروع ہوتی ہے جب کسی چیز کا سایہ اس کی اپنی لمبائی کے برابر ہو جائے (شافعی، مالکی اور حنبلی مکاتب اسی پر ہیں)۔",
+    "id": "Asar dimulai saat panjang bayangan benda sama dengan panjang bendanya (dipakai mazhab Syafi'i, Maliki, dan Hanbali)."
+  },
+  "asrHanafiTitle": {
+    "en": "Hanafi",
+    "ar": "الحنفي",
+    "ur": "حنفی",
+    "id": "Hanafi"
+  },
+  "asrHanafiBody": {
+    "en": "Asr starts when an object's shadow is twice as long as the object, so Asr begins later (used by the Hanafi school).",
+    "ar": "يبدأ العصر عندما يصبح ظل الشيء ضعف طوله، فيبدأ العصر متأخرًا (يعتمد عليه الحنفية).",
+    "ur": "عصر اس وقت شروع ہوتی ہے جب سایہ چیز کی لمبائی سے دوگنا ہو جائے، اس لیے عصر دیر سے شروع ہوتی ہے (حنفی مکتب اسی پر ہے)۔",
+    "id": "Asar dimulai saat bayangan benda dua kali panjang bendanya, sehingga Asar dimulai lebih lambat (dipakai mazhab Hanafi)."
+  },
+  "setupNotificationsTitle": {
+    "en": "Prayer alerts",
+    "ar": "تنبيهات الصلاة",
+    "ur": "نماز کے الرٹس",
+    "id": "Peringatan salat"
+  },
+  "setupNotificationsBody": {
+    "en": "To remind you at prayer times, Deen App needs permission to show notifications. Alerts are made on your phone; nothing is sent over the internet.",
+    "ar": "لتذكيرك في أوقات الصلاة يحتاج Deen App إلى إذن لعرض الإشعارات. تُنشأ التنبيهات على هاتفك، ولا يُرسل شيء عبر الإنترنت.",
+    "ur": "نماز کے اوقات پر یاد دہانی کے لیے Deen App کو نوٹیفکیشن دکھانے کی اجازت چاہیے۔ الرٹس آپ کے فون پر بنتے ہیں؛ انٹرنیٹ پر کچھ نہیں بھیجا جاتا۔",
+    "id": "Untuk mengingatkan Anda pada waktu salat, Deen App memerlukan izin menampilkan notifikasi. Peringatan dibuat di ponsel Anda; tidak ada yang dikirim lewat internet.",
+    "description": "Explanation shown before the notification permission prompt."
+  },
+  "setupNotificationsAllow": {
+    "en": "Allow notifications",
+    "ar": "السماح بالإشعارات",
+    "ur": "نوٹیفکیشن کی اجازت دیں",
+    "id": "Izinkan notifikasi"
+  },
+  "setupNotificationsGranted": {
+    "en": "Notifications are allowed.",
+    "ar": "الإشعارات مسموح بها.",
+    "ur": "نوٹیفکیشن کی اجازت ہے۔",
+    "id": "Notifikasi diizinkan."
+  },
+  "setupNotificationsDenied": {
+    "en": "Notifications are off, so prayer alerts will not appear. You can allow them later in app settings.",
+    "ar": "الإشعارات متوقفة، لذلك لن تظهر تنبيهات الصلاة. يمكنك السماح بها لاحقًا من إعدادات التطبيق.",
+    "ur": "نوٹیفکیشن بند ہیں، اس لیے نماز کے الرٹس نظر نہیں آئیں گے۔ آپ بعد میں ایپ کی ترتیبات میں اجازت دے سکتے ہیں۔",
+    "id": "Notifikasi mati, sehingga peringatan salat tidak akan muncul. Anda dapat mengizinkannya nanti di pengaturan aplikasi."
+  },
+  "setupExactTitle": {
+    "en": "Exact alert timing",
+    "ar": "توقيت التنبيه الدقيق",
+    "ur": "الرٹ کا درست وقت",
+    "id": "Ketepatan waktu peringatan"
+  },
+  "setupExactBody": {
+    "en": "Android can ring your alert at the exact prayer time only if you allow exact alarms. Without it, alerts still arrive but can be a few minutes late.",
+    "ar": "لا يستطيع أندرويد تشغيل التنبيه في وقت الصلاة بالضبط إلا إذا سمحت بالمنبّهات الدقيقة. وبدونها تصل التنبيهات لكنها قد تتأخر بضع دقائق.",
+    "ur": "اینڈرائیڈ الرٹ کو عین نماز کے وقت پر تبھی بجا سکتا ہے جب آپ درست الارم کی اجازت دیں۔ اس کے بغیر الرٹس آئیں گے مگر چند منٹ دیر سے ہو سکتے ہیں۔",
+    "id": "Android dapat membunyikan peringatan tepat pada waktu salat hanya jika Anda mengizinkan alarm tepat waktu. Tanpa itu, peringatan tetap datang tetapi bisa terlambat beberapa menit.",
+    "description": "Explanation of the Android exact-alarm permission."
+  },
+  "setupExactOpen": {
+    "en": "Open alarm settings",
+    "ar": "فتح إعدادات المنبّه",
+    "ur": "الارم کی ترتیبات کھولیں",
+    "id": "Buka pengaturan alarm"
+  },
+  "setupExactCheck": {
+    "en": "I changed it, check again",
+    "ar": "لقد غيّرته، تحقق مرة أخرى",
+    "ur": "میں نے بدل دیا، دوبارہ جانچیں",
+    "id": "Sudah saya ubah, periksa lagi"
+  },
+  "setupExactGranted": {
+    "en": "Exact alarms are allowed.",
+    "ar": "المنبّهات الدقيقة مسموح بها.",
+    "ur": "درست الارم کی اجازت ہے۔",
+    "id": "Alarm tepat waktu diizinkan."
+  },
+  "setupExactDenied": {
+    "en": "Exact alarms are off. Alerts will still arrive but may be a few minutes late. The Reliability check shows this.",
+    "ar": "المنبّهات الدقيقة متوقفة. ستصل التنبيهات لكنها قد تتأخر بضع دقائق. يعرض فحص الموثوقية ذلك.",
+    "ur": "درست الارم بند ہیں۔ الرٹس پھر بھی آئیں گے مگر چند منٹ دیر سے ہو سکتے ہیں۔ اعتماد کی جانچ میں یہ دکھایا جاتا ہے۔",
+    "id": "Alarm tepat waktu mati. Peringatan tetap datang tetapi bisa terlambat beberapa menit. Pemeriksaan keandalan menunjukkan hal ini."
+  },
+  "setupExactContinue": {
+    "en": "Continue without it",
+    "ar": "المتابعة بدونها",
+    "ur": "اس کے بغیر جاری رکھیں",
+    "id": "Lanjut tanpa itu"
+  },
+  "setupBatteryTitle": {
+    "en": "Keep alerts reliable",
+    "ar": "حافظ على موثوقية التنبيهات",
+    "ur": "الرٹس کو قابلِ اعتماد رکھیں",
+    "id": "Jaga peringatan tetap andal"
+  },
+  "setupBatteryBody": {
+    "en": "Some phones close apps in the background to save battery, which can delay or stop alerts. Choose your phone brand and follow the steps.",
+    "ar": "تغلق بعض الهواتف التطبيقات في الخلفية لتوفير البطارية، مما قد يؤخر التنبيهات أو يوقفها. اختر ماركة هاتفك واتبع الخطوات.",
+    "ur": "کچھ فون بیٹری بچانے کے لیے ایپس کو پس منظر میں بند کر دیتے ہیں، جس سے الرٹس میں تاخیر ہو سکتی ہے یا وہ رک سکتے ہیں۔ اپنے فون کا برانڈ منتخب کریں اور مراحل پر عمل کریں۔",
+    "id": "Beberapa ponsel menutup aplikasi di latar belakang untuk menghemat baterai, sehingga peringatan bisa tertunda atau berhenti. Pilih merek ponsel Anda dan ikuti langkahnya."
+  },
+  "setupBatteryBrandLabel": {
+    "en": "Your phone brand",
+    "ar": "ماركة هاتفك",
+    "ur": "آپ کے فون کا برانڈ",
+    "id": "Merek ponsel Anda"
+  },
+  "setupBatteryOpenSettings": {
+    "en": "Open battery settings",
+    "ar": "فتح إعدادات البطارية",
+    "ur": "بیٹری کی ترتیبات کھولیں",
+    "id": "Buka pengaturan baterai"
+  },
+  "setupBatteryGuideUnavailable": {
+    "en": "The steps for this brand could not be loaded. Open the battery settings and allow Deen App to run in the background.",
+    "ar": "تعذّر تحميل خطوات هذه الماركة. افتح إعدادات البطارية واسمح لـ Deen App بالعمل في الخلفية.",
+    "ur": "اس برانڈ کے مراحل لوڈ نہیں ہو سکے۔ بیٹری کی ترتیبات کھولیں اور Deen App کو پس منظر میں چلنے کی اجازت دیں۔",
+    "id": "Langkah untuk merek ini tidak dapat dimuat. Buka pengaturan baterai dan izinkan Deen App berjalan di latar belakang."
+  },
+  "setupBatteryStep": {
+    "en": "Step {number}: {text}",
+    "ar": "الخطوة {number}: {text}",
+    "ur": "مرحلہ {number}: {text}",
+    "id": "Langkah {number}: {text}",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "oemBrandXiaomi": {
+    "en": "Xiaomi, Redmi, POCO",
+    "ar": "Xiaomi, Redmi, POCO",
+    "ur": "Xiaomi, Redmi, POCO",
+    "id": "Xiaomi, Redmi, POCO",
+    "description": "Brand names are not translated."
+  },
+  "oemBrandOppo": {
+    "en": "Oppo, realme",
+    "ar": "Oppo, realme",
+    "ur": "Oppo, realme",
+    "id": "Oppo, realme",
+    "description": "Brand names are not translated."
+  },
+  "oemBrandVivo": {
+    "en": "Vivo, iQOO",
+    "ar": "Vivo, iQOO",
+    "ur": "Vivo, iQOO",
+    "id": "Vivo, iQOO",
+    "description": "Brand names are not translated."
+  },
+  "oemBrandHuawei": {
+    "en": "Huawei, Honor",
+    "ar": "Huawei, Honor",
+    "ur": "Huawei, Honor",
+    "id": "Huawei, Honor",
+    "description": "Brand names are not translated."
+  },
+  "oemBrandSamsung": {
+    "en": "Samsung",
+    "ar": "Samsung",
+    "ur": "Samsung",
+    "id": "Samsung",
+    "description": "Brand names are not translated."
+  },
+  "oemBrandOneplus": {
+    "en": "OnePlus",
+    "ar": "OnePlus",
+    "ur": "OnePlus",
+    "id": "OnePlus",
+    "description": "Brand names are not translated."
+  },
+  "oemBrandOther": {
+    "en": "Another brand",
+    "ar": "ماركة أخرى",
+    "ur": "کوئی اور برانڈ",
+    "id": "Merek lain"
+  },
+  "setupPrivacyTitle": {
+    "en": "Your privacy",
+    "ar": "خصوصيتك",
+    "ur": "آپ کی رازداری",
+    "id": "Privasi Anda"
+  },
+  "setupPrivacyNoData": {
+    "en": "Deen App collects no personal data.",
+    "ar": "لا يجمع Deen App أي بيانات شخصية.",
+    "ur": "Deen App کوئی ذاتی ڈیٹا جمع نہیں کرتی۔",
+    "id": "Deen App tidak mengumpulkan data pribadi apa pun.",
+    "description": "Privacy summary: no personal data collected."
+  },
+  "setupPrivacyOnDevice": {
+    "en": "Your location, settings and alert history stay on this phone.",
+    "ar": "يبقى موقعك وإعداداتك وسجل تنبيهاتك على هذا الهاتف.",
+    "ur": "آپ کا مقام، ترتیبات اور الرٹس کی تاریخ اسی فون پر رہتی ہے۔",
+    "id": "Lokasi, pengaturan, dan riwayat peringatan Anda tetap di ponsel ini."
+  },
+  "setupPrivacyNoTracking": {
+    "en": "There are no accounts, no ads and no trackers, and the app works without an internet connection.",
+    "ar": "لا توجد حسابات ولا إعلانات ولا أدوات تتبّع، ويعمل التطبيق دون اتصال بالإنترنت.",
+    "ur": "کوئی اکاؤنٹ، اشتہار یا ٹریکر نہیں ہے، اور ایپ انٹرنیٹ کے بغیر چلتی ہے۔",
+    "id": "Tidak ada akun, iklan, atau pelacak, dan aplikasi bekerja tanpa koneksi internet."
+  },
+  "setupSummaryTitle": {
+    "en": "What will not work yet",
+    "ar": "ما الذي لن يعمل بعد",
+    "ur": "ابھی کیا کام نہیں کرے گا",
+    "id": "Yang belum akan berfungsi"
+  },
+  "setupSummaryAlerts": {
+    "en": "Prayer alerts will not appear because notifications are off.",
+    "ar": "لن تظهر تنبيهات الصلاة لأن الإشعارات متوقفة.",
+    "ur": "نماز کے الرٹس نظر نہیں آئیں گے کیونکہ نوٹیفکیشن بند ہیں۔",
+    "id": "Peringatan salat tidak akan muncul karena notifikasi mati."
+  },
+  "setupSummaryExact": {
+    "en": "Alerts may arrive a few minutes late because exact alarms are off.",
+    "ar": "قد تتأخر التنبيهات بضع دقائق لأن المنبّهات الدقيقة متوقفة.",
+    "ur": "الرٹس چند منٹ دیر سے آ سکتے ہیں کیونکہ درست الارم بند ہیں۔",
+    "id": "Peringatan bisa terlambat beberapa menit karena alarm tepat waktu mati."
+  },
+  "setupSummaryLocation": {
+    "en": "Your phone's location is off, so times use the city you chose.",
+    "ar": "موقع هاتفك متوقف، لذلك تُستخدم المدينة التي اخترتها.",
+    "ur": "آپ کے فون کا مقام بند ہے، اس لیے اوقات آپ کے منتخب کردہ شہر کے مطابق ہیں۔",
+    "id": "Lokasi ponsel Anda mati, jadi waktu memakai kota yang Anda pilih."
+  },
+  "setupSummaryWayBack": {
+    "en": "You can allow any of these later in app settings.",
+    "ar": "يمكنك السماح بأي منها لاحقًا من إعدادات التطبيق.",
+    "ur": "آپ ان میں سے کسی کی بھی اجازت بعد میں ایپ کی ترتیبات میں دے سکتے ہیں۔",
+    "id": "Anda dapat mengizinkan semuanya nanti di pengaturan aplikasi."
+  },
+  "permissionBannerAlerts": {
+    "en": "Notifications are off. Prayer alerts will not appear.",
+    "ar": "الإشعارات متوقفة. لن تظهر تنبيهات الصلاة.",
+    "ur": "نوٹیفکیشن بند ہیں۔ نماز کے الرٹس نظر نہیں آئیں گے۔",
+    "id": "Notifikasi mati. Peringatan salat tidak akan muncul."
+  },
+  "permissionBannerExact": {
+    "en": "Exact alarms are off. Alerts may be a few minutes late.",
+    "ar": "المنبّهات الدقيقة متوقفة. قد تتأخر التنبيهات بضع دقائق.",
+    "ur": "درست الارم بند ہیں۔ الرٹس چند منٹ دیر سے آ سکتے ہیں۔",
+    "id": "Alarm tepat waktu mati. Peringatan bisa terlambat beberapa menit."
+  },
+  "permissionBannerLocation": {
+    "en": "Location is off. Times use your saved city.",
+    "ar": "الموقع متوقف. تُستخدم المدينة المحفوظة لديك.",
+    "ur": "مقام بند ہے۔ اوقات آپ کے محفوظ شہر کے مطابق ہیں۔",
+    "id": "Lokasi mati. Waktu memakai kota yang tersimpan."
+  },
+  "permissionBannerAction": {
+    "en": "Fix in settings",
+    "ar": "إصلاح من الإعدادات",
+    "ur": "ترتیبات میں درست کریں",
+    "id": "Perbaiki di pengaturan"
+  },
+  "languageSettingsTitle": {
+    "en": "Language",
+    "ar": "اللغة",
+    "ur": "زبان",
+    "id": "Bahasa"
+  },
+  "locationSettingsTitle": {
+    "en": "Location",
+    "ar": "الموقع",
+    "ur": "مقام",
+    "id": "Lokasi"
+  },
+  "locationSettingsCurrent": {
+    "en": "Current location: {name}",
+    "ar": "الموقع الحالي: {name}",
+    "ur": "موجودہ مقام: {name}",
+    "id": "Lokasi saat ini: {name}",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "locationSettingsNone": {
+    "en": "No location is saved yet.",
+    "ar": "لا يوجد موقع محفوظ بعد.",
+    "ur": "ابھی کوئی مقام محفوظ نہیں۔",
+    "id": "Belum ada lokasi yang tersimpan."
+  },
+  "locationSettingsSaved": {
+    "en": "Location saved. Alerts will be updated.",
+    "ar": "تم حفظ الموقع. ستُحدَّث التنبيهات.",
+    "ur": "مقام محفوظ ہو گیا۔ الرٹس اپڈیٹ ہوں گے۔",
+    "id": "Lokasi disimpan. Peringatan akan diperbarui."
+  }
+}

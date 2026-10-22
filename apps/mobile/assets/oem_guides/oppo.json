@@ -1,0 +1,29 @@
+{
+  "brand": "oppo",
+  "steps": {
+    "en": [
+      "Open Settings, then Battery, then find Deen App in the list.",
+      "Allow background activity and turn off any option that restricts the app in the background.",
+      "Open Settings, then Apps, then App management, then Deen App, and turn on Auto-launch (also called Startup).",
+      "In the recent apps screen, pull down on the Deen App card or tap its lock icon, so the system does not close it."
+    ],
+    "ar": [
+      "افتح الإعدادات ثم البطارية، وابحث عن Deen App في القائمة.",
+      "اسمح بالنشاط في الخلفية وأوقف أي خيار يقيّد التطبيق في الخلفية.",
+      "افتح الإعدادات ثم التطبيقات ثم إدارة التطبيقات ثم Deen App، وفعّل التشغيل التلقائي (ويسمى أيضًا بدء التشغيل).",
+      "في شاشة التطبيقات الأخيرة، اسحب بطاقة Deen App للأسفل أو اضغط على رمز القفل كي لا يغلقه النظام."
+    ],
+    "ur": [
+      "ترتیبات کھولیں، پھر بیٹری، اور فہرست میں Deen App تلاش کریں۔",
+      "پس منظر میں سرگرمی کی اجازت دیں اور وہ ہر آپشن بند کریں جو ایپ کو پس منظر میں محدود کرتا ہے۔",
+      "ترتیبات کھولیں، پھر ایپس، پھر ایپ مینجمنٹ، پھر Deen App، اور آٹو لانچ (جسے اسٹارٹ اپ بھی کہتے ہیں) آن کریں۔",
+      "حالیہ ایپس کی اسکرین میں Deen App کے کارڈ کو نیچے کھینچیں یا اس کے لاک کے نشان کو دبائیں تاکہ سسٹم اسے بند نہ کرے۔"
+    ],
+    "id": [
+      "Buka Pengaturan, lalu Baterai, dan cari Deen App dalam daftar.",
+      "Izinkan aktivitas latar belakang dan matikan opsi apa pun yang membatasi aplikasi di latar belakang.",
+      "Buka Pengaturan, lalu Aplikasi, lalu Manajemen aplikasi, lalu Deen App, dan aktifkan Peluncuran otomatis (disebut juga Startup).",
+      "Di layar aplikasi terbaru, tarik kartu Deen App ke bawah atau ketuk ikon kuncinya agar sistem tidak menutupnya."
+    ]
+  }
+}

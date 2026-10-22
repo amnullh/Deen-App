@@ -1,0 +1,25 @@
+{
+  "brand": "huawei",
+  "steps": {
+    "en": [
+      "Open Settings, then Battery, then App launch, and find Deen App.",
+      "Turn off Manage automatically for Deen App, then turn on Auto-launch, Secondary launch and Run in background.",
+      "In the recent apps screen, pull down on the Deen App card to lock it, so the system does not close it."
+    ],
+    "ar": [
+      "افتح الإعدادات ثم البطارية ثم تشغيل التطبيقات، وابحث عن Deen App.",
+      "أوقف «الإدارة تلقائيًا» لتطبيق Deen App، ثم فعّل التشغيل التلقائي والتشغيل الثانوي والعمل في الخلفية.",
+      "في شاشة التطبيقات الأخيرة، اسحب بطاقة Deen App للأسفل لقفلها كي لا يغلقه النظام."
+    ],
+    "ur": [
+      "ترتیبات کھولیں، پھر بیٹری، پھر ایپ لانچ، اور Deen App تلاش کریں۔",
+      "Deen App کے لیے «خودکار نظم» بند کریں، پھر آٹو لانچ، ثانوی لانچ اور پس منظر میں چلانا آن کریں۔",
+      "حالیہ ایپس کی اسکرین میں Deen App کے کارڈ کو نیچے کھینچ کر لاک کریں تاکہ سسٹم اسے بند نہ کرے۔"
+    ],
+    "id": [
+      "Buka Pengaturan, lalu Baterai, lalu Peluncuran aplikasi, dan cari Deen App.",
+      "Matikan Kelola otomatis untuk Deen App, lalu aktifkan Peluncuran otomatis, Peluncuran sekunder, dan Jalankan di latar belakang.",
+      "Di layar aplikasi terbaru, tarik kartu Deen App ke bawah untuk menguncinya agar sistem tidak menutupnya."
+    ]
+  }
+}

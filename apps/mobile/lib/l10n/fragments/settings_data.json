@@ -1,0 +1,306 @@
+{
+  "settingsAppearanceTitle": {
+    "en": "Appearance",
+    "ar": "المظهر",
+    "ur": "ظاہری شکل",
+    "id": "Tampilan",
+    "description": "Title of the appearance screen and its entry in settings."
+  },
+  "settingsAppearanceHint": {
+    "en": "Theme, text size and contrast",
+    "ar": "السمة وحجم النص والتباين",
+    "ur": "تھیم، متن کا سائز اور کنٹراسٹ",
+    "id": "Tema, ukuran teks, dan kontras",
+    "description": "Hint under the appearance entry."
+  },
+  "settingsAppearanceNeedsSetup": {
+    "en": "Finish setup first. You can change the appearance once your prayer settings are saved.",
+    "ar": "أكمل الإعداد أولاً. يمكنك تغيير المظهر بعد حفظ إعدادات الصلاة.",
+    "ur": "پہلے سیٹ اپ مکمل کریں۔ نماز کی ترتیبات محفوظ ہونے کے بعد آپ ظاہری شکل بدل سکتے ہیں۔",
+    "id": "Selesaikan pengaturan awal dahulu. Tampilan dapat diubah setelah pengaturan salat tersimpan.",
+    "description": "Shown when no settings exist yet."
+  },
+  "settingsThemeLabel": {
+    "en": "Theme",
+    "ar": "السمة",
+    "ur": "تھیم",
+    "id": "Tema",
+    "description": "Label of the theme choice."
+  },
+  "settingsThemeSystem": {
+    "en": "Match device",
+    "ar": "مطابقة الجهاز",
+    "ur": "آلے کے مطابق",
+    "id": "Ikuti perangkat",
+    "description": "Theme choice: follow the system."
+  },
+  "settingsThemeLight": {
+    "en": "Light",
+    "ar": "فاتح",
+    "ur": "روشن",
+    "id": "Terang",
+    "description": "Theme choice."
+  },
+  "settingsThemeDark": {
+    "en": "Dark",
+    "ar": "داكن",
+    "ur": "تاریک",
+    "id": "Gelap",
+    "description": "Theme choice."
+  },
+  "settingsTextSizeLabel": {
+    "en": "Text size",
+    "ar": "حجم النص",
+    "ur": "متن کا سائز",
+    "id": "Ukuran teks",
+    "description": "Label of the text size slider."
+  },
+  "settingsTextSizeValue": {
+    "en": "{percent}%",
+    "ar": "{percent}%",
+    "ur": "{percent}%",
+    "id": "{percent}%",
+    "description": "Current text size as a percentage.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTextSizeSmaller": {
+    "en": "Smaller text",
+    "ar": "نص أصغر",
+    "ur": "چھوٹا متن",
+    "id": "Teks lebih kecil",
+    "description": "Tooltip of the button that lowers the text size."
+  },
+  "settingsTextSizeLarger": {
+    "en": "Larger text",
+    "ar": "نص أكبر",
+    "ur": "بڑا متن",
+    "id": "Teks lebih besar",
+    "description": "Tooltip of the button that raises the text size."
+  },
+  "settingsTextSizeSample": {
+    "en": "Sample text: this is how text looks at this size.",
+    "ar": "نص تجريبي: هكذا يظهر النص بهذا الحجم.",
+    "ur": "نمونے کا متن: اس سائز پر متن ایسا نظر آتا ہے۔",
+    "id": "Teks contoh: beginilah tampilan teks pada ukuran ini.",
+    "description": "Preview line under the text size slider."
+  },
+  "settingsHighContrast": {
+    "en": "High contrast",
+    "ar": "تباين عالٍ",
+    "ur": "اعلیٰ کنٹراسٹ",
+    "id": "Kontras tinggi",
+    "description": "Label of the high contrast switch."
+  },
+  "settingsHighContrastHint": {
+    "en": "Stronger text and outline colors. Nothing in the app depends on color alone.",
+    "ar": "ألوان نص وحدود أقوى. لا يعتمد أي شيء في التطبيق على اللون وحده.",
+    "ur": "متن اور خاکے کے زیادہ گہرے رنگ۔ ایپ میں کوئی بات صرف رنگ پر منحصر نہیں ہے۔",
+    "id": "Warna teks dan garis tepi lebih kuat. Tidak ada informasi di aplikasi yang hanya bergantung pada warna.",
+    "description": "Hint under the high contrast switch."
+  },
+  "settingsSaveError": {
+    "en": "This change could not be saved.",
+    "ar": "تعذّر حفظ هذا التغيير.",
+    "ur": "یہ تبدیلی محفوظ نہیں ہو سکی۔",
+    "id": "Perubahan ini tidak dapat disimpan.",
+    "description": "Shown when saving an appearance change fails."
+  },
+  "settingsDataTitle": {
+    "en": "Your data",
+    "ar": "بياناتك",
+    "ur": "آپ کا ڈیٹا",
+    "id": "Data Anda",
+    "description": "Title of the data screen and its entry in settings."
+  },
+  "settingsDataHint": {
+    "en": "Export, import or delete",
+    "ar": "تصدير أو استيراد أو حذف",
+    "ur": "برآمد، درآمد یا حذف",
+    "id": "Ekspor, impor, atau hapus",
+    "description": "Hint under the data entry."
+  },
+  "settingsExportTitle": {
+    "en": "Export settings",
+    "ar": "تصدير الإعدادات",
+    "ur": "ترتیبات برآمد کریں",
+    "id": "Ekspor pengaturan",
+    "description": "Heading of the export section."
+  },
+  "settingsExportWarning": {
+    "en": "The file contains your saved location and your settings. Anyone who gets the file can see where you are. Share it only with people and places you trust.",
+    "ar": "يحتوي الملف على موقعك المحفوظ وإعداداتك. يستطيع أي شخص يحصل عليه معرفة مكانك. شاركه فقط مع أشخاص وجهات تثق بهم.",
+    "ur": "فائل میں آپ کا محفوظ مقام اور ترتیبات شامل ہیں۔ جس کے پاس بھی یہ فائل پہنچے وہ جان سکتا ہے کہ آپ کہاں ہیں۔ اسے صرف قابلِ اعتماد لوگوں اور جگہوں کے ساتھ شیئر کریں۔",
+    "id": "Berkas ini berisi lokasi tersimpan dan pengaturan Anda. Siapa pun yang memperolehnya dapat melihat di mana Anda berada. Bagikan hanya kepada orang dan tempat yang Anda percaya.",
+    "description": "Plain warning shown before exporting."
+  },
+  "settingsExportShare": {
+    "en": "Share settings file",
+    "ar": "مشاركة ملف الإعدادات",
+    "ur": "ترتیبات کی فائل شیئر کریں",
+    "id": "Bagikan berkas pengaturan",
+    "description": "Button that opens the system share sheet."
+  },
+  "settingsExportSave": {
+    "en": "Save settings file",
+    "ar": "حفظ ملف الإعدادات",
+    "ur": "ترتیبات کی فائل محفوظ کریں",
+    "id": "Simpan berkas pengaturan",
+    "description": "Button that opens the system save dialog."
+  },
+  "settingsExportDone": {
+    "en": "The settings file is ready.",
+    "ar": "ملف الإعدادات جاهز.",
+    "ur": "ترتیبات کی فائل تیار ہے۔",
+    "id": "Berkas pengaturan siap.",
+    "description": "Shown after a successful export."
+  },
+  "settingsExportCancelled": {
+    "en": "Export cancelled.",
+    "ar": "أُلغي التصدير.",
+    "ur": "برآمد منسوخ کر دی گئی۔",
+    "id": "Ekspor dibatalkan.",
+    "description": "Shown when the user dismisses the share or save dialog."
+  },
+  "settingsExportFailed": {
+    "en": "The settings file could not be created.",
+    "ar": "تعذّر إنشاء ملف الإعدادات.",
+    "ur": "ترتیبات کی فائل نہیں بن سکی۔",
+    "id": "Berkas pengaturan tidak dapat dibuat.",
+    "description": "Shown when export fails."
+  },
+  "settingsImportTitle": {
+    "en": "Import settings",
+    "ar": "استيراد الإعدادات",
+    "ur": "ترتیبات درآمد کریں",
+    "id": "Impor pengaturan",
+    "description": "Heading of the import section."
+  },
+  "settingsImportBody": {
+    "en": "Choose a settings file exported from Deen App. It replaces the settings it contains. If the file has a problem, nothing changes.",
+    "ar": "اختر ملف إعدادات صُدّر من التطبيق. يستبدل الإعدادات التي يحتوي عليها. إذا كان في الملف مشكلة فلن يتغير شيء.",
+    "ur": "ایپ سے برآمد کی گئی ترتیبات کی فائل چنیں۔ یہ اپنی شامل ترتیبات کو بدل دیتی ہے۔ اگر فائل میں کوئی مسئلہ ہو تو کچھ نہیں بدلے گا۔",
+    "id": "Pilih berkas pengaturan yang diekspor dari aplikasi ini. Pengaturan di dalamnya akan menggantikan yang ada. Jika berkas bermasalah, tidak ada yang berubah.",
+    "description": "Explains import."
+  },
+  "settingsImportButton": {
+    "en": "Choose settings file",
+    "ar": "اختيار ملف الإعدادات",
+    "ur": "ترتیبات کی فائل منتخب کریں",
+    "id": "Pilih berkas pengaturan",
+    "description": "Button that opens the file picker."
+  },
+  "settingsImportDone": {
+    "en": "Settings imported.",
+    "ar": "تم استيراد الإعدادات.",
+    "ur": "ترتیبات درآمد ہو گئیں۔",
+    "id": "Pengaturan berhasil diimpor.",
+    "description": "Shown after a successful import."
+  },
+  "settingsImportDoneLater": {
+    "en": "Settings imported. Alerts will be updated the next time the app opens.",
+    "ar": "تم استيراد الإعدادات. ستُحدَّث التنبيهات عند فتح التطبيق في المرة القادمة.",
+    "ur": "ترتیبات درآمد ہو گئیں۔ الرٹس اگلی بار ایپ کھلنے پر اپ ڈیٹ ہوں گے۔",
+    "id": "Pengaturan berhasil diimpor. Peringatan akan diperbarui saat aplikasi dibuka berikutnya.",
+    "description": "Shown when the settings were saved but rebuilding the schedule failed."
+  },
+  "settingsImportNotSettings": {
+    "en": "This is not a Deen App settings file.",
+    "ar": "هذا ليس ملف إعدادات للتطبيق.",
+    "ur": "یہ Deen App کی ترتیبات کی فائل نہیں ہے۔",
+    "id": "Ini bukan berkas pengaturan Deen App.",
+    "description": "Import error: wrong format."
+  },
+  "settingsImportNewer": {
+    "en": "This file was made by a newer version of the app. Update the app to read it.",
+    "ar": "أُنشئ هذا الملف بإصدار أحدث من التطبيق. حدّث التطبيق لقراءته.",
+    "ur": "یہ فائل ایپ کے نئے ورژن نے بنائی ہے۔ اسے پڑھنے کے لیے ایپ اپ ڈیٹ کریں۔",
+    "id": "Berkas ini dibuat oleh versi aplikasi yang lebih baru. Perbarui aplikasi untuk membukanya.",
+    "description": "Import error: file version is newer."
+  },
+  "settingsImportUnreadable": {
+    "en": "The file could not be read.",
+    "ar": "تعذّرت قراءة الملف.",
+    "ur": "فائل پڑھی نہیں جا سکی۔",
+    "id": "Berkas tidak dapat dibaca.",
+    "description": "Import error: not valid JSON or too large."
+  },
+  "settingsImportInvalid": {
+    "en": "The file has a value that is missing or out of range ({field}). Nothing was changed.",
+    "ar": "في الملف قيمة مفقودة أو خارج النطاق ({field}). لم يتغير شيء.",
+    "ur": "فائل میں ایک قدر غائب ہے یا حد سے باہر ہے ({field})۔ کچھ نہیں بدلا گیا۔",
+    "id": "Berkas memiliki nilai yang hilang atau di luar rentang ({field}). Tidak ada yang diubah.",
+    "description": "Import error: a value is invalid. The field is a technical key such as prayer.imsakMinutes.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsImportFailed": {
+    "en": "The settings could not be saved. Nothing was changed.",
+    "ar": "تعذّر حفظ الإعدادات. لم يتغير شيء.",
+    "ur": "ترتیبات محفوظ نہیں ہو سکیں۔ کچھ نہیں بدلا گیا۔",
+    "id": "Pengaturan tidak dapat disimpan. Tidak ada yang diubah.",
+    "description": "Import error: saving failed."
+  },
+  "settingsDeleteTitle": {
+    "en": "Delete all my data",
+    "ar": "حذف كل بياناتي",
+    "ur": "میرا سارا ڈیٹا حذف کریں",
+    "id": "Hapus semua data saya",
+    "description": "Heading and button of the delete section."
+  },
+  "settingsDeleteBody": {
+    "en": "Removes your settings, location, tasbih counts, bookmarks and alert history from this device, and cancels all scheduled alerts.",
+    "ar": "يزيل إعداداتك وموقعك وعدّاد التسبيح والعلامات المرجعية وسجل التنبيهات من هذا الجهاز، ويلغي جميع التنبيهات المجدولة.",
+    "ur": "اس آلے سے آپ کی ترتیبات، مقام، تسبیح کی گنتیاں، بک مارکس اور الرٹس کی تاریخ ہٹا دیتا ہے، اور تمام شیڈول شدہ الرٹس منسوخ کر دیتا ہے۔",
+    "id": "Menghapus pengaturan, lokasi, hitungan tasbih, markah, dan riwayat peringatan dari perangkat ini, serta membatalkan semua peringatan terjadwal.",
+    "description": "Explains what deleting does."
+  },
+  "settingsDeleteConfirmTitle": {
+    "en": "Delete all data?",
+    "ar": "حذف كل البيانات؟",
+    "ur": "سارا ڈیٹا حذف کریں؟",
+    "id": "Hapus semua data?",
+    "description": "Title of the confirmation dialog."
+  },
+  "settingsDeleteConfirmBody": {
+    "en": "This removes everything the app stores on this device and cannot be undone. Settings files you saved or shared outside the app are not deleted and stay where you put them.",
+    "ar": "يزيل هذا كل ما يخزنه التطبيق على هذا الجهاز ولا يمكن التراجع عنه. ملفات الإعدادات التي حفظتها أو شاركتها خارج التطبيق لا تُحذف وتبقى حيث وضعتها.",
+    "ur": "اس سے وہ سب کچھ ہٹ جائے گا جو ایپ اس آلے پر رکھتی ہے، اور اسے واپس نہیں کیا جا سکتا۔ ایپ کے باہر جو ترتیبات کی فائلیں آپ نے محفوظ یا شیئر کیں وہ حذف نہیں ہوتیں، وہ وہیں رہتی ہیں جہاں آپ نے رکھیں۔",
+    "id": "Ini menghapus semua yang disimpan aplikasi di perangkat ini dan tidak dapat dibatalkan. Berkas pengaturan yang Anda simpan atau bagikan di luar aplikasi tidak ikut terhapus dan tetap di tempatnya.",
+    "description": "Confirmation text; must say that saved export files remain."
+  },
+  "settingsDeleteConfirmAction": {
+    "en": "Delete everything",
+    "ar": "احذف كل شيء",
+    "ur": "سب کچھ حذف کریں",
+    "id": "Hapus semuanya",
+    "description": "Destructive button of the confirmation dialog."
+  },
+  "settingsDeleteCancel": {
+    "en": "Cancel",
+    "ar": "إلغاء",
+    "ur": "منسوخ کریں",
+    "id": "Batal",
+    "description": "Cancel button of the confirmation dialog."
+  },
+  "settingsDeleteDone": {
+    "en": "All data was deleted.",
+    "ar": "تم حذف كل البيانات.",
+    "ur": "سارا ڈیٹا حذف کر دیا گیا۔",
+    "id": "Semua data telah dihapus.",
+    "description": "Shown after deletion."
+  },
+  "settingsDeletePartial": {
+    "en": "Some data could not be removed. Please try again.",
+    "ar": "تعذّر حذف بعض البيانات. يرجى المحاولة مرة أخرى.",
+    "ur": "کچھ ڈیٹا حذف نہیں ہو سکا۔ براہِ کرم دوبارہ کوشش کریں۔",
+    "id": "Sebagian data tidak dapat dihapus. Silakan coba lagi.",
+    "description": "Shown when some deletion steps failed."
+  }
+}

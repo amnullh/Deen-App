@@ -1,0 +1,29 @@
+{
+  "brand": "vivo",
+  "steps": {
+    "en": [
+      "Open Settings, then Battery, then Background power consumption, and choose Deen App.",
+      "Choose Allow high background power consumption (the wording differs between versions).",
+      "Open Settings, then Apps, then Autostart (or Permission management), and turn on Deen App.",
+      "In the recent apps screen, pull down on the Deen App card to lock it, so the system does not close it."
+    ],
+    "ar": [
+      "افتح الإعدادات ثم البطارية ثم استهلاك الطاقة في الخلفية، واختر Deen App.",
+      "اختر السماح باستهلاك عالٍ للطاقة في الخلفية (تختلف الصياغة بين الإصدارات).",
+      "افتح الإعدادات ثم التطبيقات ثم التشغيل التلقائي (أو إدارة الأذونات)، وفعّل Deen App.",
+      "في شاشة التطبيقات الأخيرة، اسحب بطاقة Deen App للأسفل لقفلها كي لا يغلقه النظام."
+    ],
+    "ur": [
+      "ترتیبات کھولیں، پھر بیٹری، پھر پس منظر میں بجلی کا استعمال، اور Deen App منتخب کریں۔",
+      "پس منظر میں زیادہ بجلی کے استعمال کی اجازت منتخب کریں (الفاظ ورژن کے مطابق مختلف ہو سکتے ہیں)۔",
+      "ترتیبات کھولیں، پھر ایپس، پھر آٹو اسٹارٹ (یا اجازتوں کا نظم)، اور Deen App آن کریں۔",
+      "حالیہ ایپس کی اسکرین میں Deen App کے کارڈ کو نیچے کھینچ کر لاک کریں تاکہ سسٹم اسے بند نہ کرے۔"
+    ],
+    "id": [
+      "Buka Pengaturan, lalu Baterai, lalu Konsumsi daya latar belakang, dan pilih Deen App.",
+      "Pilih Izinkan konsumsi daya latar belakang yang tinggi (kata-katanya berbeda antarversi).",
+      "Buka Pengaturan, lalu Aplikasi, lalu Mulai otomatis (atau Manajemen izin), dan aktifkan Deen App.",
+      "Di layar aplikasi terbaru, tarik kartu Deen App ke bawah untuk menguncinya agar sistem tidak menutupnya."
+    ]
+  }
+}

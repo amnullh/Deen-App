@@ -1,0 +1,714 @@
+{
+  "alertNotifPrayerTitle": {
+    "en": "{prayer} prayer",
+    "ar": "صلاة {prayer}",
+    "ur": "{prayer} کی نماز",
+    "id": "Salat {prayer}",
+    "description": "Title of the notification at prayer time. The placeholder is the prayer name.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertNotifPrayerBody": {
+    "en": "It is time for {prayer}.",
+    "ar": "حان وقت {prayer}.",
+    "ur": "{prayer} کا وقت ہو گیا ہے۔",
+    "id": "Waktu {prayer} telah tiba.",
+    "description": "Body of the notification at prayer time.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertNotifPreTitle": {
+    "en": "{prayer} in {minutes} min",
+    "ar": "{prayer} بعد {minutes} د",
+    "ur": "{prayer} میں {minutes} منٹ",
+    "id": "{prayer} dalam {minutes} mnt",
+    "description": "Title of the reminder before a prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertNotifPreBody": {
+    "en": "Get ready for the {prayer} prayer.",
+    "ar": "استعد لصلاة {prayer}.",
+    "ur": "{prayer} کی نماز کی تیاری کریں۔",
+    "id": "Bersiaplah untuk salat {prayer}.",
+    "description": "Body of the reminder before a prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertNotifSuhoorTitle": {
+    "en": "Suhoor reminder",
+    "ar": "تذكير بالسحور",
+    "ur": "سحری کی یاد دہانی",
+    "id": "Pengingat sahur"
+  },
+  "alertNotifSuhoorBody": {
+    "en": "Fajr is in {minutes} min.",
+    "ar": "الفجر بعد {minutes} د.",
+    "ur": "فجر میں {minutes} منٹ باقی ہیں۔",
+    "id": "Subuh dalam {minutes} mnt.",
+    "description": "Body of the suhoor reminder.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertNotifAdhkarMorningTitle": {
+    "en": "Morning adhkar",
+    "ar": "أذكار الصباح",
+    "ur": "صبح کے اذکار",
+    "id": "Zikir pagi"
+  },
+  "alertNotifAdhkarMorningBody": {
+    "en": "A good time for your morning remembrance.",
+    "ar": "وقت مناسب لأذكار الصباح.",
+    "ur": "صبح کے اذکار کا اچھا وقت۔",
+    "id": "Waktu yang baik untuk zikir pagi."
+  },
+  "alertNotifAdhkarEveningTitle": {
+    "en": "Evening adhkar",
+    "ar": "أذكار المساء",
+    "ur": "شام کے اذکار",
+    "id": "Zikir petang"
+  },
+  "alertNotifAdhkarEveningBody": {
+    "en": "A good time for your evening remembrance.",
+    "ar": "وقت مناسب لأذكار المساء.",
+    "ur": "شام کے اذکار کا اچھا وقت۔",
+    "id": "Waktu yang baik untuk zikir petang."
+  },
+  "alertNotifRenewalTitle": {
+    "en": "Open Deen App to keep your alerts on",
+    "ar": "افتح التطبيق لتبقى تنبيهاتك مفعّلة",
+    "ur": "الرٹس جاری رکھنے کے لیے ایپ کھولیں",
+    "id": "Buka Deen App agar peringatan tetap aktif",
+    "description": "Shown about a week before the scheduled alerts run out."
+  },
+  "alertNotifRenewalBody": {
+    "en": "Your scheduled alerts end soon. Open the app once and they are renewed.",
+    "ar": "تنتهي تنبيهاتك المجدولة قريبًا. افتح التطبيق مرة واحدة لتُجدَّد.",
+    "ur": "آپ کے مقررہ الرٹس جلد ختم ہو جائیں گے۔ ایپ ایک بار کھولیں، یہ دوبارہ مقرر ہو جائیں گے۔",
+    "id": "Peringatan terjadwal Anda segera berakhir. Buka aplikasi sekali dan peringatan diperbarui."
+  },
+  "alertNotifStopLabel": {
+    "en": "Stop",
+    "ar": "إيقاف",
+    "ur": "بند کریں",
+    "id": "Hentikan",
+    "description": "Label of the notification button that stops the Azaan."
+  },
+  "alertSettingsTitle": {
+    "en": "Prayer alerts",
+    "ar": "تنبيهات الصلاة",
+    "ur": "نماز کے الرٹس",
+    "id": "Peringatan salat"
+  },
+  "alertSettingsIntro": {
+    "en": "Choose what happens at each prayer time.",
+    "ar": "اختر ما يحدث عند وقت كل صلاة.",
+    "ur": "ہر نماز کے وقت پر کیا ہو، یہ منتخب کریں۔",
+    "id": "Pilih apa yang terjadi pada setiap waktu salat."
+  },
+  "alertTypeOff": {
+    "en": "Off",
+    "ar": "إيقاف",
+    "ur": "بند",
+    "id": "Mati"
+  },
+  "alertTypeSilent": {
+    "en": "Silent notification",
+    "ar": "إشعار صامت",
+    "ur": "خاموش نوٹیفکیشن",
+    "id": "Notifikasi senyap"
+  },
+  "alertTypeVibrate": {
+    "en": "Vibrate",
+    "ar": "اهتزاز",
+    "ur": "ارتعاش",
+    "id": "Getar"
+  },
+  "alertTypeShortTone": {
+    "en": "Short tone",
+    "ar": "نغمة قصيرة",
+    "ur": "مختصر آواز",
+    "id": "Nada pendek"
+  },
+  "alertTypeFullAzaan": {
+    "en": "Full Azaan",
+    "ar": "الأذان كاملًا",
+    "ur": "مکمل اذان",
+    "id": "Azan lengkap"
+  },
+  "alertTypeGroupLabel": {
+    "en": "Alert for {prayer}",
+    "ar": "تنبيه {prayer}",
+    "ur": "{prayer} کا الرٹ",
+    "id": "Peringatan {prayer}",
+    "description": "Accessibility label of the group of choices for one prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertIgnoreQuietHours": {
+    "en": "Ignore quiet hours",
+    "ar": "تجاهل ساعات الهدوء",
+    "ur": "خاموش اوقات کو نظر انداز کریں",
+    "id": "Abaikan jam tenang"
+  },
+  "alertIgnoreQuietHoursHint": {
+    "en": "Keep this alert audible even inside quiet hours.",
+    "ar": "أبقِ هذا التنبيه مسموعًا حتى داخل ساعات الهدوء.",
+    "ur": "خاموش اوقات میں بھی اس الرٹ کی آواز برقرار رکھیں۔",
+    "id": "Tetap bunyikan peringatan ini meski di dalam jam tenang."
+  },
+  "alertVoiceTile": {
+    "en": "Voice",
+    "ar": "الصوت",
+    "ur": "آواز",
+    "id": "Suara"
+  },
+  "alertVoiceTileValue": {
+    "en": "{voice}, {variant}",
+    "ar": "{voice}، {variant}",
+    "ur": "{voice}، {variant}",
+    "id": "{voice}, {variant}",
+    "description": "Current voice and wording shown on a prayer's card.",
+    "placeholders": {
+      "voice": {
+        "type": "String"
+      },
+      "variant": {
+        "type": "String"
+      }
+    }
+  },
+  "alertOptionsTile": {
+    "en": "More alert options",
+    "ar": "خيارات تنبيه إضافية",
+    "ur": "مزید الرٹ اختیارات",
+    "id": "Opsi peringatan lainnya"
+  },
+  "alertOptionsTileHint": {
+    "en": "Loud mode, quiet hours, reminders and audio output",
+    "ar": "الوضع المرتفع وساعات الهدوء والتذكيرات ومخرج الصوت",
+    "ur": "بلند موڈ، خاموش اوقات، یاد دہانیاں اور آڈیو آؤٹ پٹ",
+    "id": "Mode keras, jam tenang, pengingat, dan keluaran audio"
+  },
+  "alertSaveFailed": {
+    "en": "This choice could not be saved. Please try again.",
+    "ar": "تعذّر حفظ هذا الاختيار. حاول مرة أخرى.",
+    "ur": "یہ انتخاب محفوظ نہیں ہو سکا۔ براہِ کرم دوبارہ کوشش کریں۔",
+    "id": "Pilihan ini tidak dapat disimpan. Silakan coba lagi."
+  },
+  "alertReminderSummary": {
+    "en": "Reminder {minutes} min before",
+    "ar": "تذكير قبل {minutes} د",
+    "ur": "{minutes} منٹ پہلے یاد دہانی",
+    "id": "Pengingat {minutes} mnt sebelumnya",
+    "description": "Summary line on a prayer's card when a reminder is set.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertVoiceTitle": {
+    "en": "Choose a voice",
+    "ar": "اختر الصوت",
+    "ur": "آواز منتخب کریں",
+    "id": "Pilih suara"
+  },
+  "alertVoiceIntro": {
+    "en": "Each voice has three recordings. Tap play to hear one before you choose.",
+    "ar": "لكل صوت ثلاثة تسجيلات. اضغط تشغيل لتسمع أحدها قبل الاختيار.",
+    "ur": "ہر آواز کی تین ریکارڈنگز ہیں۔ منتخب کرنے سے پہلے سننے کے لیے پلے دبائیں۔",
+    "id": "Setiap suara memiliki tiga rekaman. Ketuk putar untuk mendengarkan sebelum memilih."
+  },
+  "alertVoiceForPrayer": {
+    "en": "For {prayer}",
+    "ar": "لصلاة {prayer}",
+    "ur": "{prayer} کے لیے",
+    "id": "Untuk {prayer}",
+    "description": "Subtitle of the voice picker: which prayer the choice applies to.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertVoiceName": {
+    "en": "Voice {number}",
+    "ar": "الصوت {number}",
+    "ur": "آواز {number}",
+    "id": "Suara {number}",
+    "description": "Name of a bundled voice.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "alertVariantStandard": {
+    "en": "Standard",
+    "ar": "الأذان المعتاد",
+    "ur": "معیاری",
+    "id": "Standar"
+  },
+  "alertVariantStandardHint": {
+    "en": "The usual call to prayer. Fajr uses the Fajr recording.",
+    "ar": "الأذان المعتاد. يُستخدم تسجيل الفجر عند صلاة الفجر.",
+    "ur": "معمول کی اذان۔ فجر پر فجر کی ریکارڈنگ چلتی ہے۔",
+    "id": "Azan biasa. Subuh memakai rekaman Subuh."
+  },
+  "alertVariantFajr": {
+    "en": "Fajr version",
+    "ar": "نسخة الفجر",
+    "ur": "فجر کا ورژن",
+    "id": "Versi Subuh"
+  },
+  "alertVariantFajrHint": {
+    "en": "Includes “as-salatu khayrun min an-nawm”. Played at Fajr when Standard is chosen.",
+    "ar": "يتضمن «الصلاة خير من النوم». يُشغَّل عند الفجر إذا اخترت المعتاد.",
+    "ur": "اس میں «الصلاۃ خیر من النوم» شامل ہے۔ معیاری منتخب ہونے پر فجر میں چلتی ہے۔",
+    "id": "Memuat “as-salatu khairun minan-naum”. Diputar saat Subuh jika memilih Standar."
+  },
+  "alertVariantShia": {
+    "en": "Shia wording",
+    "ar": "صيغة الأذان الشيعية",
+    "ur": "شیعہ الفاظ",
+    "id": "Lafaz Syiah"
+  },
+  "alertVariantShiaHint": {
+    "en": "The call to prayer with Shia wording. Played at all five prayers when chosen.",
+    "ar": "الأذان بالصيغة الشيعية. يُشغَّل في الصلوات الخمس عند اختياره.",
+    "ur": "شیعہ الفاظ کے ساتھ اذان۔ منتخب ہونے پر پانچوں نمازوں میں چلتی ہے۔",
+    "id": "Azan dengan lafaz Syiah. Diputar pada kelima salat jika dipilih."
+  },
+  "alertPreviewPlay": {
+    "en": "Play {name}",
+    "ar": "تشغيل {name}",
+    "ur": "{name} چلائیں",
+    "id": "Putar {name}",
+    "description": "Accessibility label of a preview button.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alertPreviewStop": {
+    "en": "Stop preview",
+    "ar": "إيقاف المعاينة",
+    "ur": "پیش نظارہ بند کریں",
+    "id": "Hentikan pratinjau"
+  },
+  "alertPreviewFailed": {
+    "en": "This recording could not be played.",
+    "ar": "تعذّر تشغيل هذا التسجيل.",
+    "ur": "یہ ریکارڈنگ نہیں چلائی جا سکی۔",
+    "id": "Rekaman ini tidak dapat diputar."
+  },
+  "alertVoiceSelected": {
+    "en": "Selected",
+    "ar": "محدَّد",
+    "ur": "منتخب",
+    "id": "Dipilih"
+  },
+  "alertOptionsTitle": {
+    "en": "Alert options",
+    "ar": "خيارات التنبيه",
+    "ur": "الرٹ کے اختیارات",
+    "id": "Opsi peringatan"
+  },
+  "alertLoudTitle": {
+    "en": "Loud mode",
+    "ar": "الوضع المرتفع",
+    "ur": "بلند موڈ",
+    "id": "Mode keras"
+  },
+  "alertLoudIntro": {
+    "en": "Off by default. When on for a prayer, the Azaan sounds even if the phone is on silent. Deen App never changes your system volume unless you choose this.",
+    "ar": "مُعطَّل افتراضيًا. عند تفعيله لصلاة ما، يُسمَع الأذان حتى لو كان الهاتف صامتًا. لا يغيّر التطبيق مستوى صوت النظام إلا إذا اخترت ذلك.",
+    "ur": "بطور ڈیفالٹ بند ہے۔ کسی نماز کے لیے آن ہو تو فون خاموش ہونے پر بھی اذان سنائی دیتی ہے۔ آپ کے منتخب کیے بغیر ایپ سسٹم کی آواز نہیں بدلتی۔",
+    "id": "Mati secara bawaan. Jika aktif untuk suatu salat, azan berbunyi meski ponsel dalam mode senyap. Deen App tidak pernah mengubah volume sistem kecuali Anda memilihnya."
+  },
+  "alertLoudAndroidOnly": {
+    "en": "Loud mode is available on Android only. On iPhone the silent switch mutes the notification sound; tapping the notification still plays the full Azaan.",
+    "ar": "الوضع المرتفع متاح على أندرويد فقط. في آيفون يكتم مفتاح الصامت صوت الإشعار، ويبقى الضغط على الإشعار يشغّل الأذان كاملًا.",
+    "ur": "بلند موڈ صرف اینڈرائیڈ پر دستیاب ہے۔ آئی فون پر خاموش سوئچ نوٹیفکیشن کی آواز بند کر دیتا ہے؛ نوٹیفکیشن پر ٹیپ کرنے سے مکمل اذان پھر بھی چلتی ہے۔",
+    "id": "Mode keras hanya tersedia di Android. Di iPhone, tombol senyap membisukan suara notifikasi; mengetuk notifikasi tetap memutar azan lengkap."
+  },
+  "alertLoudSwitch": {
+    "en": "Loud mode for {prayer}",
+    "ar": "الوضع المرتفع لصلاة {prayer}",
+    "ur": "{prayer} کے لیے بلند موڈ",
+    "id": "Mode keras untuk {prayer}",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertVolumeKeep": {
+    "en": "Keep my current volume",
+    "ar": "إبقاء مستوى الصوت الحالي",
+    "ur": "میری موجودہ آواز برقرار رکھیں",
+    "id": "Pertahankan volume saya saat ini"
+  },
+  "alertVolumeRamp": {
+    "en": "Gentle ramp",
+    "ar": "رفع تدريجي",
+    "ur": "آہستہ آہستہ بڑھائیں",
+    "id": "Naik perlahan"
+  },
+  "alertVolumeRampHint": {
+    "en": "Starts quiet and gets louder over a few seconds.",
+    "ar": "يبدأ هادئًا ويرتفع خلال بضع ثوانٍ.",
+    "ur": "آہستہ شروع ہو کر چند سیکنڈ میں بلند ہوتی ہے۔",
+    "id": "Mulai pelan dan menjadi lebih keras dalam beberapa detik."
+  },
+  "alertQuietTitle": {
+    "en": "Quiet hours",
+    "ar": "ساعات الهدوء",
+    "ur": "خاموش اوقات",
+    "id": "Jam tenang"
+  },
+  "alertQuietIntro": {
+    "en": "Alerts that would make a sound inside quiet hours become silent notifications, unless a prayer is set to ignore quiet hours.",
+    "ar": "التنبيهات التي تُصدر صوتًا داخل ساعات الهدوء تصبح إشعارات صامتة، إلا إذا ضُبطت الصلاة على تجاهلها.",
+    "ur": "خاموش اوقات میں آواز والے الرٹس خاموش نوٹیفکیشن بن جاتے ہیں، سوائے اس نماز کے جسے نظر انداز کرنے پر سیٹ کیا گیا ہو۔",
+    "id": "Peringatan yang berbunyi di dalam jam tenang menjadi notifikasi senyap, kecuali salat diatur untuk mengabaikannya."
+  },
+  "alertQuietSwitch": {
+    "en": "Use quiet hours",
+    "ar": "استخدام ساعات الهدوء",
+    "ur": "خاموش اوقات استعمال کریں",
+    "id": "Gunakan jam tenang"
+  },
+  "alertQuietStart": {
+    "en": "Starts at",
+    "ar": "تبدأ في",
+    "ur": "آغاز",
+    "id": "Mulai pukul"
+  },
+  "alertQuietEnd": {
+    "en": "Ends at",
+    "ar": "تنتهي في",
+    "ur": "اختتام",
+    "id": "Berakhir pukul"
+  },
+  "alertQuietRange": {
+    "en": "Quiet hours {start} to {end}",
+    "ar": "ساعات الهدوء من {start} إلى {end}",
+    "ur": "خاموش اوقات {start} سے {end} تک",
+    "id": "Jam tenang {start} sampai {end}",
+    "description": "Summary of the chosen quiet hours.",
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "alertAudioTitle": {
+    "en": "Audio output",
+    "ar": "مخرج الصوت",
+    "ur": "آڈیو آؤٹ پٹ",
+    "id": "Keluaran audio"
+  },
+  "alertAudioIntro": {
+    "en": "Where the Azaan plays when headphones or a Bluetooth device are connected. Without them it plays on the speaker.",
+    "ar": "أين يُشغَّل الأذان عند توصيل سماعات أو جهاز بلوتوث. وبدونهما يُشغَّل عبر مكبّر الصوت.",
+    "ur": "ہیڈ فون یا بلوٹوتھ ڈیوائس جڑی ہو تو اذان کہاں چلے۔ ان کے بغیر اذان اسپیکر پر چلتی ہے۔",
+    "id": "Tempat azan diputar saat headphone atau perangkat Bluetooth terhubung. Tanpa keduanya, azan diputar lewat speaker."
+  },
+  "alertOutputSpeaker": {
+    "en": "Speaker",
+    "ar": "مكبّر الصوت",
+    "ur": "اسپیکر",
+    "id": "Speaker"
+  },
+  "alertOutputHeadphones": {
+    "en": "Headphones",
+    "ar": "سماعات الرأس",
+    "ur": "ہیڈ فون",
+    "id": "Headphone"
+  },
+  "alertOutputBluetooth": {
+    "en": "Bluetooth",
+    "ar": "بلوتوث",
+    "ur": "بلوٹوتھ",
+    "id": "Bluetooth"
+  },
+  "alertReminderTitle": {
+    "en": "Reminder before each prayer",
+    "ar": "تذكير قبل كل صلاة",
+    "ur": "ہر نماز سے پہلے یاد دہانی",
+    "id": "Pengingat sebelum setiap salat"
+  },
+  "alertReminderIntro": {
+    "en": "A reminder is never a full Azaan. It uses a short tone at most.",
+    "ar": "التذكير ليس أذانًا كاملًا أبدًا؛ يستخدم نغمة قصيرة على الأكثر.",
+    "ur": "یاد دہانی کبھی مکمل اذان نہیں ہوتی؛ زیادہ سے زیادہ مختصر آواز ہوتی ہے۔",
+    "id": "Pengingat tidak pernah berupa azan lengkap; paling banyak nada pendek."
+  },
+  "alertReminderNone": {
+    "en": "No reminder",
+    "ar": "بدون تذكير",
+    "ur": "کوئی یاد دہانی نہیں",
+    "id": "Tanpa pengingat"
+  },
+  "alertReminderMinutes": {
+    "en": "{minutes} min before",
+    "ar": "قبل {minutes} د",
+    "ur": "{minutes} منٹ پہلے",
+    "id": "{minutes} mnt sebelumnya",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertReminderFor": {
+    "en": "Reminder for {prayer}",
+    "ar": "تذكير لصلاة {prayer}",
+    "ur": "{prayer} کے لیے یاد دہانی",
+    "id": "Pengingat untuk {prayer}",
+    "description": "Accessibility label of the reminder menu for one prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertSuhoorTitle": {
+    "en": "Suhoor reminder",
+    "ar": "تذكير السحور",
+    "ur": "سحری کی یاد دہانی",
+    "id": "Pengingat sahur"
+  },
+  "alertSuhoorIntro": {
+    "en": "During Ramadan, a reminder before Fajr so you can eat in time.",
+    "ar": "في رمضان، تذكير قبل الفجر لتتناول السحور في وقته.",
+    "ur": "رمضان میں فجر سے پہلے یاد دہانی تاکہ آپ وقت پر سحری کر سکیں۔",
+    "id": "Selama Ramadan, pengingat sebelum Subuh agar Anda sempat sahur."
+  },
+  "alertSuhoorSwitch": {
+    "en": "Remind me before suhoor ends",
+    "ar": "ذكّرني قبل انتهاء السحور",
+    "ur": "سحری ختم ہونے سے پہلے یاد دلائیں",
+    "id": "Ingatkan saya sebelum sahur berakhir"
+  },
+  "alertSuhoorMinutes": {
+    "en": "{minutes} min before Fajr",
+    "ar": "قبل الفجر بـ {minutes} د",
+    "ur": "فجر سے {minutes} منٹ پہلے",
+    "id": "{minutes} mnt sebelum Subuh",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertExactTitle": {
+    "en": "Allow exact alarms?",
+    "ar": "السماح بالمنبّهات الدقيقة؟",
+    "ur": "درست الارم کی اجازت دیں؟",
+    "id": "Izinkan alarm tepat waktu?"
+  },
+  "alertExactBody": {
+    "en": "To sound at the exact prayer time, Android needs the “Alarms & reminders” permission for Deen App. Without it, alerts still arrive but may be a few minutes late.",
+    "ar": "ليُسمَع التنبيه في وقت الصلاة بالضبط، يحتاج أندرويد إلى إذن «المنبّهات والتذكيرات» للتطبيق. بدونه تصل التنبيهات لكن قد تتأخر بضع دقائق.",
+    "ur": "نماز کے عین وقت پر آواز کے لیے اینڈرائیڈ کو ایپ کے لیے «الارم اور یاد دہانیاں» کی اجازت درکار ہے۔ اس کے بغیر الرٹس آئیں گے مگر چند منٹ دیر سے ہو سکتے ہیں۔",
+    "id": "Agar berbunyi tepat pada waktu salat, Android memerlukan izin “Alarm & pengingat” untuk Deen App. Tanpa izin ini, peringatan tetap datang tetapi bisa terlambat beberapa menit."
+  },
+  "alertExactOpen": {
+    "en": "Open alarm settings",
+    "ar": "فتح إعدادات المنبّهات",
+    "ur": "الارم کی ترتیبات کھولیں",
+    "id": "Buka pengaturan alarm"
+  },
+  "alertExactCheck": {
+    "en": "I changed it, check again",
+    "ar": "غيّرته، تحقق مرة أخرى",
+    "ur": "میں نے بدل دیا، دوبارہ جانچیں",
+    "id": "Sudah saya ubah, periksa lagi"
+  },
+  "alertExactSkip": {
+    "en": "Continue without it",
+    "ar": "المتابعة بدونه",
+    "ur": "اس کے بغیر جاری رکھیں",
+    "id": "Lanjutkan tanpa izin"
+  },
+  "alertExactGranted": {
+    "en": "Exact alarms are on.",
+    "ar": "المنبّهات الدقيقة مفعّلة.",
+    "ur": "درست الارم آن ہیں۔",
+    "id": "Alarm tepat waktu aktif."
+  },
+  "alertExactInexact": {
+    "en": "Alerts will still arrive, but timing may be less precise. You can change this later in the Reliability check.",
+    "ar": "ستصل التنبيهات مع ذلك، لكن قد يقلّ ضبط التوقيت. يمكنك تغيير هذا لاحقًا من فحص الموثوقية.",
+    "ur": "الرٹس پھر بھی آئیں گے مگر وقت کم درست ہو سکتا ہے۔ آپ اسے بعد میں اعتماد کی جانچ میں بدل سکتے ہیں۔",
+    "id": "Peringatan tetap datang, tetapi ketepatan waktunya bisa berkurang. Anda dapat mengubahnya nanti di Pemeriksaan keandalan."
+  },
+  "alertSilentSwitchTitle": {
+    "en": "About the silent switch",
+    "ar": "عن مفتاح الصامت",
+    "ur": "خاموش سوئچ کے بارے میں",
+    "id": "Tentang tombol senyap"
+  },
+  "alertSilentSwitchBody": {
+    "en": "When your iPhone's silent switch is on, the sound of a notification is muted. Tapping the notification still plays the full Azaan. You can also choose vibration instead.",
+    "ar": "عندما يكون مفتاح الصامت في آيفون مفعّلًا، يُكتم صوت الإشعار. ويبقى الضغط على الإشعار يشغّل الأذان كاملًا. ويمكنك أيضًا اختيار الاهتزاز بدلًا من ذلك.",
+    "ur": "جب آپ کے آئی فون کا خاموش سوئچ آن ہو تو نوٹیفکیشن کی آواز بند ہو جاتی ہے۔ نوٹیفکیشن پر ٹیپ کرنے سے مکمل اذان پھر بھی چلتی ہے۔ آپ اس کی جگہ ارتعاش بھی منتخب کر سکتے ہیں۔",
+    "id": "Saat tombol senyap iPhone aktif, suara notifikasi dibisukan. Mengetuk notifikasi tetap memutar azan lengkap. Anda juga dapat memilih getar."
+  },
+  "alertSilentSwitchGotIt": {
+    "en": "Got it",
+    "ar": "فهمت",
+    "ur": "سمجھ گیا",
+    "id": "Mengerti"
+  },
+  "alertSilentSwitchVibrate": {
+    "en": "Use vibration for my alerts",
+    "ar": "استخدام الاهتزاز لتنبيهاتي",
+    "ur": "میرے الرٹس کے لیے ارتعاش استعمال کریں",
+    "id": "Gunakan getar untuk peringatan saya"
+  },
+  "alertMissedTitle": {
+    "en": "An alert may not have sounded",
+    "ar": "ربما لم يصدر تنبيه صوتًا",
+    "ur": "ہو سکتا ہے ایک الرٹ نہ بجا ہو",
+    "id": "Satu peringatan mungkin tidak berbunyi"
+  },
+  "alertMissedTitleMany": {
+    "en": "Some alerts may not have sounded",
+    "ar": "ربما لم تُصدر بعض التنبيهات صوتًا",
+    "ur": "ہو سکتا ہے کچھ الرٹ نہ بجے ہوں",
+    "id": "Beberapa peringatan mungkin tidak berbunyi"
+  },
+  "alertMissedPossibly": {
+    "en": "iPhone cannot confirm delivery, so this one is only possibly missed.",
+    "ar": "لا يستطيع آيفون تأكيد التسليم، لذا ربما فات هذا التنبيه فقط.",
+    "ur": "آئی فون ڈیلیوری کی تصدیق نہیں کر سکتا، اس لیے یہ صرف ممکنہ طور پر رہ گیا ہے۔",
+    "id": "iPhone tidak dapat memastikan pengiriman, jadi ini hanya mungkin terlewat."
+  },
+  "alertMissedLine": {
+    "en": "{when}: {cause}",
+    "ar": "{when}: {cause}",
+    "ur": "{when}: {cause}",
+    "id": "{when}: {cause}",
+    "description": "One line in the missed-alert notice: when, then the likely cause.",
+    "placeholders": {
+      "when": {
+        "type": "String"
+      },
+      "cause": {
+        "type": "String"
+      }
+    }
+  },
+  "alertMissedMore": {
+    "en": "and {count} more",
+    "ar": "و{count} أخرى",
+    "ur": "اور {count} مزید",
+    "id": "dan {count} lainnya",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "alertMissedDismiss": {
+    "en": "Dismiss",
+    "ar": "إغلاق",
+    "ur": "بند کریں",
+    "id": "Tutup"
+  },
+  "alertMissedOpenCheck": {
+    "en": "Open Reliability check",
+    "ar": "فتح فحص الموثوقية",
+    "ur": "اعتماد کی جانچ کھولیں",
+    "id": "Buka Pemeriksaan keandalan"
+  },
+  "alertCauseExactAlarmDenied": {
+    "en": "Exact alarms are off, so Android may have delayed it.",
+    "ar": "المنبّهات الدقيقة معطّلة، فربما أخّره أندرويد.",
+    "ur": "درست الارم بند ہیں، اس لیے اینڈرائیڈ نے اسے مؤخر کیا ہو گا۔",
+    "id": "Alarm tepat waktu mati, jadi Android mungkin menundanya."
+  },
+  "alertCauseNotificationDenied": {
+    "en": "Notifications were turned off.",
+    "ar": "كانت الإشعارات معطّلة.",
+    "ur": "نوٹیفکیشن بند تھے۔",
+    "id": "Notifikasi dimatikan."
+  },
+  "alertCauseFgsBlocked": {
+    "en": "Android did not let the app start the Azaan, so a notification tone was used.",
+    "ar": "لم يسمح أندرويد للتطبيق ببدء الأذان، فاستُخدمت نغمة الإشعار.",
+    "ur": "اینڈرائیڈ نے ایپ کو اذان شروع کرنے نہیں دی، اس لیے نوٹیفکیشن کی آواز استعمال ہوئی۔",
+    "id": "Android tidak mengizinkan aplikasi memulai azan, jadi nada notifikasi digunakan."
+  },
+  "alertCauseCallInProgress": {
+    "en": "A phone call was in progress.",
+    "ar": "كانت هناك مكالمة هاتفية.",
+    "ur": "فون کال جاری تھی۔",
+    "id": "Sedang ada panggilan telepon."
+  },
+  "alertCauseQuietHours": {
+    "en": "Silenced by quiet hours.",
+    "ar": "كُتم بسبب ساعات الهدوء.",
+    "ur": "خاموش اوقات کی وجہ سے خاموش کیا گیا۔",
+    "id": "Dibisukan oleh jam tenang."
+  },
+  "alertCauseSilentMode": {
+    "en": "The phone was on silent.",
+    "ar": "كان الهاتف في الوضع الصامت.",
+    "ur": "فون خاموش موڈ میں تھا۔",
+    "id": "Ponsel dalam mode senyap."
+  },
+  "alertCauseBatteryRestricted": {
+    "en": "Battery saving may have stopped it. Check the battery settings.",
+    "ar": "ربما أوقفه توفير البطارية. راجع إعدادات البطارية.",
+    "ur": "ہو سکتا ہے بیٹری بچت نے اسے روک دیا ہو۔ بیٹری کی ترتیبات دیکھیں۔",
+    "id": "Penghemat baterai mungkin menghentikannya. Periksa pengaturan baterai."
+  },
+  "alertCauseAppNotRun": {
+    "en": "The app had not been opened.",
+    "ar": "لم يكن التطبيق مفتوحًا.",
+    "ur": "ایپ کھولی نہیں گئی تھی۔",
+    "id": "Aplikasi belum dibuka."
+  },
+  "alertCauseScheduleEnded": {
+    "en": "The scheduled alerts ran out because the app was not opened for a long time. Opening it renewed them.",
+    "ar": "انتهت التنبيهات المجدولة لأن التطبيق لم يُفتح منذ مدة طويلة. فتحه جدّدها.",
+    "ur": "ایپ طویل عرصے تک نہ کھلنے سے مقررہ الرٹس ختم ہو گئے۔ اب کھولنے سے وہ دوبارہ مقرر ہو گئے۔",
+    "id": "Peringatan terjadwal habis karena aplikasi lama tidak dibuka. Membukanya telah memperbarui jadwal."
+  },
+  "alertCauseUnknown": {
+    "en": "The reason is not known.",
+    "ar": "السبب غير معروف.",
+    "ur": "وجہ معلوم نہیں۔",
+    "id": "Penyebabnya tidak diketahui."
+  }
+}

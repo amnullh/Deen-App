@@ -1,0 +1,25 @@
+{
+  "brand": "samsung",
+  "steps": {
+    "en": [
+      "Open Settings, then Battery (or Battery and device care), then Background usage limits.",
+      "Make sure Deen App is not in Sleeping apps or Deep sleeping apps. Remove it from those lists if it is there, and turn off Put unused apps to sleep.",
+      "Open Settings, then Apps, then Deen App, then Battery, and choose Unrestricted."
+    ],
+    "ar": [
+      "افتح الإعدادات ثم البطارية (أو البطارية والعناية بالجهاز) ثم حدود الاستخدام في الخلفية.",
+      "تأكد من أن Deen App ليس ضمن التطبيقات النائمة أو التطبيقات في السكون العميق. أزله من هاتين القائمتين إن كان فيهما، وأوقف «وضع التطبيقات غير المستخدمة في السكون».",
+      "افتح الإعدادات ثم التطبيقات ثم Deen App ثم البطارية، واختر «غير مقيّد»."
+    ],
+    "ur": [
+      "ترتیبات کھولیں، پھر بیٹری (یا بیٹری اور ڈیوائس کیئر)، پھر پس منظر کے استعمال کی حدیں۔",
+      "یقینی بنائیں کہ Deen App سوتی ہوئی ایپس یا گہری نیند والی ایپس میں شامل نہیں۔ اگر ہو تو اسے ان فہرستوں سے ہٹا دیں اور «غیر استعمال شدہ ایپس کو سلا دیں» بند کریں۔",
+      "ترتیبات کھولیں، پھر ایپس، پھر Deen App، پھر بیٹری، اور «غیر محدود» منتخب کریں۔"
+    ],
+    "id": [
+      "Buka Pengaturan, lalu Baterai (atau Baterai dan perawatan perangkat), lalu Batas penggunaan latar belakang.",
+      "Pastikan Deen App tidak ada di Aplikasi tidur atau Aplikasi tidur nyenyak. Hapus dari daftar itu jika ada, dan matikan Tidurkan aplikasi yang tidak digunakan.",
+      "Buka Pengaturan, lalu Aplikasi, lalu Deen App, lalu Baterai, dan pilih Tidak dibatasi."
+    ]
+  }
+}

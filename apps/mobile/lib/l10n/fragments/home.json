@@ -1,0 +1,540 @@
+{
+  "homeNoLocation": {
+    "en": "Choose a location to see prayer times.",
+    "ar": "اختر موقعًا لعرض مواقيت الصلاة.",
+    "ur": "نماز کے اوقات دیکھنے کے لیے مقام منتخب کریں۔",
+    "id": "Pilih lokasi untuk melihat waktu salat."
+  },
+  "homeChooseLocation": {
+    "en": "Choose location",
+    "ar": "اختيار الموقع",
+    "ur": "مقام منتخب کریں",
+    "id": "Pilih lokasi"
+  },
+  "homeCountdownSemantics": {
+    "en": "{prayer} in {hours, plural, =1{1 hour} other{{hours} hours}} and {minutes, plural, =1{1 minute} other{{minutes} minutes}}",
+    "ar": "{prayer} بعد {hours} ساعة و{minutes} دقيقة",
+    "ur": "{prayer} میں {hours} گھنٹے {minutes} منٹ باقی",
+    "id": "{prayer} dalam {hours} jam {minutes} menit",
+    "description": "Spoken label of the countdown.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      },
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "homeNextBadge": {
+    "en": "Next",
+    "ar": "التالية",
+    "ur": "اگلی",
+    "id": "Berikutnya",
+    "description": "Text marker on the row of the next prayer (not colour alone)."
+  },
+  "homeTimeNotAvailable": {
+    "en": "Does not occur today",
+    "ar": "لا يحدث اليوم",
+    "ur": "آج واقع نہیں ہوتا",
+    "id": "Tidak terjadi hari ini",
+    "description": "Shown when the sun does not rise or set."
+  },
+  "homeToday": {
+    "en": "Today",
+    "ar": "اليوم",
+    "ur": "آج",
+    "id": "Hari ini"
+  },
+  "homePreviousDay": {
+    "en": "Previous day",
+    "ar": "اليوم السابق",
+    "ur": "پچھلا دن",
+    "id": "Hari sebelumnya"
+  },
+  "homeNextDay": {
+    "en": "Next day",
+    "ar": "اليوم التالي",
+    "ur": "اگلا دن",
+    "id": "Hari berikutnya"
+  },
+  "homeBackToToday": {
+    "en": "Back to today",
+    "ar": "العودة إلى اليوم",
+    "ur": "آج پر واپس",
+    "id": "Kembali ke hari ini"
+  },
+  "homeMoreTimes": {
+    "en": "More times",
+    "ar": "أوقات إضافية",
+    "ur": "مزید اوقات",
+    "id": "Waktu lainnya",
+    "description": "Opens the detail view with Imsak, midnight and the last third of the night."
+  },
+  "homeTimeSemantics": {
+    "en": "{prayer} at {time}",
+    "ar": "{prayer} الساعة {time}",
+    "ur": "{prayer} {time} بجے",
+    "id": "{prayer} pukul {time}",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "homeError": {
+    "en": "Prayer times could not be calculated. Check the location and try again.",
+    "ar": "تعذّر حساب مواقيت الصلاة. تحقق من الموقع وحاول مرة أخرى.",
+    "ur": "نماز کے اوقات نہیں نکالے جا سکے۔ مقام دیکھیں اور دوبارہ کوشش کریں۔",
+    "id": "Waktu salat tidak dapat dihitung. Periksa lokasi dan coba lagi."
+  },
+  "homeRegionSuggestion": {
+    "en": "This region usually uses {method}. Your chosen method stays as it is.",
+    "ar": "تستخدم هذه المنطقة عادةً {method}. تبقى الطريقة التي اخترتها كما هي.",
+    "ur": "اس علاقے میں عموماً {method} استعمال ہوتا ہے۔ آپ کا منتخب کردہ طریقہ جوں کا توں رہے گا۔",
+    "id": "Wilayah ini biasanya memakai {method}. Metode pilihan Anda tidak berubah.",
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "homeRegionSuggestionGeneral": {
+    "en": "No regional default exists for this location. {method} is a general choice. Your chosen method stays as it is.",
+    "ar": "لا توجد طريقة افتراضية لهذا الموقع. {method} خيار عام. تبقى الطريقة التي اخترتها كما هي.",
+    "ur": "اس مقام کے لیے کوئی علاقائی طریقہ مقرر نہیں۔ {method} ایک عمومی انتخاب ہے۔ آپ کا منتخب کردہ طریقہ جوں کا توں رہے گا۔",
+    "id": "Tidak ada metode bawaan untuk lokasi ini. {method} adalah pilihan umum. Metode pilihan Anda tidak berubah.",
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "homeRegionSuggestionSwitch": {
+    "en": "Switch to {method}",
+    "ar": "التبديل إلى {method}",
+    "ur": "{method} پر جائیں",
+    "id": "Beralih ke {method}",
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "homeBannerDismiss": {
+    "en": "Dismiss",
+    "ar": "إغلاق",
+    "ur": "بند کریں",
+    "id": "Tutup"
+  },
+  "homeClockBeforeBuild": {
+    "en": "Your phone's date looks wrong: it is earlier than this version of the app. Prayer times and alerts may be wrong. Please check Date and time in your phone's settings.",
+    "ar": "يبدو تاريخ هاتفك خاطئًا: فهو أقدم من هذا الإصدار من التطبيق. قد تكون مواقيت الصلاة والتنبيهات خاطئة. يرجى مراجعة التاريخ والوقت في إعدادات هاتفك.",
+    "ur": "آپ کے فون کی تاریخ غلط لگتی ہے: یہ ایپ کے اس ورژن سے پرانی ہے۔ نماز کے اوقات اور الرٹس غلط ہو سکتے ہیں۔ براہِ کرم فون کی ترتیبات میں تاریخ اور وقت دیکھیں۔",
+    "id": "Tanggal ponsel Anda tampak salah: lebih awal dari versi aplikasi ini. Waktu salat dan peringatan mungkin salah. Silakan periksa Tanggal dan waktu di pengaturan ponsel Anda."
+  },
+  "homeClockMovedBack": {
+    "en": "Your phone's clock was set back. If the time is wrong, prayer times and alerts may be wrong. Please check Date and time in your phone's settings.",
+    "ar": "تم إرجاع ساعة هاتفك إلى الوراء. إذا كان الوقت خاطئًا فقد تكون مواقيت الصلاة والتنبيهات خاطئة. يرجى مراجعة التاريخ والوقت في إعدادات هاتفك.",
+    "ur": "آپ کے فون کی گھڑی پیچھے کر دی گئی ہے۔ اگر وقت غلط ہے تو نماز کے اوقات اور الرٹس غلط ہو سکتے ہیں۔ براہِ کرم فون کی ترتیبات میں تاریخ اور وقت دیکھیں۔",
+    "id": "Jam ponsel Anda diputar mundur. Jika waktunya salah, waktu salat dan peringatan mungkin salah. Silakan periksa Tanggal dan waktu di pengaturan ponsel Anda."
+  },
+  "homeClockDrifted": {
+    "en": "Your phone's clock was changed. If the time is wrong, prayer times and alerts may be wrong. Please check Date and time in your phone's settings.",
+    "ar": "تم تغيير ساعة هاتفك. إذا كان الوقت خاطئًا فقد تكون مواقيت الصلاة والتنبيهات خاطئة. يرجى مراجعة التاريخ والوقت في إعدادات هاتفك.",
+    "ur": "آپ کے فون کی گھڑی بدلی گئی ہے۔ اگر وقت غلط ہے تو نماز کے اوقات اور الرٹس غلط ہو سکتے ہیں۔ براہِ کرم فون کی ترتیبات میں تاریخ اور وقت دیکھیں۔",
+    "id": "Jam ponsel Anda diubah. Jika waktunya salah, waktu salat dan peringatan mungkin salah. Silakan periksa Tanggal dan waktu di pengaturan ponsel Anda."
+  },
+  "homeTzRulesNotice": {
+    "en": "Time-zone rules may have changed. Please update the app. Until then, times follow your phone's rules.",
+    "ar": "قد تكون قواعد المنطقة الزمنية قد تغيّرت. يرجى تحديث التطبيق. وإلى ذلك الحين تتبع المواقيت قواعد هاتفك.",
+    "ur": "ٹائم زون کے قواعد بدل چکے ہوں گے۔ براہِ کرم ایپ اپڈیٹ کریں۔ تب تک اوقات آپ کے فون کے قواعد کے مطابق رہیں گے۔",
+    "id": "Aturan zona waktu mungkin telah berubah. Silakan perbarui aplikasi. Sementara itu, waktu mengikuti aturan ponsel Anda."
+  },
+  "detailImsak": {
+    "en": "Imsak",
+    "ar": "الإمساك",
+    "ur": "امساک",
+    "id": "Imsak"
+  },
+  "detailMidnight": {
+    "en": "Midnight",
+    "ar": "منتصف الليل",
+    "ur": "نصف شب",
+    "id": "Tengah malam"
+  },
+  "detailLastThird": {
+    "en": "Last third of the night",
+    "ar": "الثلث الأخير من الليل",
+    "ur": "رات کا آخری تہائی حصہ",
+    "id": "Sepertiga malam terakhir"
+  },
+  "detailHijriTitle": {
+    "en": "Hijri date",
+    "ar": "التاريخ الهجري",
+    "ur": "ہجری تاریخ",
+    "id": "Tanggal Hijriah"
+  },
+  "detailHijriUnavailable": {
+    "en": "The Hijri date is not available yet.",
+    "ar": "التاريخ الهجري غير متاح بعد.",
+    "ur": "ہجری تاریخ ابھی دستیاب نہیں۔",
+    "id": "Tanggal Hijriah belum tersedia."
+  },
+  "detailHijriValue": {
+    "en": "{day} {month} {year} AH",
+    "ar": "{day} {month} {year} هـ",
+    "ur": "{day} {month} {year} ھ",
+    "id": "{day} {month} {year} H",
+    "description": "Hijri date, for example 12 Ramadan 1448 AH.",
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "month": {
+        "type": "String"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "detailHijriAdjusted": {
+    "en": "Includes your adjustment of {days} days (Umm al-Qura calendar).",
+    "ar": "يشمل تعديلك البالغ {days} يوم (تقويم أم القرى).",
+    "ur": "اس میں آپ کی {days} دن کی ایڈجسٹمنٹ شامل ہے (ام القریٰ کیلنڈر)۔",
+    "id": "Termasuk penyesuaian Anda sebesar {days} hari (kalender Umm al-Qura).",
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "detailHijriDefault": {
+    "en": "Umm al-Qura calendar.",
+    "ar": "تقويم أم القرى.",
+    "ur": "ام القریٰ کیلنڈر۔",
+    "id": "Kalender Umm al-Qura."
+  },
+  "hijriMonth1": {
+    "en": "Muharram",
+    "ar": "محرم",
+    "ur": "محرم",
+    "id": "Muharam"
+  },
+  "hijriMonth2": {
+    "en": "Safar",
+    "ar": "صفر",
+    "ur": "صفر",
+    "id": "Safar"
+  },
+  "hijriMonth3": {
+    "en": "Rabi' al-awwal",
+    "ar": "ربيع الأول",
+    "ur": "ربیع الاول",
+    "id": "Rabiulawal"
+  },
+  "hijriMonth4": {
+    "en": "Rabi' al-thani",
+    "ar": "ربيع الآخر",
+    "ur": "ربیع الثانی",
+    "id": "Rabiulakhir"
+  },
+  "hijriMonth5": {
+    "en": "Jumada al-ula",
+    "ar": "جمادى الأولى",
+    "ur": "جمادی الاولیٰ",
+    "id": "Jumadilawal"
+  },
+  "hijriMonth6": {
+    "en": "Jumada al-thani",
+    "ar": "جمادى الآخرة",
+    "ur": "جمادی الثانیہ",
+    "id": "Jumadilakhir"
+  },
+  "hijriMonth7": {
+    "en": "Rajab",
+    "ar": "رجب",
+    "ur": "رجب",
+    "id": "Rajab"
+  },
+  "hijriMonth8": {
+    "en": "Sha'ban",
+    "ar": "شعبان",
+    "ur": "شعبان",
+    "id": "Syaban"
+  },
+  "hijriMonth9": {
+    "en": "Ramadan",
+    "ar": "رمضان",
+    "ur": "رمضان",
+    "id": "Ramadan"
+  },
+  "hijriMonth10": {
+    "en": "Shawwal",
+    "ar": "شوال",
+    "ur": "شوال",
+    "id": "Syawal"
+  },
+  "hijriMonth11": {
+    "en": "Dhu al-Qi'dah",
+    "ar": "ذو القعدة",
+    "ur": "ذوالقعدہ",
+    "id": "Zulkaidah"
+  },
+  "hijriMonth12": {
+    "en": "Dhu al-Hijjah",
+    "ar": "ذو الحجة",
+    "ur": "ذوالحجہ",
+    "id": "Zulhijah"
+  },
+  "methodMuslimWorldLeague": {
+    "en": "Muslim World League",
+    "ar": "رابطة العالم الإسلامي",
+    "ur": "مسلم ورلڈ لیگ",
+    "id": "Liga Dunia Muslim"
+  },
+  "methodIsna": {
+    "en": "ISNA (North America)",
+    "ar": "الجمعية الإسلامية لأمريكا الشمالية (ISNA)",
+    "ur": "آئی ایس این اے (شمالی امریکہ)",
+    "id": "ISNA (Amerika Utara)"
+  },
+  "methodEgypt": {
+    "en": "Egyptian General Authority of Survey",
+    "ar": "الهيئة المصرية العامة للمساحة",
+    "ur": "مصری جنرل اتھارٹی آف سروے",
+    "id": "Otoritas Survei Umum Mesir"
+  },
+  "methodUmmAlQura": {
+    "en": "Umm al-Qura (Makkah)",
+    "ar": "أم القرى (مكة المكرمة)",
+    "ur": "ام القریٰ (مکہ مکرمہ)",
+    "id": "Umm al-Qura (Makkah)"
+  },
+  "methodKarachi": {
+    "en": "University of Islamic Sciences, Karachi",
+    "ar": "جامعة العلوم الإسلامية بكراتشي",
+    "ur": "جامعہ علومِ اسلامیہ، کراچی",
+    "id": "Universitas Ilmu Islam, Karachi"
+  },
+  "methodTehran": {
+    "en": "Institute of Geophysics, University of Tehran",
+    "ar": "معهد الجيوفيزياء، جامعة طهران",
+    "ur": "انسٹیٹیوٹ آف جیوفزکس، تہران یونیورسٹی",
+    "id": "Institut Geofisika, Universitas Teheran"
+  },
+  "methodJafari": {
+    "en": "Shia Ithna-Ashari (Jafari)",
+    "ar": "الشيعة الاثنا عشرية (الجعفري)",
+    "ur": "شیعہ اثنا عشری (جعفری)",
+    "id": "Syiah Itsna Asyariyah (Jakfari)"
+  },
+  "methodGulf": {
+    "en": "Gulf Region",
+    "ar": "منطقة الخليج",
+    "ur": "خلیجی خطہ",
+    "id": "Kawasan Teluk"
+  },
+  "methodKuwait": {
+    "en": "Kuwait",
+    "ar": "الكويت",
+    "ur": "کویت",
+    "id": "Kuwait"
+  },
+  "methodQatar": {
+    "en": "Qatar",
+    "ar": "قطر",
+    "ur": "قطر",
+    "id": "Qatar"
+  },
+  "methodSingapore": {
+    "en": "Singapore (MUIS)",
+    "ar": "سنغافورة (المجلس الإسلامي)",
+    "ur": "سنگاپور (MUIS)",
+    "id": "Singapura (MUIS)"
+  },
+  "methodDiyanet": {
+    "en": "Turkey (Diyanet)",
+    "ar": "تركيا (ديانت)",
+    "ur": "ترکی (دیانت)",
+    "id": "Turki (Diyanet)"
+  },
+  "methodFranceUoif": {
+    "en": "France (UOIF)",
+    "ar": "فرنسا (UOIF)",
+    "ur": "فرانس (UOIF)",
+    "id": "Prancis (UOIF)"
+  },
+  "methodMoonsightingCommittee": {
+    "en": "Moonsighting Committee",
+    "ar": "لجنة رؤية الهلال",
+    "ur": "مون سائٹنگ کمیٹی",
+    "id": "Komite Rukyat Hilal"
+  },
+  "prayerSettingsTitle": {
+    "en": "Prayer settings",
+    "ar": "إعدادات الصلاة",
+    "ur": "نماز کی ترتیبات",
+    "id": "Pengaturan salat"
+  },
+  "prayerSettingsHighLatTitle": {
+    "en": "High latitudes",
+    "ar": "خطوط العرض العليا",
+    "ur": "بلند عرض بلد",
+    "id": "Lintang tinggi"
+  },
+  "prayerSettingsHighLatIntro": {
+    "en": "Above 48 degrees of latitude, twilight may not end in summer. Choose how Fajr and Isha are estimated then.",
+    "ar": "فوق خط العرض 48 درجة قد لا ينتهي الشفق في الصيف. اختر كيف يُقدَّر الفجر والعشاء حينئذٍ.",
+    "ur": "48 ڈگری سے اوپر کے عرض بلد پر گرمیوں میں شفق ختم نہیں ہوتی۔ منتخب کریں کہ اس وقت فجر اور عشاء کا اندازہ کیسے لگایا جائے۔",
+    "id": "Di atas lintang 48 derajat, senja bisa tidak berakhir saat musim panas. Pilih cara memperkirakan Subuh dan Isya pada saat itu."
+  },
+  "highLatMiddleTitle": {
+    "en": "Middle of the night",
+    "ar": "منتصف الليل",
+    "ur": "رات کا درمیان",
+    "id": "Tengah malam"
+  },
+  "highLatMiddleBody": {
+    "en": "The night is split in half: Isha comes no later than the middle of the night and Fajr no earlier.",
+    "ar": "يُقسَّم الليل إلى نصفين: لا يتأخر العشاء عن منتصف الليل ولا يبكّر الفجر عنه.",
+    "ur": "رات کو دو برابر حصوں میں بانٹا جاتا ہے: عشاء رات کے درمیان سے دیر سے نہیں ہوتی اور فجر اس سے پہلے نہیں ہوتی۔",
+    "id": "Malam dibagi dua: Isya paling lambat pada tengah malam dan Subuh paling awal pada tengah malam."
+  },
+  "highLatSeventhTitle": {
+    "en": "Seventh of the night",
+    "ar": "سُبع الليل",
+    "ur": "رات کا ساتواں حصہ",
+    "id": "Sepertujuh malam"
+  },
+  "highLatSeventhBody": {
+    "en": "The night is divided into seven parts: Isha is at most one part after sunset and Fajr one part before sunrise.",
+    "ar": "يُقسَّم الليل إلى سبعة أجزاء: يكون العشاء بعد الغروب بجزء واحد على الأكثر والفجر قبل الشروق بجزء واحد.",
+    "ur": "رات کو سات حصوں میں بانٹا جاتا ہے: عشاء غروب کے بعد زیادہ سے زیادہ ایک حصہ اور فجر طلوع سے ایک حصہ پہلے ہوتی ہے۔",
+    "id": "Malam dibagi tujuh bagian: Isya paling lama satu bagian setelah matahari terbenam dan Subuh satu bagian sebelum matahari terbit."
+  },
+  "highLatAngleTitle": {
+    "en": "Angle-based",
+    "ar": "بحسب الزاوية",
+    "ur": "زاویے کے مطابق",
+    "id": "Berdasarkan sudut"
+  },
+  "highLatAngleBody": {
+    "en": "Fajr and Isha use a share of the night equal to the twilight angle divided by 60.",
+    "ar": "يستخدم الفجر والعشاء جزءًا من الليل يساوي زاوية الشفق مقسومة على 60.",
+    "ur": "فجر اور عشاء کے لیے رات کا وہ حصہ لیا جاتا ہے جو شفق کے زاویے کو 60 سے تقسیم کرنے پر آتا ہے۔",
+    "id": "Subuh dan Isya memakai bagian malam yang sama dengan sudut senja dibagi 60."
+  },
+  "highLatApplied": {
+    "en": "Fajr and Isha were estimated with the “{rule}” rule because your latitude is above 48 degrees, where twilight may not end. You can change the rule in prayer settings.",
+    "ar": "قُدِّر الفجر والعشاء بقاعدة «{rule}» لأن خط عرضك فوق 48 درجة حيث قد لا ينتهي الشفق. يمكنك تغيير القاعدة من إعدادات الصلاة.",
+    "ur": "آپ کا عرض بلد 48 ڈگری سے اوپر ہے جہاں شفق ختم نہیں ہو سکتی، اس لیے فجر اور عشاء کا اندازہ «{rule}» قاعدے سے لگایا گیا۔ آپ نماز کی ترتیبات میں قاعدہ بدل سکتے ہیں۔",
+    "id": "Subuh dan Isya diperkirakan dengan aturan “{rule}” karena lintang Anda di atas 48 derajat, tempat senja bisa tidak berakhir. Anda dapat mengubah aturan di pengaturan salat.",
+    "description": "Explanation shown when a high-latitude rule is applied.",
+    "placeholders": {
+      "rule": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetsTitle": {
+    "en": "Adjust times",
+    "ar": "تعديل الأوقات",
+    "ur": "اوقات میں ردوبدل",
+    "id": "Sesuaikan waktu"
+  },
+  "prayerSettingsOffsetsIntro": {
+    "en": "Add or remove up to 60 minutes for any prayer. This applies everywhere, including alerts.",
+    "ar": "أضف أو اطرح حتى 60 دقيقة لأي صلاة. ينطبق ذلك في كل مكان، بما في ذلك التنبيهات.",
+    "ur": "کسی بھی نماز میں 60 منٹ تک کمی یا اضافہ کریں۔ یہ ہر جگہ لاگو ہوتا ہے، الرٹس سمیت۔",
+    "id": "Tambah atau kurangi hingga 60 menit untuk salat mana pun. Berlaku di mana saja, termasuk peringatan."
+  },
+  "prayerSettingsOffsetValue": {
+    "en": "{value} min",
+    "ar": "{value} د",
+    "ur": "{value} منٹ",
+    "id": "{value} mnt",
+    "description": "Signed minutes, for example +5 min.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetLabel": {
+    "en": "{prayer} adjustment",
+    "ar": "تعديل {prayer}",
+    "ur": "{prayer} میں ردوبدل",
+    "id": "Penyesuaian {prayer}",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetLess": {
+    "en": "Subtract one minute from {prayer}",
+    "ar": "طرح دقيقة واحدة من {prayer}",
+    "ur": "{prayer} سے ایک منٹ کم کریں",
+    "id": "Kurangi satu menit dari {prayer}",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetMore": {
+    "en": "Add one minute to {prayer}",
+    "ar": "إضافة دقيقة واحدة إلى {prayer}",
+    "ur": "{prayer} میں ایک منٹ بڑھائیں",
+    "id": "Tambah satu menit ke {prayer}",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsHijriTitle": {
+    "en": "Hijri date adjustment (days)",
+    "ar": "تعديل التاريخ الهجري (بالأيام)",
+    "ur": "ہجری تاریخ میں ردوبدل (دنوں میں)",
+    "id": "Penyesuaian tanggal Hijriah (hari)"
+  },
+  "prayerSettingsHijriLess": {
+    "en": "Move the Hijri date one day back",
+    "ar": "تأخير التاريخ الهجري يومًا",
+    "ur": "ہجری تاریخ ایک دن پیچھے کریں",
+    "id": "Mundurkan tanggal Hijriah satu hari"
+  },
+  "prayerSettingsHijriMore": {
+    "en": "Move the Hijri date one day forward",
+    "ar": "تقديم التاريخ الهجري يومًا",
+    "ur": "ہجری تاریخ ایک دن آگے کریں",
+    "id": "Majukan tanggal Hijriah satu hari"
+  },
+  "prayerSettingsHijriValue": {
+    "en": "{value} days",
+    "ar": "{value} يوم",
+    "ur": "{value} دن",
+    "id": "{value} hari",
+    "description": "Signed days, for example +1 days.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsNoLocation": {
+    "en": "Choose a location first. Prayer settings apply to your saved location.",
+    "ar": "اختر موقعًا أولًا. تنطبق إعدادات الصلاة على موقعك المحفوظ.",
+    "ur": "پہلے مقام منتخب کریں۔ نماز کی ترتیبات آپ کے محفوظ مقام پر لاگو ہوتی ہیں۔",
+    "id": "Pilih lokasi lebih dulu. Pengaturan salat berlaku untuk lokasi Anda yang tersimpan."
+  }
+}

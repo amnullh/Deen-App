@@ -1,0 +1,253 @@
+{
+  "qiblaTitle": {
+    "en": "Qibla",
+    "ar": "القبلة",
+    "ur": "قبلہ",
+    "id": "Kiblat",
+    "description": "Title of the Qibla screen and its entry on the home screen."
+  },
+  "qiblaEntryHint": {
+    "en": "Find the direction of the Kaaba",
+    "ar": "اعرف اتجاه الكعبة",
+    "ur": "کعبہ کی سمت معلوم کریں",
+    "id": "Temukan arah Ka'bah",
+    "description": "One-line hint under the Qibla entry on the home screen."
+  },
+  "qiblaDirectionNorth": {
+    "en": "north",
+    "ar": "الشمال",
+    "ur": "شمال",
+    "id": "utara",
+    "description": "Compass point, lower case, used inside a sentence read by a screen reader."
+  },
+  "qiblaDirectionNortheast": {
+    "en": "northeast",
+    "ar": "الشمال الشرقي",
+    "ur": "شمال مشرق",
+    "id": "timur laut",
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionEast": {
+    "en": "east",
+    "ar": "الشرق",
+    "ur": "مشرق",
+    "id": "timur",
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionSoutheast": {
+    "en": "southeast",
+    "ar": "الجنوب الشرقي",
+    "ur": "جنوب مشرق",
+    "id": "tenggara",
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionSouth": {
+    "en": "south",
+    "ar": "الجنوب",
+    "ur": "جنوب",
+    "id": "selatan",
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionSouthwest": {
+    "en": "southwest",
+    "ar": "الجنوب الغربي",
+    "ur": "جنوب مغرب",
+    "id": "barat daya",
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionWest": {
+    "en": "west",
+    "ar": "الغرب",
+    "ur": "مغرب",
+    "id": "barat",
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionNorthwest": {
+    "en": "northwest",
+    "ar": "الشمال الغربي",
+    "ur": "شمال مغرب",
+    "id": "barat laut",
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionDescription": {
+    "en": "{degrees} degrees, {direction}",
+    "ar": "{degrees} درجة، {direction}",
+    "ur": "{degrees} ڈگری، {direction}",
+    "id": "{degrees} derajat, {direction}",
+    "description": "A bearing spoken by a screen reader, for example '212 degrees, southwest'. Degrees are clockwise from true north.",
+    "placeholders": {
+      "degrees": { "type": "int" },
+      "direction": { "type": "String" }
+    }
+  },
+  "qiblaBearingFromPlace": {
+    "en": "Qibla from {place}: {description}",
+    "ar": "القبلة من {place}: {description}",
+    "ur": "{place} سے قبلہ: {description}",
+    "id": "Kiblat dari {place}: {description}",
+    "description": "Heading with the saved place name and the bearing text.",
+    "placeholders": {
+      "place": { "type": "String" },
+      "description": { "type": "String" }
+    }
+  },
+  "qiblaNorthReference": {
+    "en": "Measured clockwise from true north",
+    "ar": "تُقاس باتجاه عقارب الساعة من الشمال الحقيقي",
+    "ur": "شمالِ حقیقی سے گھڑی کی سمت میں ناپا گیا",
+    "id": "Diukur searah jarum jam dari utara sejati",
+    "description": "Explains what the degrees mean."
+  },
+  "qiblaDistanceToKaaba": {
+    "en": "{km} km to the Kaaba",
+    "ar": "{km} كم إلى الكعبة",
+    "ur": "کعبہ تک {km} کلومیٹر",
+    "id": "{km} km ke Ka'bah",
+    "description": "Great-circle distance to the Kaaba in kilometres.",
+    "placeholders": {
+      "km": { "type": "int" }
+    }
+  },
+  "qiblaAccuracyLabel": {
+    "en": "Compass accuracy: {level}",
+    "ar": "دقة البوصلة: {level}",
+    "ur": "قطب نما کی درستگی: {level}",
+    "id": "Akurasi kompas: {level}",
+    "description": "Accuracy indicator. The level is always written out, never shown by color alone.",
+    "placeholders": {
+      "level": { "type": "String" }
+    }
+  },
+  "qiblaAccuracyHigh": {
+    "en": "High",
+    "ar": "عالية",
+    "ur": "اعلیٰ",
+    "id": "Tinggi",
+    "description": "Compass accuracy level."
+  },
+  "qiblaAccuracyMedium": {
+    "en": "Medium",
+    "ar": "متوسطة",
+    "ur": "درمیانی",
+    "id": "Sedang",
+    "description": "Compass accuracy level."
+  },
+  "qiblaAccuracyLow": {
+    "en": "Low",
+    "ar": "منخفضة",
+    "ur": "کم",
+    "id": "Rendah",
+    "description": "Compass accuracy level."
+  },
+  "qiblaAccuracyUnreliable": {
+    "en": "Unreliable",
+    "ar": "غير موثوقة",
+    "ur": "ناقابلِ اعتماد",
+    "id": "Tidak andal",
+    "description": "Compass accuracy level."
+  },
+  "qiblaCalibrationPrompt": {
+    "en": "Calibrate your compass. Move your phone in a figure eight a few times, away from metal and magnets.",
+    "ar": "عايِر البوصلة. حرّك هاتفك على شكل رقم 8 عدة مرات بعيدًا عن المعادن والمغناطيس.",
+    "ur": "قطب نما کیلیبریٹ کریں۔ فون کو چند بار عدد 8 کی شکل میں گھمائیں، دھات اور مقناطیس سے دور۔",
+    "id": "Kalibrasi kompas. Gerakkan ponsel membentuk angka 8 beberapa kali, jauh dari logam dan magnet.",
+    "description": "Shown when the compass reports low accuracy."
+  },
+  "qiblaInterferenceWarning": {
+    "en": "Magnetic interference nearby. Move away from metal, speakers, magnets and electronics, then check again. The arrow may be wrong until then.",
+    "ar": "يوجد تشويش مغناطيسي قريب. ابتعد عن المعادن ومكبرات الصوت والمغناطيس والأجهزة الإلكترونية ثم تحقق مرة أخرى. قد يكون السهم غير صحيح إلى ذلك الحين.",
+    "ur": "قریب مقناطیسی خلل ہے۔ دھات، اسپیکر، مقناطیس اور برقی آلات سے دور ہوں، پھر دوبارہ دیکھیں۔ تب تک تیر غلط ہو سکتا ہے۔",
+    "id": "Ada gangguan magnet di dekat Anda. Menjauhlah dari logam, speaker, magnet, dan perangkat elektronik, lalu periksa lagi. Panah mungkin tidak tepat sampai saat itu.",
+    "description": "Shown when the magnetic field is outside the expected range or the heading jumps."
+  },
+  "qiblaAtHaram": {
+    "en": "You are at the Haram in Makkah. Face the Kaaba directly.",
+    "ar": "أنت في المسجد الحرام بمكة المكرمة. استقبل الكعبة المشرفة مباشرة.",
+    "ur": "آپ مکہ مکرمہ میں حرم شریف میں ہیں۔ کعبہ شریف کی طرف براہِ راست رخ کریں۔",
+    "id": "Anda berada di Masjidil Haram, Makkah. Menghadaplah langsung ke Ka'bah.",
+    "description": "Shown instead of a compass when the saved location is within the Haram."
+  },
+  "qiblaFacingQibla": {
+    "en": "You are facing the Qibla",
+    "ar": "أنت تواجه القبلة",
+    "ur": "آپ کا رخ قبلے کی طرف ہے",
+    "id": "Anda menghadap kiblat",
+    "description": "Shown and announced when the phone points within a few degrees of the Qibla."
+  },
+  "qiblaTurnHint": {
+    "en": "Turn until the arrow points straight up",
+    "ar": "استدر حتى يشير السهم إلى الأعلى مباشرة",
+    "ur": "اس وقت تک گھومیں جب تک تیر سیدھا اوپر نہ ہو جائے",
+    "id": "Putar badan sampai panah menunjuk lurus ke atas",
+    "description": "Plain instruction under the compass arrow."
+  },
+  "qiblaTurnRight": {
+    "en": "Turn {degrees} degrees to the right",
+    "ar": "استدر {degrees} درجة إلى اليمين",
+    "ur": "{degrees} ڈگری دائیں گھومیں",
+    "id": "Putar {degrees} derajat ke kanan",
+    "description": "Screen-reader description of the arrow when the Qibla is to the right.",
+    "placeholders": {
+      "degrees": { "type": "int" }
+    }
+  },
+  "qiblaTurnLeft": {
+    "en": "Turn {degrees} degrees to the left",
+    "ar": "استدر {degrees} درجة إلى اليسار",
+    "ur": "{degrees} ڈگری بائیں گھومیں",
+    "id": "Putar {degrees} derajat ke kiri",
+    "description": "Screen-reader description of the arrow when the Qibla is to the left.",
+    "placeholders": {
+      "degrees": { "type": "int" }
+    }
+  },
+  "qiblaMagneticNorthNote": {
+    "en": "The compass is using magnetic north. A small error is possible.",
+    "ar": "تستخدم البوصلة الشمال المغناطيسي. قد يوجد خطأ بسيط.",
+    "ur": "قطب نما مقناطیسی شمال استعمال کر رہا ہے۔ معمولی غلطی ممکن ہے۔",
+    "id": "Kompas memakai utara magnetis. Kesalahan kecil mungkin terjadi.",
+    "description": "Shown when the platform could not apply magnetic declination."
+  },
+  "qiblaNoCompassTitle": {
+    "en": "No compass on this device",
+    "ar": "لا توجد بوصلة في هذا الجهاز",
+    "ur": "اس آلے میں قطب نما نہیں ہے",
+    "id": "Perangkat ini tidak memiliki kompas",
+    "description": "Heading of the no-compass fallback."
+  },
+  "qiblaNoCompassInstructions": {
+    "en": "Use the direction above. Find north with a map, a compass, or the sun (it rises in the east and sets in the west), then turn clockwise from north by the number of degrees shown.",
+    "ar": "استخدم الاتجاه أعلاه. حدّد الشمال بخريطة أو بوصلة أو بالشمس (تشرق من الشرق وتغرب في الغرب)، ثم استدر باتجاه عقارب الساعة من الشمال بعدد الدرجات المعروض.",
+    "ur": "اوپر دی گئی سمت استعمال کریں۔ نقشے، قطب نما یا سورج (جو مشرق سے طلوع اور مغرب میں غروب ہوتا ہے) سے شمال معلوم کریں، پھر شمال سے گھڑی کی سمت میں دکھائے گئے ڈگری کے برابر گھومیں۔",
+    "id": "Gunakan arah di atas. Tentukan utara dengan peta, kompas, atau matahari (terbit di timur, terbenam di barat), lalu putar searah jarum jam dari utara sebesar derajat yang ditampilkan.",
+    "description": "Plain instructions when the device has no usable compass."
+  },
+  "qiblaCompassError": {
+    "en": "The compass could not be started. The direction is shown in degrees instead.",
+    "ar": "تعذّر تشغيل البوصلة. يُعرض الاتجاه بالدرجات بدلًا من ذلك.",
+    "ur": "قطب نما شروع نہیں ہو سکا۔ اس کے بجائے سمت ڈگری میں دکھائی جا رہی ہے۔",
+    "id": "Kompas tidak dapat dimulai. Arah ditampilkan dalam derajat.",
+    "description": "Shown when starting the sensors fails."
+  },
+  "qiblaStartingCompass": {
+    "en": "Starting the compass",
+    "ar": "جارٍ تشغيل البوصلة",
+    "ur": "قطب نما شروع ہو رہا ہے",
+    "id": "Memulai kompas",
+    "description": "Shown briefly until the first compass reading arrives."
+  },
+  "qiblaNoLocation": {
+    "en": "Set your location first so the Qibla direction can be worked out.",
+    "ar": "حدّد موقعك أولًا ليتم حساب اتجاه القبلة.",
+    "ur": "پہلے اپنا مقام منتخب کریں تاکہ قبلے کی سمت معلوم ہو سکے۔",
+    "id": "Atur lokasi Anda dulu agar arah kiblat dapat dihitung.",
+    "description": "Shown when no location has been saved."
+  },
+  "qiblaArrowSemantics": {
+    "en": "Compass arrow",
+    "ar": "سهم البوصلة",
+    "ur": "قطب نما کا تیر",
+    "id": "Panah kompas",
+    "description": "Prefix of the screen-reader label of the rotating arrow."
+  }
+}

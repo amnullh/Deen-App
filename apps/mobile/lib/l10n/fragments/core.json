@@ -1,0 +1,93 @@
+{
+  "appTitle": {
+    "en": "Deen App",
+    "ar": "Deen App",
+    "ur": "Deen App",
+    "id": "Deen App",
+    "description": "Brand name shown in the app bar and task switcher."
+  },
+  "homeTitle": {
+    "en": "Prayer times",
+    "ar": "مواقيت الصلاة",
+    "ur": "نماز کے اوقات",
+    "id": "Waktu salat"
+  },
+  "reliabilityCheckTitle": {
+    "en": "Reliability check",
+    "ar": "فحص الموثوقية",
+    "ur": "اعتماد کی جانچ",
+    "id": "Pemeriksaan keandalan"
+  },
+  "reliabilityCheckHint": {
+    "en": "Check that your alerts will fire",
+    "ar": "تأكد من أن تنبيهاتك ستعمل",
+    "ur": "یقینی بنائیں کہ آپ کے الرٹس بجیں گے",
+    "id": "Pastikan peringatan Anda akan berbunyi"
+  },
+  "settingsTitle": {
+    "en": "Settings",
+    "ar": "الإعدادات",
+    "ur": "ترتیبات",
+    "id": "Pengaturan"
+  },
+  "nextPrayerLabel": {
+    "en": "Next prayer",
+    "ar": "الصلاة القادمة",
+    "ur": "اگلی نماز",
+    "id": "Salat berikutnya"
+  },
+  "loading": {
+    "en": "Loading",
+    "ar": "جارٍ التحميل",
+    "ur": "لوڈ ہو رہا ہے",
+    "id": "Memuat"
+  },
+  "errorGeneric": {
+    "en": "Something went wrong. Please try again.",
+    "ar": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "ur": "کچھ غلط ہو گیا۔ براہِ کرم دوبارہ کوشش کریں۔",
+    "id": "Terjadi kesalahan. Silakan coba lagi."
+  },
+  "prayerFajr": {
+    "en": "Fajr",
+    "ar": "الفجر",
+    "ur": "فجر",
+    "id": "Subuh"
+  },
+  "prayerSunrise": {
+    "en": "Sunrise",
+    "ar": "الشروق",
+    "ur": "طلوعِ آفتاب",
+    "id": "Terbit"
+  },
+  "prayerDhuhr": {
+    "en": "Dhuhr",
+    "ar": "الظهر",
+    "ur": "ظہر",
+    "id": "Zuhur"
+  },
+  "prayerAsr": {
+    "en": "Asr",
+    "ar": "العصر",
+    "ur": "عصر",
+    "id": "Asar"
+  },
+  "prayerMaghrib": {
+    "en": "Maghrib",
+    "ar": "المغرب",
+    "ur": "مغرب",
+    "id": "Magrib"
+  },
+  "prayerIsha": {
+    "en": "Isha",
+    "ar": "العشاء",
+    "ur": "عشاء",
+    "id": "Isya"
+  },
+  "prayerJumuah": {
+    "en": "Jumu'ah",
+    "ar": "الجمعة",
+    "ur": "جمعہ",
+    "id": "Jumat"
+  }
+}

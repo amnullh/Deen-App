@@ -1,0 +1,29 @@
+{
+  "brand": "xiaomi",
+  "steps": {
+    "en": [
+      "Open Settings, then Apps, then Manage apps, and choose Deen App.",
+      "Turn on Autostart.",
+      "Open Battery saver (or Battery) for Deen App and choose No restrictions.",
+      "Open the recent apps screen, touch and hold the Deen App card, and choose Lock, so the system does not close it."
+    ],
+    "ar": [
+      "افتح الإعدادات ثم التطبيقات ثم إدارة التطبيقات، واختر Deen App.",
+      "فعّل خيار التشغيل التلقائي.",
+      "افتح توفير البطارية (أو البطارية) الخاص بـ Deen App واختر «بلا قيود».",
+      "افتح شاشة التطبيقات الأخيرة، واضغط مطولًا على بطاقة Deen App، ثم اختر «قفل» كي لا يغلقه النظام."
+    ],
+    "ur": [
+      "ترتیبات کھولیں، پھر ایپس، پھر ایپس کا نظم، اور Deen App منتخب کریں۔",
+      "آٹو اسٹارٹ آن کریں۔",
+      "Deen App کے لیے بیٹری سیور (یا بیٹری) کھولیں اور «کوئی پابندی نہیں» منتخب کریں۔",
+      "حالیہ ایپس کی اسکرین کھولیں، Deen App کے کارڈ کو دبائے رکھیں اور «لاک» منتخب کریں تاکہ سسٹم اسے بند نہ کرے۔"
+    ],
+    "id": [
+      "Buka Pengaturan, lalu Aplikasi, lalu Kelola aplikasi, dan pilih Deen App.",
+      "Aktifkan Mulai otomatis.",
+      "Buka Penghemat baterai (atau Baterai) untuk Deen App dan pilih Tanpa batasan.",
+      "Buka layar aplikasi terbaru, tekan dan tahan kartu Deen App, lalu pilih Kunci agar sistem tidak menutupnya."
+    ]
+  }
+}

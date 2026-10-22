@@ -1,0 +1,380 @@
+{
+  "reliabilityIntro": {
+    "en": "This screen shows whether your alerts will fire, and how to fix anything that could stop them.",
+    "ar": "تعرض هذه الشاشة ما إذا كانت تنبيهاتك ستعمل، وكيف تُصلح ما قد يوقفها.",
+    "ur": "یہ اسکرین بتاتی ہے کہ آپ کے الرٹس بجیں گے یا نہیں، اور انہیں روکنے والی کسی بھی چیز کو کیسے ٹھیک کیا جائے۔",
+    "id": "Layar ini menunjukkan apakah peringatan Anda akan berbunyi dan cara memperbaiki hal yang bisa menghentikannya."
+  },
+  "reliabilityAllGood": {
+    "en": "Everything looks good.",
+    "ar": "كل شيء يبدو جيدًا.",
+    "ur": "سب کچھ ٹھیک نظر آ رہا ہے۔",
+    "id": "Semuanya tampak baik."
+  },
+  "reliabilityProblemsFound": {
+    "en": "Something needs your attention.",
+    "ar": "هناك أمر يحتاج إلى انتباهك.",
+    "ur": "کسی چیز پر توجہ درکار ہے۔",
+    "id": "Ada hal yang perlu diperhatikan."
+  },
+  "reliabilityRefresh": {
+    "en": "Check again",
+    "ar": "تحقق مرة أخرى",
+    "ur": "دوبارہ جانچیں",
+    "id": "Periksa lagi"
+  },
+  "reliabilityLoadFailed": {
+    "en": "The check could not be completed. Please try again.",
+    "ar": "تعذّر إكمال الفحص. حاول مرة أخرى.",
+    "ur": "جانچ مکمل نہیں ہو سکی۔ براہِ کرم دوبارہ کوشش کریں۔",
+    "id": "Pemeriksaan tidak dapat diselesaikan. Silakan coba lagi."
+  },
+  "reliabilityUnsupported": {
+    "en": "This device cannot schedule alerts, so there is nothing to check here.",
+    "ar": "لا يستطيع هذا الجهاز جدولة التنبيهات، فلا شيء لفحصه هنا.",
+    "ur": "یہ ڈیوائس الرٹس مقرر نہیں کر سکتی، اس لیے یہاں جانچنے کو کچھ نہیں۔",
+    "id": "Perangkat ini tidak dapat menjadwalkan peringatan, jadi tidak ada yang perlu diperiksa."
+  },
+  "reliabilityPermissionsTitle": {
+    "en": "Permissions",
+    "ar": "الأذونات",
+    "ur": "اجازتیں",
+    "id": "Izin"
+  },
+  "reliabilityStateOn": {
+    "en": "On",
+    "ar": "مفعّل",
+    "ur": "آن",
+    "id": "Aktif"
+  },
+  "reliabilityStateOff": {
+    "en": "Off",
+    "ar": "معطّل",
+    "ur": "بند",
+    "id": "Mati"
+  },
+  "reliabilityNotifications": {
+    "en": "Notifications",
+    "ar": "الإشعارات",
+    "ur": "نوٹیفکیشن",
+    "id": "Notifikasi"
+  },
+  "reliabilityNotificationsFix": {
+    "en": "Notifications are off, so alerts cannot appear. Allow notifications for Deen App.",
+    "ar": "الإشعارات معطّلة، فلا يمكن ظهور التنبيهات. اسمح بالإشعارات لـ Deen App.",
+    "ur": "نوٹیفکیشن بند ہیں، اس لیے الرٹس ظاہر نہیں ہو سکتے۔ Deen App کے لیے نوٹیفکیشن کی اجازت دیں۔",
+    "id": "Notifikasi mati, jadi peringatan tidak dapat muncul. Izinkan notifikasi untuk Deen App."
+  },
+  "reliabilityNotificationsAllow": {
+    "en": "Allow notifications",
+    "ar": "السماح بالإشعارات",
+    "ur": "نوٹیفکیشن کی اجازت دیں",
+    "id": "Izinkan notifikasi"
+  },
+  "reliabilityNotificationsSettings": {
+    "en": "Open notification settings",
+    "ar": "فتح إعدادات الإشعارات",
+    "ur": "نوٹیفکیشن کی ترتیبات کھولیں",
+    "id": "Buka pengaturan notifikasi"
+  },
+  "reliabilityExact": {
+    "en": "Exact alarms (Android)",
+    "ar": "المنبّهات الدقيقة (أندرويد)",
+    "ur": "درست الارم (اینڈرائیڈ)",
+    "id": "Alarm tepat waktu (Android)"
+  },
+  "reliabilityExactFix": {
+    "en": "Exact alarms are off, so alerts may be a few minutes late. Allow “Alarms & reminders” for Deen App.",
+    "ar": "المنبّهات الدقيقة معطّلة، فقد تتأخر التنبيهات بضع دقائق. اسمح بـ «المنبّهات والتذكيرات» لـ Deen App.",
+    "ur": "درست الارم بند ہیں، اس لیے الرٹس چند منٹ دیر سے آ سکتے ہیں۔ Deen App کے لیے «الارم اور یاد دہانیاں» کی اجازت دیں۔",
+    "id": "Alarm tepat waktu mati, jadi peringatan bisa terlambat beberapa menit. Izinkan “Alarm & pengingat” untuk Deen App."
+  },
+  "reliabilityExactOpen": {
+    "en": "Open alarm settings",
+    "ar": "فتح إعدادات المنبّهات",
+    "ur": "الارم کی ترتیبات کھولیں",
+    "id": "Buka pengaturan alarm"
+  },
+  "reliabilityBattery": {
+    "en": "Battery optimization (Android)",
+    "ar": "تحسين البطارية (أندرويد)",
+    "ur": "بیٹری آپٹیمائزیشن (اینڈرائیڈ)",
+    "id": "Optimalisasi baterai (Android)"
+  },
+  "reliabilityBatteryOk": {
+    "en": "Deen App is not restricted.",
+    "ar": "التطبيق غير مقيَّد.",
+    "ur": "Deen App پر کوئی پابندی نہیں۔",
+    "id": "Deen App tidak dibatasi."
+  },
+  "reliabilityBatteryFix": {
+    "en": "On some phones, battery saving can stop alerts. Open the battery settings and let Deen App run in the background.",
+    "ar": "في بعض الهواتف قد يوقف توفير البطارية التنبيهات. افتح إعدادات البطارية واسمح لـ Deen App بالعمل في الخلفية.",
+    "ur": "کچھ فونز پر بیٹری بچت الرٹس کو روک سکتی ہے۔ بیٹری کی ترتیبات کھولیں اور Deen App کو بیک گراؤنڈ میں چلنے دیں۔",
+    "id": "Di beberapa ponsel, penghemat baterai dapat menghentikan peringatan. Buka pengaturan baterai dan biarkan Deen App berjalan di latar belakang."
+  },
+  "reliabilityBatteryOpen": {
+    "en": "Open battery settings",
+    "ar": "فتح إعدادات البطارية",
+    "ur": "بیٹری کی ترتیبات کھولیں",
+    "id": "Buka pengaturan baterai"
+  },
+  "reliabilitySound": {
+    "en": "Notification sound (iPhone)",
+    "ar": "صوت الإشعارات (آيفون)",
+    "ur": "نوٹیفکیشن کی آواز (آئی فون)",
+    "id": "Suara notifikasi (iPhone)"
+  },
+  "reliabilitySoundFix": {
+    "en": "Sound is off in the notification settings, so alerts will be silent. Allow sound for Deen App.",
+    "ar": "الصوت معطّل في إعدادات الإشعارات، فستكون التنبيهات صامتة. اسمح بالصوت لـ Deen App.",
+    "ur": "نوٹیفکیشن کی ترتیبات میں آواز بند ہے، اس لیے الرٹس خاموش ہوں گے۔ Deen App کے لیے آواز کی اجازت دیں۔",
+    "id": "Suara mati di pengaturan notifikasi, jadi peringatan akan senyap. Izinkan suara untuk Deen App."
+  },
+  "reliabilitySilentSwitchTip": {
+    "en": "If your iPhone's silent switch is on, notification sounds are muted. Tapping the notification plays the full Azaan.",
+    "ar": "إذا كان مفتاح الصامت في آيفون مفعّلًا فإن أصوات الإشعارات تُكتم. والضغط على الإشعار يشغّل الأذان كاملًا.",
+    "ur": "اگر آپ کے آئی فون کا خاموش سوئچ آن ہے تو نوٹیفکیشن کی آوازیں بند رہتی ہیں۔ نوٹیفکیشن پر ٹیپ کرنے سے مکمل اذان چلتی ہے۔",
+    "id": "Jika tombol senyap iPhone aktif, suara notifikasi dibisukan. Mengetuk notifikasi memutar azan lengkap."
+  },
+  "reliabilityIosRefreshNote": {
+    "en": "On iPhone, alerts are refreshed each time you open the app. Open it every few days to keep them going.",
+    "ar": "في آيفون تُحدَّث التنبيهات في كل مرة تفتح فيها التطبيق. افتحه كل بضعة أيام لتستمر.",
+    "ur": "آئی فون پر ہر بار ایپ کھولنے پر الرٹس تازہ ہوتے ہیں۔ انہیں جاری رکھنے کے لیے ہر چند دن بعد ایپ کھولیں۔",
+    "id": "Di iPhone, peringatan diperbarui setiap kali Anda membuka aplikasi. Buka setiap beberapa hari agar tetap berjalan."
+  },
+  "reliabilityRunsUntilTitle": {
+    "en": "Alerts run until",
+    "ar": "تعمل التنبيهات حتى",
+    "ur": "الرٹس اس تاریخ تک چلیں گے",
+    "id": "Peringatan berjalan sampai"
+  },
+  "reliabilityRunsUntilNone": {
+    "en": "No alerts are scheduled yet.",
+    "ar": "لا توجد تنبيهات مجدولة بعد.",
+    "ur": "ابھی کوئی الرٹ مقرر نہیں۔",
+    "id": "Belum ada peringatan terjadwal."
+  },
+  "reliabilityRunsUntilHint": {
+    "en": "Open the app before this date to keep alerts going. It renews them every time.",
+    "ar": "افتح التطبيق قبل هذا التاريخ لتستمر التنبيهات. يجدّدها في كل مرة.",
+    "ur": "الرٹس جاری رکھنے کے لیے اس تاریخ سے پہلے ایپ کھولیں۔ ہر بار کھلنے پر وہ تجدید ہو جاتے ہیں۔",
+    "id": "Buka aplikasi sebelum tanggal ini agar peringatan terus berjalan. Setiap kali dibuka, jadwal diperbarui."
+  },
+  "reliabilityNextTitle": {
+    "en": "Next 5 alerts",
+    "ar": "التنبيهات الخمسة القادمة",
+    "ur": "اگلے 5 الرٹس",
+    "id": "5 peringatan berikutnya"
+  },
+  "reliabilityNextNone": {
+    "en": "Nothing is scheduled.",
+    "ar": "لا شيء مجدول.",
+    "ur": "کچھ بھی مقرر نہیں۔",
+    "id": "Tidak ada yang terjadwal."
+  },
+  "reliabilityNextRow": {
+    "en": "{title}, {type}, {when}",
+    "ar": "{title}، {type}، {when}",
+    "ur": "{title}، {type}، {when}",
+    "id": "{title}, {type}, {when}",
+    "description": "Accessibility label of one upcoming alert.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "type": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityFlagSilenced": {
+    "en": "Silenced by quiet hours",
+    "ar": "مكتوم بسبب ساعات الهدوء",
+    "ur": "خاموش اوقات کی وجہ سے خاموش",
+    "id": "Dibisukan oleh jam tenang"
+  },
+  "reliabilityFlagInexact": {
+    "en": "Timing may be a few minutes late",
+    "ar": "قد يتأخر التوقيت بضع دقائق",
+    "ur": "وقت چند منٹ دیر سے ہو سکتا ہے",
+    "id": "Waktu bisa terlambat beberapa menit"
+  },
+  "reliabilityKindRenewal": {
+    "en": "Renewal notice",
+    "ar": "إشعار التجديد",
+    "ur": "تجدید کی اطلاع",
+    "id": "Pemberitahuan pembaruan"
+  },
+  "reliabilityLastTitle": {
+    "en": "Last alert result",
+    "ar": "نتيجة آخر تنبيه",
+    "ur": "آخری الرٹ کا نتیجہ",
+    "id": "Hasil peringatan terakhir"
+  },
+  "reliabilityLastNone": {
+    "en": "No alert has fired yet.",
+    "ar": "لم يصدر أي تنبيه بعد.",
+    "ur": "ابھی کوئی الرٹ نہیں بجا۔",
+    "id": "Belum ada peringatan yang berbunyi."
+  },
+  "reliabilityLastLine": {
+    "en": "{when}: {result}",
+    "ar": "{when}: {result}",
+    "ur": "{when}: {result}",
+    "id": "{when}: {result}",
+    "description": "Last alert: when it was due, then what happened.",
+    "placeholders": {
+      "when": {
+        "type": "String"
+      },
+      "result": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityResultPlanned": {
+    "en": "Waiting",
+    "ar": "في الانتظار",
+    "ur": "انتظار میں",
+    "id": "Menunggu"
+  },
+  "reliabilityResultFired": {
+    "en": "Delivered",
+    "ar": "تم التسليم",
+    "ur": "پہنچ گیا",
+    "id": "Terkirim"
+  },
+  "reliabilityResultPlayed": {
+    "en": "Azaan played",
+    "ar": "شُغِّل الأذان",
+    "ur": "اذان چلی",
+    "id": "Azan diputar"
+  },
+  "reliabilityResultAcknowledged": {
+    "en": "Stopped by you",
+    "ar": "أوقفته أنت",
+    "ur": "آپ نے روکا",
+    "id": "Dihentikan oleh Anda"
+  },
+  "reliabilityResultMissed": {
+    "en": "Missed",
+    "ar": "فات",
+    "ur": "رہ گیا",
+    "id": "Terlewat"
+  },
+  "reliabilityResultPossiblyMissed": {
+    "en": "Possibly missed",
+    "ar": "ربما فات",
+    "ur": "ممکنہ طور پر رہ گیا",
+    "id": "Mungkin terlewat"
+  },
+  "reliabilityResultSuppressed": {
+    "en": "Silenced",
+    "ar": "مكتوم",
+    "ur": "خاموش کیا گیا",
+    "id": "Dibisukan"
+  },
+  "reliabilityResultFailed": {
+    "en": "Failed",
+    "ar": "فشل",
+    "ur": "ناکام",
+    "id": "Gagal"
+  },
+  "reliabilityTestButton": {
+    "en": "Send a test Azaan in 1 minute",
+    "ar": "أرسل أذانًا تجريبيًا بعد دقيقة",
+    "ur": "1 منٹ میں آزمائشی اذان بھیجیں",
+    "id": "Kirim azan uji dalam 1 menit"
+  },
+  "reliabilityTestScheduled": {
+    "en": "Test Azaan set for {time}. Lock your phone and wait.",
+    "ar": "ضُبط الأذان التجريبي في {time}. اقفل هاتفك وانتظر.",
+    "ur": "آزمائشی اذان {time} پر مقرر ہو گئی۔ اپنا فون لاک کریں اور انتظار کریں۔",
+    "id": "Azan uji dijadwalkan pukul {time}. Kunci ponsel Anda dan tunggu.",
+    "description": "Confirmation after pressing the test button.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityTestNeedsNotifications": {
+    "en": "Allow notifications first, then try again.",
+    "ar": "اسمح بالإشعارات أولًا ثم حاول مرة أخرى.",
+    "ur": "پہلے نوٹیفکیشن کی اجازت دیں، پھر دوبارہ کوشش کریں۔",
+    "id": "Izinkan notifikasi terlebih dahulu, lalu coba lagi."
+  },
+  "reliabilityTestFailed": {
+    "en": "The test could not be set. {reason}",
+    "ar": "تعذّر ضبط التجربة. {reason}",
+    "ur": "آزمائش مقرر نہیں ہو سکی۔ {reason}",
+    "id": "Uji tidak dapat dijadwalkan. {reason}",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityErrorPermissionDenied": {
+    "en": "Notifications are not allowed.",
+    "ar": "الإشعارات غير مسموح بها.",
+    "ur": "نوٹیفکیشن کی اجازت نہیں۔",
+    "id": "Notifikasi tidak diizinkan."
+  },
+  "reliabilityErrorExactDenied": {
+    "en": "Exact alarms are not allowed, so timing may be less precise.",
+    "ar": "المنبّهات الدقيقة غير مسموح بها، فقد يقلّ ضبط التوقيت.",
+    "ur": "درست الارم کی اجازت نہیں، اس لیے وقت کم درست ہو سکتا ہے۔",
+    "id": "Alarm tepat waktu tidak diizinkan, jadi ketepatan waktu bisa berkurang."
+  },
+  "reliabilityErrorServiceBlocked": {
+    "en": "Android blocked the Azaan sound from starting. A notification tone is used instead.",
+    "ar": "منع أندرويد بدء صوت الأذان. تُستخدم نغمة الإشعار بدلًا منه.",
+    "ur": "اینڈرائیڈ نے اذان کی آواز شروع ہونے سے روک دیا۔ اس کی جگہ نوٹیفکیشن کی آواز استعمال ہو گی۔",
+    "id": "Android memblokir pemutaran azan. Nada notifikasi digunakan sebagai gantinya."
+  },
+  "reliabilityErrorBudget": {
+    "en": "There are more alerts than this phone can hold, so the later ones were left out until you open the app again.",
+    "ar": "عدد التنبيهات أكبر مما يتّسع له هذا الهاتف، فتُركت المتأخرة منها حتى تفتح التطبيق مرة أخرى.",
+    "ur": "الرٹس اس فون کی گنجائش سے زیادہ ہیں، اس لیے بعد والے ایپ دوبارہ کھلنے تک چھوڑ دیے گئے۔",
+    "id": "Jumlah peringatan melebihi kapasitas ponsel ini, jadi yang terakhir dilewatkan sampai Anda membuka aplikasi lagi."
+  },
+  "reliabilityErrorInvalid": {
+    "en": "The phone could not accept this alert.",
+    "ar": "لم يستطع الهاتف قبول هذا التنبيه.",
+    "ur": "فون یہ الرٹ قبول نہیں کر سکا۔",
+    "id": "Ponsel tidak dapat menerima peringatan ini."
+  },
+  "reliabilityErrorPlatform": {
+    "en": "The alert system did not respond.",
+    "ar": "لم يستجب نظام التنبيهات.",
+    "ur": "الرٹ سسٹم نے جواب نہیں دیا۔",
+    "id": "Sistem peringatan tidak merespons."
+  },
+  "reliabilityRebuildFailed": {
+    "en": "Your alerts could not be updated. {reason}",
+    "ar": "تعذّر تحديث تنبيهاتك. {reason}",
+    "ur": "آپ کے الرٹس اپ ڈیٹ نہیں ہو سکے۔ {reason}",
+    "id": "Peringatan Anda tidak dapat diperbarui. {reason}",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityRegistered": {
+    "en": "{count} alerts are registered with the phone.",
+    "ar": "{count} تنبيهًا مسجّلًا لدى الهاتف.",
+    "ur": "فون میں {count} الرٹس درج ہیں۔",
+    "id": "{count} peringatan terdaftar di ponsel.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}

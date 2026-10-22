@@ -1,0 +1,1652 @@
+{
+  "@@locale": "en",
+  "aboutAttributionsTitle": "Attributions",
+  "@aboutAttributionsTitle": {
+    "description": "Heading of the attributions section."
+  },
+  "aboutCitiesHeading": "City data",
+  "@aboutCitiesHeading": {
+    "description": "Heading above the GeoNames attribution."
+  },
+  "aboutContentHeading": "Adhkar texts",
+  "@aboutContentHeading": {
+    "description": "Heading of the content sources section."
+  },
+  "aboutDescription": "Prayer times, Azaan alerts and daily worship tools. Everything works offline.",
+  "@aboutDescription": {
+    "description": "Short description of the app at the top of About."
+  },
+  "aboutEntryHint": "Licenses, sources and privacy",
+  "@aboutEntryHint": {
+    "description": "Hint under the About entry in settings."
+  },
+  "aboutFontsHeading": "Fonts",
+  "@aboutFontsHeading": {
+    "description": "Heading above the font attribution."
+  },
+  "aboutHijriHeading": "Hijri calendar data",
+  "@aboutHijriHeading": {
+    "description": "Heading above the Unicode notice."
+  },
+  "aboutLegalEnglishNote": "The wording below is the license wording and stays in English.",
+  "@aboutLegalEnglishNote": {
+    "description": "Note before the English license wording."
+  },
+  "aboutLicensesSubtitle": "Licenses of the software this app is built with",
+  "@aboutLicensesSubtitle": {
+    "description": "Subtitle of the licenses entry."
+  },
+  "aboutLicensesTitle": "Open-source licenses",
+  "@aboutLicensesTitle": {
+    "description": "Entry that opens the list of software licenses."
+  },
+  "aboutNoDataCollected": "Deen App collects no data. There are no accounts, no analytics and no ads. Your location stays on this device and is used only to work out prayer times and the Qibla direction.",
+  "@aboutNoDataCollected": {
+    "description": "The no-data-collected statement."
+  },
+  "aboutPrivacyHeading": "Your privacy",
+  "@aboutPrivacyHeading": {
+    "description": "Heading of the privacy statement."
+  },
+  "aboutPrivacyPolicyAddress": "Read the full policy at: {address}",
+  "@aboutPrivacyPolicyAddress": {
+    "description": "Shown when the privacy policy address is known.",
+    "placeholders": {
+      "address": {
+        "type": "String"
+      }
+    }
+  },
+  "aboutPrivacyPolicyPending": "The full privacy policy will be published before release. It will say the same thing: the app collects no data.",
+  "@aboutPrivacyPolicyPending": {
+    "description": "Placeholder shown until the privacy policy address is known."
+  },
+  "aboutPrivacyPolicyTitle": "Privacy policy",
+  "@aboutPrivacyPolicyTitle": {
+    "description": "Heading of the privacy policy section."
+  },
+  "aboutTitle": "About",
+  "@aboutTitle": {
+    "description": "Title of the About screen."
+  },
+  "aboutVersion": "Version {version}",
+  "@aboutVersion": {
+    "description": "App version.",
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarBookmarkAdd": "Add bookmark",
+  "@adhkarBookmarkAdd": {
+    "description": "Tooltip and screen-reader label of the bookmark button when the entry is not bookmarked."
+  },
+  "adhkarBookmarkRemove": "Remove bookmark",
+  "@adhkarBookmarkRemove": {
+    "description": "Tooltip and screen-reader label of the bookmark button when the entry is bookmarked."
+  },
+  "adhkarBookmarksEmpty": "You have not bookmarked anything yet. Use the bookmark button on an entry to save it here.",
+  "@adhkarBookmarksEmpty": {
+    "description": "Empty state of the bookmarks screen."
+  },
+  "adhkarBookmarksTitle": "Bookmarks",
+  "@adhkarBookmarksTitle": {
+    "description": "Title of the bookmarks screen and its button."
+  },
+  "adhkarCollectionAfterPrayer": "After prayer",
+  "@adhkarCollectionAfterPrayer": {
+    "description": "Collection name."
+  },
+  "adhkarCollectionBeforeSleep": "Before sleep",
+  "@adhkarCollectionBeforeSleep": {
+    "description": "Collection name."
+  },
+  "adhkarCollectionEvening": "Evening adhkar",
+  "@adhkarCollectionEvening": {
+    "description": "Collection name."
+  },
+  "adhkarCollectionMorning": "Morning adhkar",
+  "@adhkarCollectionMorning": {
+    "description": "Collection name."
+  },
+  "adhkarCollectionOther": "Other adhkar",
+  "@adhkarCollectionOther": {
+    "description": "Collection name."
+  },
+  "adhkarCollectionWaking": "On waking",
+  "@adhkarCollectionWaking": {
+    "description": "Collection name."
+  },
+  "adhkarCountLabel": "Tap to count: {done} of {total}",
+  "@adhkarCountLabel": {
+    "description": "Text and screen-reader label of the large counting button.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarCreditEntry": "Entry {order}: {reference}",
+  "@adhkarCreditEntry": {
+    "description": "Heading of one text in the credits list.",
+    "placeholders": {
+      "order": {
+        "type": "int"
+      },
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarCreditReviewer": "Reviewed by {reviewer} on {date}.",
+  "@adhkarCreditReviewer": {
+    "description": "Reviewer and review date of one text.",
+    "placeholders": {
+      "reviewer": {
+        "type": "String"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarCreditSource": "Source: {source}. License: {license}.",
+  "@adhkarCreditSource": {
+    "description": "Source and license of one text.",
+    "placeholders": {
+      "source": {
+        "type": "String"
+      },
+      "license": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarCreditsCount": "Texts listed: {count}",
+  "@adhkarCreditsCount": {
+    "description": "Subtitle of the credits entry in About.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarCreditsEmpty": "This version of the app includes no adhkar texts, so there are no sources to list yet.",
+  "@adhkarCreditsEmpty": {
+    "description": "Empty state of the credits screen."
+  },
+  "adhkarCreditsIntro": "Every text lists where it comes from, its license and who reviewed it.",
+  "@adhkarCreditsIntro": {
+    "description": "Introduction on the credits screen."
+  },
+  "adhkarCreditsTitle": "Content sources and reviewers",
+  "@adhkarCreditsTitle": {
+    "description": "Title of the credits screen and its entry in About."
+  },
+  "adhkarEmptyBody": "This version of the app does not include adhkar texts yet. They will be added only after their sources are licensed and a scholar has reviewed them.",
+  "@adhkarEmptyBody": {
+    "description": "Explanation in the empty state; says why there is no adhkar content."
+  },
+  "adhkarEmptyTitle": "Adhkar are not available yet",
+  "@adhkarEmptyTitle": {
+    "description": "Heading of the empty state shown while the content pack is empty."
+  },
+  "adhkarEntryCount": "Entries: {count}",
+  "@adhkarEntryCount": {
+    "description": "Number of entries in a collection, shown under its name.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarEntryDone": "Done",
+  "@adhkarEntryDone": {
+    "description": "Label of the counting button once the entry reached its repeat count."
+  },
+  "adhkarEntryHint": "Daily remembrances, bookmarks and reminders",
+  "@adhkarEntryHint": {
+    "description": "One-line hint under the adhkar entry on the home screen."
+  },
+  "adhkarLoadError": "The adhkar could not be loaded.",
+  "@adhkarLoadError": {
+    "description": "Shown when the content pack fails to load."
+  },
+  "adhkarNext": "Next entry",
+  "@adhkarNext": {
+    "description": "Tooltip of the next button."
+  },
+  "adhkarNotFound": "This collection is not available.",
+  "@adhkarNotFound": {
+    "description": "Shown when a collection id is not in the pack."
+  },
+  "adhkarPosition": "Entry {position} of {total}",
+  "@adhkarPosition": {
+    "description": "Position of the shown entry in its collection.",
+    "placeholders": {
+      "position": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarPrevious": "Previous entry",
+  "@adhkarPrevious": {
+    "description": "Tooltip of the previous button."
+  },
+  "adhkarProgressLabel": "{done} of {total} entries complete",
+  "@adhkarProgressLabel": {
+    "description": "Progress through a session, shown above the entry and read by screen readers.",
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarReminderAfter": "{minutes} min after {prayer}",
+  "@adhkarReminderAfter": {
+    "description": "Reminder timing, positive offset.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarReminderAnchor": "Time it from",
+  "@adhkarReminderAnchor": {
+    "description": "Label above the choice of prayer a reminder follows."
+  },
+  "adhkarReminderAt": "At {prayer} time",
+  "@adhkarReminderAt": {
+    "description": "Reminder timing, zero offset.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarReminderBefore": "{minutes} min before {prayer}",
+  "@adhkarReminderBefore": {
+    "description": "Reminder timing, negative offset.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarReminderEarlier": "5 minutes earlier",
+  "@adhkarReminderEarlier": {
+    "description": "Tooltip of the button that moves a reminder earlier."
+  },
+  "adhkarReminderEnable": "Remind me",
+  "@adhkarReminderEnable": {
+    "description": "Label of the on/off switch of a reminder."
+  },
+  "adhkarReminderEvening": "Evening reminder",
+  "@adhkarReminderEvening": {
+    "description": "Heading of the evening reminder card."
+  },
+  "adhkarReminderFajrOnly": "Morning reminders follow Fajr.",
+  "@adhkarReminderFajrOnly": {
+    "description": "Explains that the morning reminder has a fixed anchor."
+  },
+  "adhkarReminderLater": "5 minutes later",
+  "@adhkarReminderLater": {
+    "description": "Tooltip of the button that moves a reminder later."
+  },
+  "adhkarReminderMorning": "Morning reminder",
+  "@adhkarReminderMorning": {
+    "description": "Heading of the morning reminder card."
+  },
+  "adhkarReminderNote": "Reminders are notifications on this device. They follow your prayer times, so they move with your location and calculation method.",
+  "@adhkarReminderNote": {
+    "description": "Note at the bottom of the reminder settings."
+  },
+  "adhkarReminderSaveError": "The reminder could not be saved.",
+  "@adhkarReminderSaveError": {
+    "description": "Shown when saving a reminder fails."
+  },
+  "adhkarRemindersTitle": "Adhkar reminders",
+  "@adhkarRemindersTitle": {
+    "description": "Title of the reminder settings screen and its button."
+  },
+  "adhkarRepeatLabel": "Repetitions: {count}",
+  "@adhkarRepeatLabel": {
+    "description": "How many times the entry is recited.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "adhkarSessionComplete": "Session complete",
+  "@adhkarSessionComplete": {
+    "description": "Shown when every entry reached its repeat count."
+  },
+  "adhkarSourceLabel": "Source: {reference}",
+  "@adhkarSourceLabel": {
+    "description": "Source reference of an entry.",
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "adhkarStartAgain": "Start again",
+  "@adhkarStartAgain": {
+    "description": "Button that begins a new session after one is complete."
+  },
+  "adhkarTitle": "Adhkar",
+  "@adhkarTitle": {
+    "description": "Title of the adhkar collections screen."
+  },
+  "adhkarTranslationFallbackHeading": "Translation (English; not available in your language yet)",
+  "@adhkarTranslationFallbackHeading": {
+    "description": "Heading used when only the English translation exists."
+  },
+  "adhkarTranslationHeading": "Translation",
+  "@adhkarTranslationHeading": {
+    "description": "Heading above the translation of an entry."
+  },
+  "adhkarTransliterationHeading": "Transliteration",
+  "@adhkarTransliterationHeading": {
+    "description": "Heading above the transliteration of an entry."
+  },
+  "adhkarUndo": "Undo last count",
+  "@adhkarUndo": {
+    "description": "Tooltip of the undo button."
+  },
+  "alertAudioIntro": "Where the Azaan plays when headphones or a Bluetooth device are connected. Without them it plays on the speaker.",
+  "alertAudioTitle": "Audio output",
+  "alertCauseAppNotRun": "The app had not been opened.",
+  "alertCauseBatteryRestricted": "Battery saving may have stopped it. Check the battery settings.",
+  "alertCauseCallInProgress": "A phone call was in progress.",
+  "alertCauseExactAlarmDenied": "Exact alarms are off, so Android may have delayed it.",
+  "alertCauseFgsBlocked": "Android did not let the app start the Azaan, so a notification tone was used.",
+  "alertCauseNotificationDenied": "Notifications were turned off.",
+  "alertCauseQuietHours": "Silenced by quiet hours.",
+  "alertCauseScheduleEnded": "The scheduled alerts ran out because the app was not opened for a long time. Opening it renewed them.",
+  "alertCauseSilentMode": "The phone was on silent.",
+  "alertCauseUnknown": "The reason is not known.",
+  "alertExactBody": "To sound at the exact prayer time, Android needs the “Alarms & reminders” permission for Deen App. Without it, alerts still arrive but may be a few minutes late.",
+  "alertExactCheck": "I changed it, check again",
+  "alertExactGranted": "Exact alarms are on.",
+  "alertExactInexact": "Alerts will still arrive, but timing may be less precise. You can change this later in the Reliability check.",
+  "alertExactOpen": "Open alarm settings",
+  "alertExactSkip": "Continue without it",
+  "alertExactTitle": "Allow exact alarms?",
+  "alertIgnoreQuietHours": "Ignore quiet hours",
+  "alertIgnoreQuietHoursHint": "Keep this alert audible even inside quiet hours.",
+  "alertLoudAndroidOnly": "Loud mode is available on Android only. On iPhone the silent switch mutes the notification sound; tapping the notification still plays the full Azaan.",
+  "alertLoudIntro": "Off by default. When on for a prayer, the Azaan sounds even if the phone is on silent. Deen App never changes your system volume unless you choose this.",
+  "alertLoudSwitch": "Loud mode for {prayer}",
+  "@alertLoudSwitch": {
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertLoudTitle": "Loud mode",
+  "alertMissedDismiss": "Dismiss",
+  "alertMissedLine": "{when}: {cause}",
+  "@alertMissedLine": {
+    "description": "One line in the missed-alert notice: when, then the likely cause.",
+    "placeholders": {
+      "when": {
+        "type": "String"
+      },
+      "cause": {
+        "type": "String"
+      }
+    }
+  },
+  "alertMissedMore": "and {count} more",
+  "@alertMissedMore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "alertMissedOpenCheck": "Open Reliability check",
+  "alertMissedPossibly": "iPhone cannot confirm delivery, so this one is only possibly missed.",
+  "alertMissedTitle": "An alert may not have sounded",
+  "alertMissedTitleMany": "Some alerts may not have sounded",
+  "alertNotifAdhkarEveningBody": "A good time for your evening remembrance.",
+  "alertNotifAdhkarEveningTitle": "Evening adhkar",
+  "alertNotifAdhkarMorningBody": "A good time for your morning remembrance.",
+  "alertNotifAdhkarMorningTitle": "Morning adhkar",
+  "alertNotifPrayerBody": "It is time for {prayer}.",
+  "@alertNotifPrayerBody": {
+    "description": "Body of the notification at prayer time.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertNotifPrayerTitle": "{prayer} prayer",
+  "@alertNotifPrayerTitle": {
+    "description": "Title of the notification at prayer time. The placeholder is the prayer name.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertNotifPreBody": "Get ready for the {prayer} prayer.",
+  "@alertNotifPreBody": {
+    "description": "Body of the reminder before a prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertNotifPreTitle": "{prayer} in {minutes} min",
+  "@alertNotifPreTitle": {
+    "description": "Title of the reminder before a prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertNotifRenewalBody": "Your scheduled alerts end soon. Open the app once and they are renewed.",
+  "alertNotifRenewalTitle": "Open Deen App to keep your alerts on",
+  "@alertNotifRenewalTitle": {
+    "description": "Shown about a week before the scheduled alerts run out."
+  },
+  "alertNotifStopLabel": "Stop",
+  "@alertNotifStopLabel": {
+    "description": "Label of the notification button that stops the Azaan."
+  },
+  "alertNotifSuhoorBody": "Fajr is in {minutes} min.",
+  "@alertNotifSuhoorBody": {
+    "description": "Body of the suhoor reminder.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertNotifSuhoorTitle": "Suhoor reminder",
+  "alertOptionsTile": "More alert options",
+  "alertOptionsTileHint": "Loud mode, quiet hours, reminders and audio output",
+  "alertOptionsTitle": "Alert options",
+  "alertOutputBluetooth": "Bluetooth",
+  "alertOutputHeadphones": "Headphones",
+  "alertOutputSpeaker": "Speaker",
+  "alertPreviewFailed": "This recording could not be played.",
+  "alertPreviewPlay": "Play {name}",
+  "@alertPreviewPlay": {
+    "description": "Accessibility label of a preview button.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alertPreviewStop": "Stop preview",
+  "alertQuietEnd": "Ends at",
+  "alertQuietIntro": "Alerts that would make a sound inside quiet hours become silent notifications, unless a prayer is set to ignore quiet hours.",
+  "alertQuietRange": "Quiet hours {start} to {end}",
+  "@alertQuietRange": {
+    "description": "Summary of the chosen quiet hours.",
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "alertQuietStart": "Starts at",
+  "alertQuietSwitch": "Use quiet hours",
+  "alertQuietTitle": "Quiet hours",
+  "alertReminderFor": "Reminder for {prayer}",
+  "@alertReminderFor": {
+    "description": "Accessibility label of the reminder menu for one prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertReminderIntro": "A reminder is never a full Azaan. It uses a short tone at most.",
+  "alertReminderMinutes": "{minutes} min before",
+  "@alertReminderMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertReminderNone": "No reminder",
+  "alertReminderSummary": "Reminder {minutes} min before",
+  "@alertReminderSummary": {
+    "description": "Summary line on a prayer's card when a reminder is set.",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertReminderTitle": "Reminder before each prayer",
+  "alertSaveFailed": "This choice could not be saved. Please try again.",
+  "alertSettingsIntro": "Choose what happens at each prayer time.",
+  "alertSettingsTitle": "Prayer alerts",
+  "alertSilentSwitchBody": "When your iPhone's silent switch is on, the sound of a notification is muted. Tapping the notification still plays the full Azaan. You can also choose vibration instead.",
+  "alertSilentSwitchGotIt": "Got it",
+  "alertSilentSwitchTitle": "About the silent switch",
+  "alertSilentSwitchVibrate": "Use vibration for my alerts",
+  "alertSuhoorIntro": "During Ramadan, a reminder before Fajr so you can eat in time.",
+  "alertSuhoorMinutes": "{minutes} min before Fajr",
+  "@alertSuhoorMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "alertSuhoorSwitch": "Remind me before suhoor ends",
+  "alertSuhoorTitle": "Suhoor reminder",
+  "alertTypeFullAzaan": "Full Azaan",
+  "alertTypeGroupLabel": "Alert for {prayer}",
+  "@alertTypeGroupLabel": {
+    "description": "Accessibility label of the group of choices for one prayer.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertTypeOff": "Off",
+  "alertTypeShortTone": "Short tone",
+  "alertTypeSilent": "Silent notification",
+  "alertTypeVibrate": "Vibrate",
+  "alertVariantFajr": "Fajr version",
+  "alertVariantFajrHint": "Includes “as-salatu khayrun min an-nawm”. Played at Fajr when Standard is chosen.",
+  "alertVariantShia": "Shia wording",
+  "alertVariantShiaHint": "The call to prayer with Shia wording. Played at all five prayers when chosen.",
+  "alertVariantStandard": "Standard",
+  "alertVariantStandardHint": "The usual call to prayer. Fajr uses the Fajr recording.",
+  "alertVoiceForPrayer": "For {prayer}",
+  "@alertVoiceForPrayer": {
+    "description": "Subtitle of the voice picker: which prayer the choice applies to.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "alertVoiceIntro": "Each voice has three recordings. Tap play to hear one before you choose.",
+  "alertVoiceName": "Voice {number}",
+  "@alertVoiceName": {
+    "description": "Name of a bundled voice.",
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "alertVoiceSelected": "Selected",
+  "alertVoiceTile": "Voice",
+  "alertVoiceTileValue": "{voice}, {variant}",
+  "@alertVoiceTileValue": {
+    "description": "Current voice and wording shown on a prayer's card.",
+    "placeholders": {
+      "voice": {
+        "type": "String"
+      },
+      "variant": {
+        "type": "String"
+      }
+    }
+  },
+  "alertVoiceTitle": "Choose a voice",
+  "alertVolumeKeep": "Keep my current volume",
+  "alertVolumeRamp": "Gentle ramp",
+  "alertVolumeRampHint": "Starts quiet and gets louder over a few seconds.",
+  "appTitle": "Deen App",
+  "@appTitle": {
+    "description": "Brand name shown in the app bar and task switcher."
+  },
+  "asrHanafiBody": "Asr starts when an object's shadow is twice as long as the object, so Asr begins later (used by the Hanafi school).",
+  "asrHanafiTitle": "Hanafi",
+  "asrStandardBody": "Asr starts when an object's shadow is as long as the object itself (used by the Shafi'i, Maliki and Hanbali schools).",
+  "asrStandardTitle": "Standard",
+  "detailHijriAdjusted": "Includes your adjustment of {days} days (Umm al-Qura calendar).",
+  "@detailHijriAdjusted": {
+    "placeholders": {
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "detailHijriDefault": "Umm al-Qura calendar.",
+  "detailHijriTitle": "Hijri date",
+  "detailHijriUnavailable": "The Hijri date is not available yet.",
+  "detailHijriValue": "{day} {month} {year} AH",
+  "@detailHijriValue": {
+    "description": "Hijri date, for example 12 Ramadan 1448 AH.",
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "month": {
+        "type": "String"
+      },
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "detailImsak": "Imsak",
+  "detailLastThird": "Last third of the night",
+  "detailMidnight": "Midnight",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "highLatAngleBody": "Fajr and Isha use a share of the night equal to the twilight angle divided by 60.",
+  "highLatAngleTitle": "Angle-based",
+  "highLatApplied": "Fajr and Isha were estimated with the “{rule}” rule because your latitude is above 48 degrees, where twilight may not end. You can change the rule in prayer settings.",
+  "@highLatApplied": {
+    "description": "Explanation shown when a high-latitude rule is applied.",
+    "placeholders": {
+      "rule": {
+        "type": "String"
+      }
+    }
+  },
+  "highLatMiddleBody": "The night is split in half: Isha comes no later than the middle of the night and Fajr no earlier.",
+  "highLatMiddleTitle": "Middle of the night",
+  "highLatSeventhBody": "The night is divided into seven parts: Isha is at most one part after sunset and Fajr one part before sunrise.",
+  "highLatSeventhTitle": "Seventh of the night",
+  "hijriMonth1": "Muharram",
+  "hijriMonth10": "Shawwal",
+  "hijriMonth11": "Dhu al-Qi'dah",
+  "hijriMonth12": "Dhu al-Hijjah",
+  "hijriMonth2": "Safar",
+  "hijriMonth3": "Rabi' al-awwal",
+  "hijriMonth4": "Rabi' al-thani",
+  "hijriMonth5": "Jumada al-ula",
+  "hijriMonth6": "Jumada al-thani",
+  "hijriMonth7": "Rajab",
+  "hijriMonth8": "Sha'ban",
+  "hijriMonth9": "Ramadan",
+  "homeBackToToday": "Back to today",
+  "homeBannerDismiss": "Dismiss",
+  "homeChooseLocation": "Choose location",
+  "homeClockBeforeBuild": "Your phone's date looks wrong: it is earlier than this version of the app. Prayer times and alerts may be wrong. Please check Date and time in your phone's settings.",
+  "homeClockDrifted": "Your phone's clock was changed. If the time is wrong, prayer times and alerts may be wrong. Please check Date and time in your phone's settings.",
+  "homeClockMovedBack": "Your phone's clock was set back. If the time is wrong, prayer times and alerts may be wrong. Please check Date and time in your phone's settings.",
+  "homeCountdownSemantics": "{prayer} in {hours, plural, =1{1 hour} other{{hours} hours}} and {minutes, plural, =1{1 minute} other{{minutes} minutes}}",
+  "@homeCountdownSemantics": {
+    "description": "Spoken label of the countdown.",
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      },
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "homeError": "Prayer times could not be calculated. Check the location and try again.",
+  "homeMoreTimes": "More times",
+  "@homeMoreTimes": {
+    "description": "Opens the detail view with Imsak, midnight and the last third of the night."
+  },
+  "homeNextBadge": "Next",
+  "@homeNextBadge": {
+    "description": "Text marker on the row of the next prayer (not colour alone)."
+  },
+  "homeNextDay": "Next day",
+  "homeNoLocation": "Choose a location to see prayer times.",
+  "homePreviousDay": "Previous day",
+  "homeRegionSuggestion": "This region usually uses {method}. Your chosen method stays as it is.",
+  "@homeRegionSuggestion": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "homeRegionSuggestionGeneral": "No regional default exists for this location. {method} is a general choice. Your chosen method stays as it is.",
+  "@homeRegionSuggestionGeneral": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "homeRegionSuggestionSwitch": "Switch to {method}",
+  "@homeRegionSuggestionSwitch": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "homeTimeNotAvailable": "Does not occur today",
+  "@homeTimeNotAvailable": {
+    "description": "Shown when the sun does not rise or set."
+  },
+  "homeTimeSemantics": "{prayer} at {time}",
+  "@homeTimeSemantics": {
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "homeTitle": "Prayer times",
+  "homeToday": "Today",
+  "homeTzRulesNotice": "Time-zone rules may have changed. Please update the app. Until then, times follow your phone's rules.",
+  "languageNameAr": "العربية",
+  "@languageNameAr": {
+    "description": "Name of the language in itself; never translated."
+  },
+  "languageNameEn": "English",
+  "@languageNameEn": {
+    "description": "Name of the language in itself; never translated."
+  },
+  "languageNameId": "Bahasa Indonesia",
+  "@languageNameId": {
+    "description": "Name of the language in itself; never translated."
+  },
+  "languageNameUr": "اردو",
+  "@languageNameUr": {
+    "description": "Name of the language in itself; never translated."
+  },
+  "languageSettingsTitle": "Language",
+  "loading": "Loading",
+  "locationSettingsCurrent": "Current location: {name}",
+  "@locationSettingsCurrent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "locationSettingsNone": "No location is saved yet.",
+  "locationSettingsSaved": "Location saved. Alerts will be updated.",
+  "locationSettingsTitle": "Location",
+  "methodDiyanet": "Turkey (Diyanet)",
+  "methodEgypt": "Egyptian General Authority of Survey",
+  "methodFranceUoif": "France (UOIF)",
+  "methodGulf": "Gulf Region",
+  "methodIsna": "ISNA (North America)",
+  "methodJafari": "Shia Ithna-Ashari (Jafari)",
+  "methodKarachi": "University of Islamic Sciences, Karachi",
+  "methodKuwait": "Kuwait",
+  "methodMoonsightingCommittee": "Moonsighting Committee",
+  "methodMuslimWorldLeague": "Muslim World League",
+  "methodQatar": "Qatar",
+  "methodSingapore": "Singapore (MUIS)",
+  "methodTehran": "Institute of Geophysics, University of Tehran",
+  "methodUmmAlQura": "Umm al-Qura (Makkah)",
+  "nextPrayerLabel": "Next prayer",
+  "oemBrandHuawei": "Huawei, Honor",
+  "@oemBrandHuawei": {
+    "description": "Brand names are not translated."
+  },
+  "oemBrandOneplus": "OnePlus",
+  "@oemBrandOneplus": {
+    "description": "Brand names are not translated."
+  },
+  "oemBrandOppo": "Oppo, realme",
+  "@oemBrandOppo": {
+    "description": "Brand names are not translated."
+  },
+  "oemBrandOther": "Another brand",
+  "oemBrandSamsung": "Samsung",
+  "@oemBrandSamsung": {
+    "description": "Brand names are not translated."
+  },
+  "oemBrandVivo": "Vivo, iQOO",
+  "@oemBrandVivo": {
+    "description": "Brand names are not translated."
+  },
+  "oemBrandXiaomi": "Xiaomi, Redmi, POCO",
+  "@oemBrandXiaomi": {
+    "description": "Brand names are not translated."
+  },
+  "permissionBannerAction": "Fix in settings",
+  "permissionBannerAlerts": "Notifications are off. Prayer alerts will not appear.",
+  "permissionBannerExact": "Exact alarms are off. Alerts may be a few minutes late.",
+  "permissionBannerLocation": "Location is off. Times use your saved city.",
+  "prayerAsr": "Asr",
+  "prayerDhuhr": "Dhuhr",
+  "prayerFajr": "Fajr",
+  "prayerIsha": "Isha",
+  "prayerJumuah": "Jumu'ah",
+  "prayerMaghrib": "Maghrib",
+  "prayerSettingsHighLatIntro": "Above 48 degrees of latitude, twilight may not end in summer. Choose how Fajr and Isha are estimated then.",
+  "prayerSettingsHighLatTitle": "High latitudes",
+  "prayerSettingsHijriLess": "Move the Hijri date one day back",
+  "prayerSettingsHijriMore": "Move the Hijri date one day forward",
+  "prayerSettingsHijriTitle": "Hijri date adjustment (days)",
+  "prayerSettingsHijriValue": "{value} days",
+  "@prayerSettingsHijriValue": {
+    "description": "Signed days, for example +1 days.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsNoLocation": "Choose a location first. Prayer settings apply to your saved location.",
+  "prayerSettingsOffsetLabel": "{prayer} adjustment",
+  "@prayerSettingsOffsetLabel": {
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetLess": "Subtract one minute from {prayer}",
+  "@prayerSettingsOffsetLess": {
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetMore": "Add one minute to {prayer}",
+  "@prayerSettingsOffsetMore": {
+    "placeholders": {
+      "prayer": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetValue": "{value} min",
+  "@prayerSettingsOffsetValue": {
+    "description": "Signed minutes, for example +5 min.",
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "prayerSettingsOffsetsIntro": "Add or remove up to 60 minutes for any prayer. This applies everywhere, including alerts.",
+  "prayerSettingsOffsetsTitle": "Adjust times",
+  "prayerSettingsTitle": "Prayer settings",
+  "prayerSunrise": "Sunrise",
+  "qiblaAccuracyHigh": "High",
+  "@qiblaAccuracyHigh": {
+    "description": "Compass accuracy level."
+  },
+  "qiblaAccuracyLabel": "Compass accuracy: {level}",
+  "@qiblaAccuracyLabel": {
+    "description": "Accuracy indicator. The level is always written out, never shown by color alone.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "qiblaAccuracyLow": "Low",
+  "@qiblaAccuracyLow": {
+    "description": "Compass accuracy level."
+  },
+  "qiblaAccuracyMedium": "Medium",
+  "@qiblaAccuracyMedium": {
+    "description": "Compass accuracy level."
+  },
+  "qiblaAccuracyUnreliable": "Unreliable",
+  "@qiblaAccuracyUnreliable": {
+    "description": "Compass accuracy level."
+  },
+  "qiblaArrowSemantics": "Compass arrow",
+  "@qiblaArrowSemantics": {
+    "description": "Prefix of the screen-reader label of the rotating arrow."
+  },
+  "qiblaAtHaram": "You are at the Haram in Makkah. Face the Kaaba directly.",
+  "@qiblaAtHaram": {
+    "description": "Shown instead of a compass when the saved location is within the Haram."
+  },
+  "qiblaBearingFromPlace": "Qibla from {place}: {description}",
+  "@qiblaBearingFromPlace": {
+    "description": "Heading with the saved place name and the bearing text.",
+    "placeholders": {
+      "place": {
+        "type": "String"
+      },
+      "description": {
+        "type": "String"
+      }
+    }
+  },
+  "qiblaCalibrationPrompt": "Calibrate your compass. Move your phone in a figure eight a few times, away from metal and magnets.",
+  "@qiblaCalibrationPrompt": {
+    "description": "Shown when the compass reports low accuracy."
+  },
+  "qiblaCompassError": "The compass could not be started. The direction is shown in degrees instead.",
+  "@qiblaCompassError": {
+    "description": "Shown when starting the sensors fails."
+  },
+  "qiblaDirectionDescription": "{degrees} degrees, {direction}",
+  "@qiblaDirectionDescription": {
+    "description": "A bearing spoken by a screen reader, for example '212 degrees, southwest'. Degrees are clockwise from true north.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      },
+      "direction": {
+        "type": "String"
+      }
+    }
+  },
+  "qiblaDirectionEast": "east",
+  "@qiblaDirectionEast": {
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionNorth": "north",
+  "@qiblaDirectionNorth": {
+    "description": "Compass point, lower case, used inside a sentence read by a screen reader."
+  },
+  "qiblaDirectionNortheast": "northeast",
+  "@qiblaDirectionNortheast": {
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionNorthwest": "northwest",
+  "@qiblaDirectionNorthwest": {
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionSouth": "south",
+  "@qiblaDirectionSouth": {
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionSoutheast": "southeast",
+  "@qiblaDirectionSoutheast": {
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionSouthwest": "southwest",
+  "@qiblaDirectionSouthwest": {
+    "description": "Compass point, lower case."
+  },
+  "qiblaDirectionWest": "west",
+  "@qiblaDirectionWest": {
+    "description": "Compass point, lower case."
+  },
+  "qiblaDistanceToKaaba": "{km} km to the Kaaba",
+  "@qiblaDistanceToKaaba": {
+    "description": "Great-circle distance to the Kaaba in kilometres.",
+    "placeholders": {
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "qiblaEntryHint": "Find the direction of the Kaaba",
+  "@qiblaEntryHint": {
+    "description": "One-line hint under the Qibla entry on the home screen."
+  },
+  "qiblaFacingQibla": "You are facing the Qibla",
+  "@qiblaFacingQibla": {
+    "description": "Shown and announced when the phone points within a few degrees of the Qibla."
+  },
+  "qiblaInterferenceWarning": "Magnetic interference nearby. Move away from metal, speakers, magnets and electronics, then check again. The arrow may be wrong until then.",
+  "@qiblaInterferenceWarning": {
+    "description": "Shown when the magnetic field is outside the expected range or the heading jumps."
+  },
+  "qiblaMagneticNorthNote": "The compass is using magnetic north. A small error is possible.",
+  "@qiblaMagneticNorthNote": {
+    "description": "Shown when the platform could not apply magnetic declination."
+  },
+  "qiblaNoCompassInstructions": "Use the direction above. Find north with a map, a compass, or the sun (it rises in the east and sets in the west), then turn clockwise from north by the number of degrees shown.",
+  "@qiblaNoCompassInstructions": {
+    "description": "Plain instructions when the device has no usable compass."
+  },
+  "qiblaNoCompassTitle": "No compass on this device",
+  "@qiblaNoCompassTitle": {
+    "description": "Heading of the no-compass fallback."
+  },
+  "qiblaNoLocation": "Set your location first so the Qibla direction can be worked out.",
+  "@qiblaNoLocation": {
+    "description": "Shown when no location has been saved."
+  },
+  "qiblaNorthReference": "Measured clockwise from true north",
+  "@qiblaNorthReference": {
+    "description": "Explains what the degrees mean."
+  },
+  "qiblaStartingCompass": "Starting the compass",
+  "@qiblaStartingCompass": {
+    "description": "Shown briefly until the first compass reading arrives."
+  },
+  "qiblaTitle": "Qibla",
+  "@qiblaTitle": {
+    "description": "Title of the Qibla screen and its entry on the home screen."
+  },
+  "qiblaTurnHint": "Turn until the arrow points straight up",
+  "@qiblaTurnHint": {
+    "description": "Plain instruction under the compass arrow."
+  },
+  "qiblaTurnLeft": "Turn {degrees} degrees to the left",
+  "@qiblaTurnLeft": {
+    "description": "Screen-reader description of the arrow when the Qibla is to the left.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "qiblaTurnRight": "Turn {degrees} degrees to the right",
+  "@qiblaTurnRight": {
+    "description": "Screen-reader description of the arrow when the Qibla is to the right.",
+    "placeholders": {
+      "degrees": {
+        "type": "int"
+      }
+    }
+  },
+  "reliabilityAllGood": "Everything looks good.",
+  "reliabilityBattery": "Battery optimization (Android)",
+  "reliabilityBatteryFix": "On some phones, battery saving can stop alerts. Open the battery settings and let Deen App run in the background.",
+  "reliabilityBatteryOk": "Deen App is not restricted.",
+  "reliabilityBatteryOpen": "Open battery settings",
+  "reliabilityCheckHint": "Check that your alerts will fire",
+  "reliabilityCheckTitle": "Reliability check",
+  "reliabilityErrorBudget": "There are more alerts than this phone can hold, so the later ones were left out until you open the app again.",
+  "reliabilityErrorExactDenied": "Exact alarms are not allowed, so timing may be less precise.",
+  "reliabilityErrorInvalid": "The phone could not accept this alert.",
+  "reliabilityErrorPermissionDenied": "Notifications are not allowed.",
+  "reliabilityErrorPlatform": "The alert system did not respond.",
+  "reliabilityErrorServiceBlocked": "Android blocked the Azaan sound from starting. A notification tone is used instead.",
+  "reliabilityExact": "Exact alarms (Android)",
+  "reliabilityExactFix": "Exact alarms are off, so alerts may be a few minutes late. Allow “Alarms & reminders” for Deen App.",
+  "reliabilityExactOpen": "Open alarm settings",
+  "reliabilityFlagInexact": "Timing may be a few minutes late",
+  "reliabilityFlagSilenced": "Silenced by quiet hours",
+  "reliabilityIntro": "This screen shows whether your alerts will fire, and how to fix anything that could stop them.",
+  "reliabilityIosRefreshNote": "On iPhone, alerts are refreshed each time you open the app. Open it every few days to keep them going.",
+  "reliabilityKindRenewal": "Renewal notice",
+  "reliabilityLastLine": "{when}: {result}",
+  "@reliabilityLastLine": {
+    "description": "Last alert: when it was due, then what happened.",
+    "placeholders": {
+      "when": {
+        "type": "String"
+      },
+      "result": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityLastNone": "No alert has fired yet.",
+  "reliabilityLastTitle": "Last alert result",
+  "reliabilityLoadFailed": "The check could not be completed. Please try again.",
+  "reliabilityNextNone": "Nothing is scheduled.",
+  "reliabilityNextRow": "{title}, {type}, {when}",
+  "@reliabilityNextRow": {
+    "description": "Accessibility label of one upcoming alert.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "type": {
+        "type": "String"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityNextTitle": "Next 5 alerts",
+  "reliabilityNotifications": "Notifications",
+  "reliabilityNotificationsAllow": "Allow notifications",
+  "reliabilityNotificationsFix": "Notifications are off, so alerts cannot appear. Allow notifications for Deen App.",
+  "reliabilityNotificationsSettings": "Open notification settings",
+  "reliabilityPermissionsTitle": "Permissions",
+  "reliabilityProblemsFound": "Something needs your attention.",
+  "reliabilityRebuildFailed": "Your alerts could not be updated. {reason}",
+  "@reliabilityRebuildFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityRefresh": "Check again",
+  "reliabilityRegistered": "{count} alerts are registered with the phone.",
+  "@reliabilityRegistered": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "reliabilityResultAcknowledged": "Stopped by you",
+  "reliabilityResultFailed": "Failed",
+  "reliabilityResultFired": "Delivered",
+  "reliabilityResultMissed": "Missed",
+  "reliabilityResultPlanned": "Waiting",
+  "reliabilityResultPlayed": "Azaan played",
+  "reliabilityResultPossiblyMissed": "Possibly missed",
+  "reliabilityResultSuppressed": "Silenced",
+  "reliabilityRunsUntilHint": "Open the app before this date to keep alerts going. It renews them every time.",
+  "reliabilityRunsUntilNone": "No alerts are scheduled yet.",
+  "reliabilityRunsUntilTitle": "Alerts run until",
+  "reliabilitySilentSwitchTip": "If your iPhone's silent switch is on, notification sounds are muted. Tapping the notification plays the full Azaan.",
+  "reliabilitySound": "Notification sound (iPhone)",
+  "reliabilitySoundFix": "Sound is off in the notification settings, so alerts will be silent. Allow sound for Deen App.",
+  "reliabilityStateOff": "Off",
+  "reliabilityStateOn": "On",
+  "reliabilityTestButton": "Send a test Azaan in 1 minute",
+  "reliabilityTestFailed": "The test could not be set. {reason}",
+  "@reliabilityTestFailed": {
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityTestNeedsNotifications": "Allow notifications first, then try again.",
+  "reliabilityTestScheduled": "Test Azaan set for {time}. Lock your phone and wait.",
+  "@reliabilityTestScheduled": {
+    "description": "Confirmation after pressing the test button.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reliabilityUnsupported": "This device cannot schedule alerts, so there is nothing to check here.",
+  "settingsAppearanceHint": "Theme, text size and contrast",
+  "@settingsAppearanceHint": {
+    "description": "Hint under the appearance entry."
+  },
+  "settingsAppearanceNeedsSetup": "Finish setup first. You can change the appearance once your prayer settings are saved.",
+  "@settingsAppearanceNeedsSetup": {
+    "description": "Shown when no settings exist yet."
+  },
+  "settingsAppearanceTitle": "Appearance",
+  "@settingsAppearanceTitle": {
+    "description": "Title of the appearance screen and its entry in settings."
+  },
+  "settingsDataHint": "Export, import or delete",
+  "@settingsDataHint": {
+    "description": "Hint under the data entry."
+  },
+  "settingsDataTitle": "Your data",
+  "@settingsDataTitle": {
+    "description": "Title of the data screen and its entry in settings."
+  },
+  "settingsDeleteBody": "Removes your settings, location, tasbih counts, bookmarks and alert history from this device, and cancels all scheduled alerts.",
+  "@settingsDeleteBody": {
+    "description": "Explains what deleting does."
+  },
+  "settingsDeleteCancel": "Cancel",
+  "@settingsDeleteCancel": {
+    "description": "Cancel button of the confirmation dialog."
+  },
+  "settingsDeleteConfirmAction": "Delete everything",
+  "@settingsDeleteConfirmAction": {
+    "description": "Destructive button of the confirmation dialog."
+  },
+  "settingsDeleteConfirmBody": "This removes everything the app stores on this device and cannot be undone. Settings files you saved or shared outside the app are not deleted and stay where you put them.",
+  "@settingsDeleteConfirmBody": {
+    "description": "Confirmation text; must say that saved export files remain."
+  },
+  "settingsDeleteConfirmTitle": "Delete all data?",
+  "@settingsDeleteConfirmTitle": {
+    "description": "Title of the confirmation dialog."
+  },
+  "settingsDeleteDone": "All data was deleted.",
+  "@settingsDeleteDone": {
+    "description": "Shown after deletion."
+  },
+  "settingsDeletePartial": "Some data could not be removed. Please try again.",
+  "@settingsDeletePartial": {
+    "description": "Shown when some deletion steps failed."
+  },
+  "settingsDeleteTitle": "Delete all my data",
+  "@settingsDeleteTitle": {
+    "description": "Heading and button of the delete section."
+  },
+  "settingsExportCancelled": "Export cancelled.",
+  "@settingsExportCancelled": {
+    "description": "Shown when the user dismisses the share or save dialog."
+  },
+  "settingsExportDone": "The settings file is ready.",
+  "@settingsExportDone": {
+    "description": "Shown after a successful export."
+  },
+  "settingsExportFailed": "The settings file could not be created.",
+  "@settingsExportFailed": {
+    "description": "Shown when export fails."
+  },
+  "settingsExportSave": "Save settings file",
+  "@settingsExportSave": {
+    "description": "Button that opens the system save dialog."
+  },
+  "settingsExportShare": "Share settings file",
+  "@settingsExportShare": {
+    "description": "Button that opens the system share sheet."
+  },
+  "settingsExportTitle": "Export settings",
+  "@settingsExportTitle": {
+    "description": "Heading of the export section."
+  },
+  "settingsExportWarning": "The file contains your saved location and your settings. Anyone who gets the file can see where you are. Share it only with people and places you trust.",
+  "@settingsExportWarning": {
+    "description": "Plain warning shown before exporting."
+  },
+  "settingsHighContrast": "High contrast",
+  "@settingsHighContrast": {
+    "description": "Label of the high contrast switch."
+  },
+  "settingsHighContrastHint": "Stronger text and outline colors. Nothing in the app depends on color alone.",
+  "@settingsHighContrastHint": {
+    "description": "Hint under the high contrast switch."
+  },
+  "settingsImportBody": "Choose a settings file exported from Deen App. It replaces the settings it contains. If the file has a problem, nothing changes.",
+  "@settingsImportBody": {
+    "description": "Explains import."
+  },
+  "settingsImportButton": "Choose settings file",
+  "@settingsImportButton": {
+    "description": "Button that opens the file picker."
+  },
+  "settingsImportDone": "Settings imported.",
+  "@settingsImportDone": {
+    "description": "Shown after a successful import."
+  },
+  "settingsImportDoneLater": "Settings imported. Alerts will be updated the next time the app opens.",
+  "@settingsImportDoneLater": {
+    "description": "Shown when the settings were saved but rebuilding the schedule failed."
+  },
+  "settingsImportFailed": "The settings could not be saved. Nothing was changed.",
+  "@settingsImportFailed": {
+    "description": "Import error: saving failed."
+  },
+  "settingsImportInvalid": "The file has a value that is missing or out of range ({field}). Nothing was changed.",
+  "@settingsImportInvalid": {
+    "description": "Import error: a value is invalid. The field is a technical key such as prayer.imsakMinutes.",
+    "placeholders": {
+      "field": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsImportNewer": "This file was made by a newer version of the app. Update the app to read it.",
+  "@settingsImportNewer": {
+    "description": "Import error: file version is newer."
+  },
+  "settingsImportNotSettings": "This is not a Deen App settings file.",
+  "@settingsImportNotSettings": {
+    "description": "Import error: wrong format."
+  },
+  "settingsImportTitle": "Import settings",
+  "@settingsImportTitle": {
+    "description": "Heading of the import section."
+  },
+  "settingsImportUnreadable": "The file could not be read.",
+  "@settingsImportUnreadable": {
+    "description": "Import error: not valid JSON or too large."
+  },
+  "settingsSaveError": "This change could not be saved.",
+  "@settingsSaveError": {
+    "description": "Shown when saving an appearance change fails."
+  },
+  "settingsTextSizeLabel": "Text size",
+  "@settingsTextSizeLabel": {
+    "description": "Label of the text size slider."
+  },
+  "settingsTextSizeLarger": "Larger text",
+  "@settingsTextSizeLarger": {
+    "description": "Tooltip of the button that raises the text size."
+  },
+  "settingsTextSizeSample": "Sample text: this is how text looks at this size.",
+  "@settingsTextSizeSample": {
+    "description": "Preview line under the text size slider."
+  },
+  "settingsTextSizeSmaller": "Smaller text",
+  "@settingsTextSizeSmaller": {
+    "description": "Tooltip of the button that lowers the text size."
+  },
+  "settingsTextSizeValue": "{percent}%",
+  "@settingsTextSizeValue": {
+    "description": "Current text size as a percentage.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsThemeDark": "Dark",
+  "@settingsThemeDark": {
+    "description": "Theme choice."
+  },
+  "settingsThemeLabel": "Theme",
+  "@settingsThemeLabel": {
+    "description": "Label of the theme choice."
+  },
+  "settingsThemeLight": "Light",
+  "@settingsThemeLight": {
+    "description": "Theme choice."
+  },
+  "settingsThemeSystem": "Match device",
+  "@settingsThemeSystem": {
+    "description": "Theme choice: follow the system."
+  },
+  "settingsTitle": "Settings",
+  "setupAsrIntro": "Choose the school you follow for the start of Asr. Standard is already selected.",
+  "setupAsrTitle": "Asr prayer",
+  "setupBack": "Back",
+  "setupBatteryBody": "Some phones close apps in the background to save battery, which can delay or stop alerts. Choose your phone brand and follow the steps.",
+  "setupBatteryBrandLabel": "Your phone brand",
+  "setupBatteryGuideUnavailable": "The steps for this brand could not be loaded. Open the battery settings and allow Deen App to run in the background.",
+  "setupBatteryOpenSettings": "Open battery settings",
+  "setupBatteryStep": "Step {number}: {text}",
+  "@setupBatteryStep": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "setupBatteryTitle": "Keep alerts reliable",
+  "setupExactBody": "Android can ring your alert at the exact prayer time only if you allow exact alarms. Without it, alerts still arrive but can be a few minutes late.",
+  "@setupExactBody": {
+    "description": "Explanation of the Android exact-alarm permission."
+  },
+  "setupExactCheck": "I changed it, check again",
+  "setupExactContinue": "Continue without it",
+  "setupExactDenied": "Exact alarms are off. Alerts will still arrive but may be a few minutes late. The Reliability check shows this.",
+  "setupExactGranted": "Exact alarms are allowed.",
+  "setupExactOpen": "Open alarm settings",
+  "setupExactTitle": "Exact alert timing",
+  "setupFinish": "Finish setup",
+  "setupLanguageBody": "You can change this at any time in settings.",
+  "setupLanguageTitle": "Choose your language",
+  "setupLocationApproximate": "Use my approximate location",
+  "setupLocationApproximateHint": "Approximate rounds your position to about 10 km. Prayer times change by well under a minute.",
+  "setupLocationApproximateName": "Approximate location",
+  "@setupLocationApproximateName": {
+    "description": "Saved name for a rounded position."
+  },
+  "setupLocationCurrentName": "Current location",
+  "@setupLocationCurrentName": {
+    "description": "Saved name for a place read from the phone's position."
+  },
+  "setupLocationFinding": "Finding your location…",
+  "setupLocationNeeded": "Choose a location or a city to continue.",
+  "setupLocationOfflineNote": "The city list is stored in the app, so searching works without internet. You can skip sharing your location and just pick a city.",
+  "setupLocationPrecise": "Use my precise location",
+  "setupLocationPrivacy": "Your location stays on this device. It is never sent anywhere, and it is only used to calculate prayer times.",
+  "@setupLocationPrivacy": {
+    "description": "Plain statement that location never leaves the device."
+  },
+  "setupLocationSearchEmpty": "No city found. Check the spelling or try another name.",
+  "setupLocationSearchHint": "City name",
+  "setupLocationSearchLabel": "Or search for a city",
+  "setupLocationSelected": "Selected: {name}",
+  "@setupLocationSelected": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "setupLocationTitle": "Your location",
+  "setupMethodChange": "You can choose a different method:",
+  "setupMethodGeneral": "There is no regional default for your location, so the general Muslim World League method is suggested.",
+  "setupMethodSuggested": "Suggested for your region: {method}",
+  "@setupMethodSuggested": {
+    "placeholders": {
+      "method": {
+        "type": "String"
+      }
+    }
+  },
+  "setupMethodTitle": "Calculation method",
+  "setupNext": "Next",
+  "setupNotNow": "Not now",
+  "setupNotificationsAllow": "Allow notifications",
+  "setupNotificationsBody": "To remind you at prayer times, Deen App needs permission to show notifications. Alerts are made on your phone; nothing is sent over the internet.",
+  "@setupNotificationsBody": {
+    "description": "Explanation shown before the notification permission prompt."
+  },
+  "setupNotificationsDenied": "Notifications are off, so prayer alerts will not appear. You can allow them later in app settings.",
+  "setupNotificationsGranted": "Notifications are allowed.",
+  "setupNotificationsTitle": "Prayer alerts",
+  "setupOpenAppSettings": "Open app settings",
+  "setupPrivacyNoData": "Deen App collects no personal data.",
+  "@setupPrivacyNoData": {
+    "description": "Privacy summary: no personal data collected."
+  },
+  "setupPrivacyNoTracking": "There are no accounts, no ads and no trackers, and the app works without an internet connection.",
+  "setupPrivacyOnDevice": "Your location, settings and alert history stay on this phone.",
+  "setupPrivacyTitle": "Your privacy",
+  "setupProblemLocationDenied": "Location was not allowed. Pick a city from the list instead, or allow location in app settings.",
+  "setupProblemLocationTimeout": "Your location could not be found in time. Try again, or pick a city from the list.",
+  "setupProblemLocationUnavailable": "Location is not available on this phone right now. Pick a city from the list.",
+  "setupProblemSaveFailed": "Your choice could not be saved. Please try again.",
+  "setupProblemZoneUnknown": "Your phone did not report a time zone. Pick a city from the list.",
+  "setupProgress": "Step {current} of {total}",
+  "@setupProgress": {
+    "description": "Progress through setup.",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "setupSummaryAlerts": "Prayer alerts will not appear because notifications are off.",
+  "setupSummaryExact": "Alerts may arrive a few minutes late because exact alarms are off.",
+  "setupSummaryLocation": "Your phone's location is off, so times use the city you chose.",
+  "setupSummaryTitle": "What will not work yet",
+  "setupSummaryWayBack": "You can allow any of these later in app settings.",
+  "setupTitle": "Set up Deen App",
+  "@setupTitle": {
+    "description": "Title of the first-run setup app bar."
+  },
+  "tasbihCancel": "Cancel",
+  "@tasbihCancel": {
+    "description": "Dismisses a dialog without changes."
+  },
+  "tasbihCountHint": "Adds one to the count",
+  "@tasbihCountHint": {
+    "description": "Screen-reader hint of the large tap target."
+  },
+  "tasbihCountLabel": "Count: {count} of {target}",
+  "@tasbihCountLabel": {
+    "description": "Screen-reader label of the large tap target.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihEntryHint": "Count your dhikr",
+  "@tasbihEntryHint": {
+    "description": "One-line hint under the Tasbih entry on the home screen."
+  },
+  "tasbihHaptics": "Vibrate on each count",
+  "@tasbihHaptics": {
+    "description": "Switch label."
+  },
+  "tasbihHistoryEmpty": "No counts yet. Your daily totals appear here.",
+  "@tasbihHistoryEmpty": {
+    "description": "Shown when there are no daily totals."
+  },
+  "tasbihHistoryTitle": "History",
+  "@tasbihHistoryTitle": {
+    "description": "Heading of the daily totals list."
+  },
+  "tasbihKeepAwake": "Keep the screen on",
+  "@tasbihKeepAwake": {
+    "description": "Switch label; applies only while this screen is open."
+  },
+  "tasbihLock": "Lock touches on the counter",
+  "@tasbihLock": {
+    "description": "Switch label for the tap lock."
+  },
+  "tasbihLockHint": "A stray touch will not add a count. The volume keys still count.",
+  "@tasbihLockHint": {
+    "description": "Explains the tap lock."
+  },
+  "tasbihLockedMessage": "Locked. Touches on the counter are ignored.",
+  "@tasbihLockedMessage": {
+    "description": "Shown on the counter while the tap lock is on."
+  },
+  "tasbihOfTarget": "of {target}",
+  "@tasbihOfTarget": {
+    "description": "Shown under the large count, for example 'of 33'.",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihOptionsTitle": "Options",
+  "@tasbihOptionsTitle": {
+    "description": "Heading of the switches below the counter."
+  },
+  "tasbihReset": "Reset",
+  "@tasbihReset": {
+    "description": "Button that sets the count back to zero (after confirmation)."
+  },
+  "tasbihResetBody": "The count goes back to 0. Your daily totals are kept.",
+  "@tasbihResetBody": {
+    "description": "Body of the reset confirmation dialog."
+  },
+  "tasbihResetTitle": "Reset the counter?",
+  "@tasbihResetTitle": {
+    "description": "Title of the reset confirmation dialog."
+  },
+  "tasbihRounds": "Rounds completed: {rounds}",
+  "@tasbihRounds": {
+    "description": "How many times the target was reached since the last reset.",
+    "placeholders": {
+      "rounds": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihSave": "Save",
+  "@tasbihSave": {
+    "description": "Confirms the custom target."
+  },
+  "tasbihSaveError": "Could not save the count. Try again.",
+  "@tasbihSaveError": {
+    "description": "Plain error message when the database write fails."
+  },
+  "tasbihSound": "Tap sound",
+  "@tasbihSound": {
+    "description": "Switch label for the optional tick sound."
+  },
+  "tasbihTargetCustom": "Custom",
+  "@tasbihTargetCustom": {
+    "description": "Choice that opens the custom target dialog."
+  },
+  "tasbihTargetCustomField": "Target (1 to 100000)",
+  "@tasbihTargetCustomField": {
+    "description": "Label of the number field in the custom target dialog."
+  },
+  "tasbihTargetCustomLabel": "Custom target: {target}",
+  "@tasbihTargetCustomLabel": {
+    "description": "Screen-reader label of the custom choice when a custom target is active.",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTargetCustomTitle": "Custom target",
+  "@tasbihTargetCustomTitle": {
+    "description": "Title of the custom target dialog."
+  },
+  "tasbihTargetHeading": "Target",
+  "@tasbihTargetHeading": {
+    "description": "Heading above the target choices."
+  },
+  "tasbihTargetInvalid": "Enter a whole number from 1 to 100000.",
+  "@tasbihTargetInvalid": {
+    "description": "Error under the custom target field."
+  },
+  "tasbihTargetOptionLabel": "Target {target}",
+  "@tasbihTargetOptionLabel": {
+    "description": "Screen-reader label of a target choice (33 or 99).",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTargetReached": "Target of {target} reached",
+  "@tasbihTargetReached": {
+    "description": "Announced to screen readers when the count reaches the target.",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihTitle": "Tasbih",
+  "@tasbihTitle": {
+    "description": "Title of the Tasbih counter screen and its entry on the home screen."
+  },
+  "tasbihTodayTotal": "Today: {total}",
+  "@tasbihTodayTotal": {
+    "description": "Total counted today, across resets.",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tasbihUnlock": "Hold to unlock",
+  "@tasbihUnlock": {
+    "description": "Button that turns the tap lock off with a long press."
+  },
+  "tasbihUnlockPressHint": "Press and hold the button to unlock.",
+  "@tasbihUnlockPressHint": {
+    "description": "Message shown after a short press on the unlock button."
+  },
+  "tasbihVolumeKeys": "Count with the volume keys",
+  "@tasbihVolumeKeys": {
+    "description": "Switch label, Android only."
+  },
+  "tasbihVolumeKeysHint": "While this screen is open the volume keys count instead of changing the volume.",
+  "@tasbihVolumeKeysHint": {
+    "description": "Explains the volume key option."
+  }
+}
