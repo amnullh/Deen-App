@@ -1,0 +1,26 @@
+{
+  "schema": "recording_mapping/1",
+  "description": "recordings: recordingId(voiceId, variant, prayer) must equal expected (data-model mapping table). reminderTypes: reminderType(prayerType) must equal expected; standaloneReminderType(prayerType) must equal expectedStandalone (a reminder that is its own opt-in turns 'off' into 'shortTone'). Reminders never use fullAzaan.",
+  "recordings": [
+    {"voiceId": "voice-1", "variant": "standard", "prayer": "fajr", "expected": "voice-1-fajr"},
+    {"voiceId": "voice-1", "variant": "standard", "prayer": "dhuhr", "expected": "voice-1-standard"},
+    {"voiceId": "voice-1", "variant": "standard", "prayer": "asr", "expected": "voice-1-standard"},
+    {"voiceId": "voice-1", "variant": "standard", "prayer": "maghrib", "expected": "voice-1-standard"},
+    {"voiceId": "voice-1", "variant": "standard", "prayer": "isha", "expected": "voice-1-standard"},
+    {"voiceId": "voice-1", "variant": "shia", "prayer": "fajr", "expected": "voice-1-shia"},
+    {"voiceId": "voice-1", "variant": "shia", "prayer": "dhuhr", "expected": "voice-1-shia"},
+    {"voiceId": "voice-1", "variant": "shia", "prayer": "asr", "expected": "voice-1-shia"},
+    {"voiceId": "voice-1", "variant": "shia", "prayer": "maghrib", "expected": "voice-1-shia"},
+    {"voiceId": "voice-1", "variant": "shia", "prayer": "isha", "expected": "voice-1-shia"},
+    {"voiceId": "voice-2", "variant": "standard", "prayer": "fajr", "expected": "voice-2-fajr"},
+    {"voiceId": "voice-2", "variant": "standard", "prayer": "isha", "expected": "voice-2-standard"},
+    {"voiceId": "voice-2", "variant": "shia", "prayer": "fajr", "expected": "voice-2-shia"}
+  ],
+  "reminderTypes": [
+    {"prayerType": "off", "expected": "off", "expectedStandalone": "shortTone"},
+    {"prayerType": "silent", "expected": "silent", "expectedStandalone": "silent"},
+    {"prayerType": "vibrate", "expected": "vibrate", "expectedStandalone": "vibrate"},
+    {"prayerType": "shortTone", "expected": "shortTone", "expectedStandalone": "shortTone"},
+    {"prayerType": "fullAzaan", "expected": "shortTone", "expectedStandalone": "shortTone"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "alert_ids/1",
+  "description": "build: alertId(kind, localDate, pre) must equal expected (or throw when expected is null). parse: parseAlertId(id) must equal expected {kind, localDate, pre} (null when malformed). Kinds: fajr dhuhr asr maghrib isha suhoor adhkar-morning adhkar-evening renewal. Only prayers take pre=true.",
+  "build": [
+    {"kind": "fajr", "localDate": "2026-10-22", "pre": false, "expected": "fajr:2026-10-22"},
+    {"kind": "fajr", "localDate": "2026-10-22", "pre": true, "expected": "fajr:2026-10-22:pre"},
+    {"kind": "dhuhr", "localDate": "2026-01-01", "pre": false, "expected": "dhuhr:2026-01-01"},
+    {"kind": "asr", "localDate": "2026-12-31", "pre": true, "expected": "asr:2026-12-31:pre"},
+    {"kind": "maghrib", "localDate": "2028-02-29", "pre": false, "expected": "maghrib:2028-02-29"},
+    {"kind": "isha", "localDate": "2026-10-22", "pre": true, "expected": "isha:2026-10-22:pre"},
+    {"kind": "suhoor", "localDate": "2027-02-09", "pre": false, "expected": "suhoor:2027-02-09"},
+    {"kind": "adhkar-morning", "localDate": "2026-10-22", "pre": false, "expected": "adhkar-morning:2026-10-22"},
+    {"kind": "adhkar-evening", "localDate": "2026-10-22", "pre": false, "expected": "adhkar-evening:2026-10-22"},
+    {"kind": "renewal", "localDate": "2026-12-13", "pre": false, "expected": "renewal:2026-12-13"},
+    {"kind": "suhoor", "localDate": "2026-10-22", "pre": true, "expected": null},
+    {"kind": "renewal", "localDate": "2026-10-22", "pre": true, "expected": null},
+    {"kind": "sunrise", "localDate": "2026-10-22", "pre": false, "expected": null},
+    {"kind": "Fajr", "localDate": "2026-10-22", "pre": false, "expected": null},
+    {"kind": "fajr", "localDate": "2026-10-2", "pre": false, "expected": null},
+    {"kind": "fajr", "localDate": "2026-02-30", "pre": false, "expected": null},
+    {"kind": "fajr", "localDate": "22-10-2026", "pre": false, "expected": null}
+  ],
+  "parse": [
+    {"id": "fajr:2026-10-22", "expected": {"kind": "fajr", "localDate": "2026-10-22", "pre": false}},
+    {"id": "fajr:2026-10-22:pre", "expected": {"kind": "fajr", "localDate": "2026-10-22", "pre": true}},
+    {"id": "suhoor:2027-02-09", "expected": {"kind": "suhoor", "localDate": "2027-02-09", "pre": false}},
+    {"id": "adhkar-evening:2026-10-22", "expected": {"kind": "adhkar-evening", "localDate": "2026-10-22", "pre": false}},
+    {"id": "renewal:2026-12-13", "expected": {"kind": "renewal", "localDate": "2026-12-13", "pre": false}},
+    {"id": "suhoor:2026-10-22:pre", "expected": null},
+    {"id": "fajr", "expected": null},
+    {"id": "fajr:2026-10-22:post", "expected": null},
+    {"id": "sunrise:2026-10-22", "expected": null},
+    {"id": "fajr:2026-13-01", "expected": null},
+    {"id": "", "expected": null}
+  ]
+}

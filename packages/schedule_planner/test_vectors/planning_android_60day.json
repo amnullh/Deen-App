@@ -1,0 +1,30 @@
+{
+  "schema": "planning/1",
+  "description": "Android 60-day snapshot: five short-tone prayers for 60 local days plus one renewal alert 7 days before the end. The location zone is UTC so every instant is easy to check.",
+  "cases": [
+    {
+      "name": "android 60-day snapshot with renewal about 7 days before the end",
+      "description": "d0 = 2026-10-21, days 2026-10-21 .. 2026-12-19 (60 days) x 5 prayers = 300 alerts, plus renewal:2026-12-13 at 09:00 local (d0 + 60 - 7 days).",
+      "input": {
+        "now": "2026-10-21T00:00:00Z",
+        "location": {"latitude": 21.42, "longitude": 39.83, "timeZoneId": "Etc/UTC", "countryCode": "SA"},
+        "zone": {"initialOffsetMinutes": 0, "changes": []},
+        "localTimes": {"fajr": "05:00", "sunrise": "06:30", "dhuhr": "12:00", "asr": "15:30", "maghrib": "18:00", "isha": "19:30"},
+        "budget": {"platform": "android", "snapshotDays": 60, "renewalDaysBeforeEnd": 7},
+        "alertPreferences": [
+          {"prayer": "fajr", "type": "shortTone"}, {"prayer": "dhuhr", "type": "shortTone"},
+          {"prayer": "asr", "type": "shortTone"}, {"prayer": "maghrib", "type": "shortTone"},
+          {"prayer": "isha", "type": "shortTone"}
+        ],
+        "quietHours": null
+      },
+      "expectedSummary": {
+        "count": 301,
+        "kindCounts": {"prayer": 300, "renewal": 1},
+        "first": {"alertId": "fajr:2026-10-21", "fireAt": "2026-10-21T05:00:00Z"},
+        "last": {"alertId": "isha:2026-12-19", "fireAt": "2026-12-19T19:30:00Z"},
+        "renewal": {"alertId": "renewal:2026-12-13", "fireAt": "2026-12-13T09:00:00Z", "deliveryType": "renewal"}
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "planning/1",
+  "description": "iOS 63-request budget: nearest 62 alerts plus a renewal alert placed one minute after the last kept alert, carrying that alert's local date.",
+  "cases": [
+    {
+      "name": "ios keeps the nearest 62 alerts and a renewal as the 63rd",
+      "description": "Five prayers a day from 2026-10-21. 12 full days (to 2026-11-01) = 60 alerts, then fajr and dhuhr of 2026-11-02 make 62. The renewal is renewal:2026-11-02 at 12:01Z.",
+      "input": {
+        "now": "2026-10-21T00:00:00Z",
+        "location": {"latitude": 51.5, "longitude": -0.12, "timeZoneId": "Etc/UTC", "countryCode": "GB"},
+        "zone": {"initialOffsetMinutes": 0, "changes": []},
+        "localTimes": {"fajr": "05:00", "sunrise": "06:30", "dhuhr": "12:00", "asr": "15:30", "maghrib": "18:00", "isha": "19:30"},
+        "budget": {"platform": "ios", "maxRequests": 63},
+        "alertPreferences": [
+          {"prayer": "fajr", "type": "shortTone"}, {"prayer": "dhuhr", "type": "shortTone"},
+          {"prayer": "asr", "type": "shortTone"}, {"prayer": "maghrib", "type": "shortTone"},
+          {"prayer": "isha", "type": "shortTone"}
+        ],
+        "quietHours": null
+      },
+      "expectedSummary": {
+        "count": 63,
+        "kindCounts": {"prayer": 62, "renewal": 1},
+        "first": {"alertId": "fajr:2026-10-21", "fireAt": "2026-10-21T05:00:00Z"},
+        "last": {"alertId": "renewal:2026-11-02", "fireAt": "2026-11-02T12:01:00Z", "deliveryType": "renewal"},
+        "renewal": {"alertId": "renewal:2026-11-02", "fireAt": "2026-11-02T12:01:00Z", "deliveryType": "renewal"}
+      }
+    }
+  ]
+}

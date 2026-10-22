@@ -1,0 +1,44 @@
+{
+  "schema": "arbiter/1",
+  "description": "Rule: at most one play per alertId. 'cases' are single decisions against a fixed ledger. 'sequences' replay steps against one ledger; a step with markPlayed=true adds its alertId to the ledger after the decision (the caller does this after playback starts; decide never does).",
+  "cases": [
+    {"name": "fresh alert plays", "ledger": [], "alertId": "fajr:2026-10-22", "suppressed": false, "expected": "play"},
+    {"name": "already played is skipped", "ledger": ["fajr:2026-10-22"], "alertId": "fajr:2026-10-22", "suppressed": false, "expected": "skipAlreadyPlayed"},
+    {"name": "suppressed fresh alert is skipped", "ledger": [], "alertId": "dhuhr:2026-10-22", "suppressed": true, "expected": "skipSuppressed"},
+    {"name": "already played wins over suppressed", "ledger": ["asr:2026-10-22"], "alertId": "asr:2026-10-22", "suppressed": true, "expected": "skipAlreadyPlayed"},
+    {"name": "other alerts in the ledger do not block", "ledger": ["fajr:2026-10-22", "dhuhr:2026-10-22"], "alertId": "asr:2026-10-22", "suppressed": false, "expected": "play"},
+    {"name": "same prayer other day plays", "ledger": ["fajr:2026-10-22"], "alertId": "fajr:2026-10-23", "suppressed": false, "expected": "play"},
+    {"name": "pre reminder is a separate id", "ledger": ["fajr:2026-10-22"], "alertId": "fajr:2026-10-22:pre", "suppressed": false, "expected": "play"},
+    {"name": "prayer is separate from its pre reminder", "ledger": ["fajr:2026-10-22:pre"], "alertId": "fajr:2026-10-22", "suppressed": false, "expected": "play"},
+    {"name": "renewal plays once", "ledger": ["renewal:2026-12-13"], "alertId": "renewal:2026-12-13", "suppressed": false, "expected": "skipAlreadyPlayed"},
+    {"name": "ids are case sensitive", "ledger": ["fajr:2026-10-22"], "alertId": "Fajr:2026-10-22", "suppressed": false, "expected": "play"}
+  ],
+  "sequences": [
+    {
+      "name": "alarm fires twice (receiver and in-app tap)",
+      "steps": [
+        {"alertId": "maghrib:2026-10-22", "suppressed": false, "expected": "play", "markPlayed": true},
+        {"alertId": "maghrib:2026-10-22", "suppressed": false, "expected": "skipAlreadyPlayed", "markPlayed": false}
+      ]
+    },
+    {
+      "name": "suppressed first, then allowed later (call ended, not marked played)",
+      "steps": [
+        {"alertId": "isha:2026-10-22", "suppressed": true, "expected": "skipSuppressed", "markPlayed": false},
+        {"alertId": "isha:2026-10-22", "suppressed": false, "expected": "play", "markPlayed": true},
+        {"alertId": "isha:2026-10-22", "suppressed": false, "expected": "skipAlreadyPlayed", "markPlayed": false}
+      ]
+    },
+    {
+      "name": "a day of five prayers plays five times",
+      "steps": [
+        {"alertId": "fajr:2026-10-22", "suppressed": false, "expected": "play", "markPlayed": true},
+        {"alertId": "dhuhr:2026-10-22", "suppressed": false, "expected": "play", "markPlayed": true},
+        {"alertId": "asr:2026-10-22", "suppressed": false, "expected": "play", "markPlayed": true},
+        {"alertId": "maghrib:2026-10-22", "suppressed": false, "expected": "play", "markPlayed": true},
+        {"alertId": "isha:2026-10-22", "suppressed": false, "expected": "play", "markPlayed": true},
+        {"alertId": "fajr:2026-10-22", "suppressed": false, "expected": "skipAlreadyPlayed", "markPlayed": false}
+      ]
+    }
+  ]
+}

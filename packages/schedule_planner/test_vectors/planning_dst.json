@@ -1,0 +1,89 @@
+{
+  "schema": "planning/1",
+  "description": "DST and time-zone planning cases. The input describes a fake prayer engine (fixed local clock times per prayer, converted with the zone's offsets) so expected instants can be checked by hand.",
+  "cases": [
+    {
+      "name": "spring forward: quiet hours are judged in local time, not UTC",
+      "description": "London switches to BST at 2026-03-29T01:00Z. Fajr is 04:30 local every day, so its UTC instant moves from 04:30Z to 03:30Z. Quiet hours 22:00-04:00 local never contain 04:30 local, so the full Azaan stays audible even though 03:30Z would fall inside a UTC reading of the same hours.",
+      "input": {
+        "now": "2026-03-28T00:00:00Z",
+        "location": {"latitude": 51.5, "longitude": -0.12, "timeZoneId": "Europe/London", "countryCode": "GB"},
+        "zone": {"initialOffsetMinutes": 0, "changes": [
+          {"atUtc": "2026-03-29T01:00:00Z", "offsetMinutes": 60},
+          {"atUtc": "2026-10-25T01:00:00Z", "offsetMinutes": 0}
+        ]},
+        "localTimes": {"fajr": "04:30", "sunrise": "06:00", "dhuhr": "12:00", "asr": "15:30", "maghrib": "18:30", "isha": "20:00"},
+        "budget": {"platform": "android", "snapshotDays": 3, "renewalDaysBeforeEnd": 1},
+        "alertPreferences": [{"prayer": "fajr", "type": "fullAzaan", "voiceId": "voice-1", "variant": "standard"}],
+        "quietHours": {"startMinutes": 1320, "endMinutes": 240}
+      },
+      "expected": {"alerts": [
+        {"alertId": "fajr:2026-03-28", "fireAt": "2026-03-28T04:30:00Z", "deliveryType": "fullAzaan", "audioRef": "voice-1-fajr", "reasons": []},
+        {"alertId": "fajr:2026-03-29", "fireAt": "2026-03-29T03:30:00Z", "deliveryType": "fullAzaan", "audioRef": "voice-1-fajr", "reasons": []},
+        {"alertId": "fajr:2026-03-30", "fireAt": "2026-03-30T03:30:00Z", "deliveryType": "fullAzaan", "audioRef": "voice-1-fajr", "reasons": []},
+        {"alertId": "renewal:2026-03-30", "fireAt": "2026-03-30T08:00:00Z", "deliveryType": "renewal", "reasons": []}
+      ]}
+    },
+    {
+      "name": "spring forward: alert inside local quiet hours is silenced on every day",
+      "description": "Same zone changes as above; quiet hours 22:00-05:00 contain Fajr at 04:30 local on all three days.",
+      "input": {
+        "now": "2026-03-28T00:00:00Z",
+        "location": {"latitude": 51.5, "longitude": -0.12, "timeZoneId": "Europe/London", "countryCode": "GB"},
+        "zone": {"initialOffsetMinutes": 0, "changes": [
+          {"atUtc": "2026-03-29T01:00:00Z", "offsetMinutes": 60},
+          {"atUtc": "2026-10-25T01:00:00Z", "offsetMinutes": 0}
+        ]},
+        "localTimes": {"fajr": "04:30", "sunrise": "06:00", "dhuhr": "12:00", "asr": "15:30", "maghrib": "18:30", "isha": "20:00"},
+        "budget": {"platform": "android", "snapshotDays": 3, "renewalDaysBeforeEnd": 1},
+        "alertPreferences": [{"prayer": "fajr", "type": "fullAzaan", "voiceId": "voice-1", "variant": "standard"}],
+        "quietHours": {"startMinutes": 1320, "endMinutes": 300}
+      },
+      "expected": {"alerts": [
+        {"alertId": "fajr:2026-03-28", "fireAt": "2026-03-28T04:30:00Z", "deliveryType": "silent", "reasons": ["silencedByQuietHours"]},
+        {"alertId": "fajr:2026-03-29", "fireAt": "2026-03-29T03:30:00Z", "deliveryType": "silent", "reasons": ["silencedByQuietHours"]},
+        {"alertId": "fajr:2026-03-30", "fireAt": "2026-03-30T03:30:00Z", "deliveryType": "silent", "reasons": ["silencedByQuietHours"]},
+        {"alertId": "renewal:2026-03-30", "fireAt": "2026-03-30T08:00:00Z", "deliveryType": "renewal", "reasons": []}
+      ]}
+    },
+    {
+      "name": "fall back: Fajr moves later in UTC and stays outside quiet hours",
+      "description": "London returns to GMT at 2026-10-25T01:00Z. Fajr is 05:30 local: 04:30Z on 24 Oct (BST), 05:30Z afterwards. Quiet hours 22:00-05:00 local never contain 05:30 local, although 04:30Z falls inside a UTC reading.",
+      "input": {
+        "now": "2026-10-24T00:00:00Z",
+        "location": {"latitude": 51.5, "longitude": -0.12, "timeZoneId": "Europe/London", "countryCode": "GB"},
+        "zone": {"initialOffsetMinutes": 60, "changes": [
+          {"atUtc": "2026-10-25T01:00:00Z", "offsetMinutes": 0}
+        ]},
+        "localTimes": {"fajr": "05:30", "sunrise": "07:00", "dhuhr": "12:00", "asr": "14:30", "maghrib": "17:00", "isha": "18:30"},
+        "budget": {"platform": "android", "snapshotDays": 3, "renewalDaysBeforeEnd": 1},
+        "alertPreferences": [{"prayer": "fajr", "type": "fullAzaan", "voiceId": "voice-1", "variant": "standard"}],
+        "quietHours": {"startMinutes": 1320, "endMinutes": 300}
+      },
+      "expected": {"alerts": [
+        {"alertId": "fajr:2026-10-24", "fireAt": "2026-10-24T04:30:00Z", "deliveryType": "fullAzaan", "audioRef": "voice-1-fajr", "reasons": []},
+        {"alertId": "fajr:2026-10-25", "fireAt": "2026-10-25T05:30:00Z", "deliveryType": "fullAzaan", "audioRef": "voice-1-fajr", "reasons": []},
+        {"alertId": "fajr:2026-10-26", "fireAt": "2026-10-26T05:30:00Z", "deliveryType": "fullAzaan", "audioRef": "voice-1-fajr", "reasons": []},
+        {"alertId": "renewal:2026-10-26", "fireAt": "2026-10-26T09:00:00Z", "deliveryType": "renewal", "reasons": []}
+      ]}
+    },
+    {
+      "name": "time-zone change: local date comes from the location zone, not UTC",
+      "description": "Location Asia/Karachi (UTC+5). At 2026-10-21T20:00Z it is already 22 Oct 01:00 there, so today is 2026-10-22: the window is 22 and 23 Oct and the renewal falls on 2026-10-23 (09:00 local = 04:00Z). Isha is 23:30 local (18:30Z); isha:2026-10-21 has passed.",
+      "input": {
+        "now": "2026-10-21T20:00:00Z",
+        "location": {"latitude": 24.86, "longitude": 67.0, "timeZoneId": "Asia/Karachi", "countryCode": "PK"},
+        "zone": {"initialOffsetMinutes": 300, "changes": []},
+        "localTimes": {"fajr": "05:00", "sunrise": "06:20", "dhuhr": "12:00", "asr": "15:20", "maghrib": "17:40", "isha": "23:30"},
+        "budget": {"platform": "android", "snapshotDays": 2, "renewalDaysBeforeEnd": 1},
+        "alertPreferences": [{"prayer": "isha", "type": "shortTone"}],
+        "quietHours": null
+      },
+      "expected": {"alerts": [
+        {"alertId": "isha:2026-10-22", "fireAt": "2026-10-22T18:30:00Z", "deliveryType": "shortTone", "audioRef": "tone-short", "reasons": []},
+        {"alertId": "renewal:2026-10-23", "fireAt": "2026-10-23T04:00:00Z", "deliveryType": "renewal", "reasons": []},
+        {"alertId": "isha:2026-10-23", "fireAt": "2026-10-23T18:30:00Z", "deliveryType": "shortTone", "audioRef": "tone-short", "reasons": []}
+      ]}
+    }
+  ]
+}
