@@ -6,7 +6,7 @@ set -uxo pipefail
 cd "$(dirname "$0")/../apps/mobile"
 flutter build apk --debug || exit $?
 cd android
-./gradlew connectedDebugAndroidTest
+./gradlew :app:connectedDebugAndroidTest
 status=$?
 # Failed tests become annotations, readable on the run page without a login.
 python3 ../../../scripts/ci-junit-summary.py ../build/app/outputs
